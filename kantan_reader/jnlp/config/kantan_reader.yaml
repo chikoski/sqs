@@ -1,0 +1,7 @@
+templates:
+  - "Reader.jnlp.erb"
+  - "libraries.jnlp.erb"
+directories:
+  base: "."
+  target: "target"
+  template: "templates"

@@ -1,0 +1,185 @@
+--- 
+- !ruby/object:Pom::Dependency 
+  artifact_id: junit
+  group_id: junit
+  version: 3.8.2
+- !ruby/object:Pom::Dependency 
+  artifact_id: jnlp
+  group_id: jnlp
+  version: 1.6.0
+- !ruby/object:Pom::Dependency 
+  artifact_id: sqs-util
+  group_id: net.sqs2
+  version: 1.3.22
+- !ruby/object:Pom::Dependency 
+  artifact_id: antlr
+  group_id: antlr
+  version: 2.7.1
+- !ruby/object:Pom::Dependency 
+  artifact_id: batik-awt-util
+  group_id: batik
+  version: "1.6"
+- !ruby/object:Pom::Dependency 
+  artifact_id: batik-swing
+  group_id: batik
+  version: "1.6"
+- !ruby/object:Pom::Dependency 
+  artifact_id: batik-gvt
+  group_id: batik
+  version: "1.6"
+- !ruby/object:Pom::Dependency 
+  artifact_id: batik-css
+  group_id: batik
+  version: "1.6"
+- !ruby/object:Pom::Dependency 
+  artifact_id: batik-xml
+  group_id: batik
+  version: "1.6"
+- !ruby/object:Pom::Dependency 
+  artifact_id: batik-ext
+  group_id: batik
+  version: "1.6"
+- !ruby/object:Pom::Dependency 
+  artifact_id: batik-gui-util
+  group_id: batik
+  version: "1.6"
+- !ruby/object:Pom::Dependency 
+  artifact_id: batik-util
+  group_id: batik
+  version: "1.6"
+- !ruby/object:Pom::Dependency 
+  artifact_id: batik-bridge
+  group_id: batik
+  version: "1.6"
+- !ruby/object:Pom::Dependency 
+  artifact_id: batik-svg-dom
+  group_id: batik
+  version: "1.6"
+- !ruby/object:Pom::Dependency 
+  artifact_id: batik-dom
+  group_id: batik
+  version: "1.6"
+- !ruby/object:Pom::Dependency 
+  artifact_id: batik-script
+  group_id: batik
+  version: "1.6"
+- !ruby/object:Pom::Dependency 
+  artifact_id: batik-parser
+  group_id: batik
+  version: "1.6"
+- !ruby/object:Pom::Dependency 
+  artifact_id: xml-apis
+  group_id: xml-apis
+  version: 1.0.b2
+- !ruby/object:Pom::Dependency 
+  artifact_id: poi
+  group_id: org.apache.poi
+  version: 3.2-FINAL
+- !ruby/object:Pom::Dependency 
+  artifact_id: commons-logging
+  group_id: commons-logging
+  version: "1.1"
+- !ruby/object:Pom::Dependency 
+  artifact_id: commons-io
+  group_id: commons-io
+  version: "1.4"
+- !ruby/object:Pom::Dependency 
+  artifact_id: httpcore
+  group_id: org.apache.httpcomponents
+  version: 4.0-beta2
+- !ruby/object:Pom::Dependency 
+  artifact_id: httpclient
+  group_id: org.apache.httpcomponents
+  version: 4.0-beta2
+- !ruby/object:Pom::Dependency 
+  artifact_id: commons-beanutils
+  group_id: commons-beanutils
+  version: 1.7.0
+- !ruby/object:Pom::Dependency 
+  artifact_id: commons-digester
+  group_id: commons-digester
+  version: "1.8"
+- !ruby/object:Pom::Dependency 
+  artifact_id: itext
+  group_id: com.lowagie
+  version: 2.0.7
+- !ruby/object:Pom::Dependency 
+  artifact_id: avalon-framework-api
+  group_id: avalon-framework
+  version: 4.2.0
+- !ruby/object:Pom::Dependency 
+  artifact_id: avalon-framework-impl
+  group_id: avalon-framework
+  version: 4.2.0
+- !ruby/object:Pom::Dependency 
+  artifact_id: logkit
+  group_id: logkit
+  version: 1.0.1
+- !ruby/object:Pom::Dependency 
+  artifact_id: jfreechart
+  group_id: jfree
+  version: 1.0.9
+- !ruby/object:Pom::Dependency 
+  artifact_id: jcommon
+  group_id: jfree
+  version: 1.0.12
+- !ruby/object:Pom::Dependency 
+  artifact_id: velocity
+  group_id: org.apache.velocity
+  version: 1.6-beta1
+- !ruby/object:Pom::Dependency 
+  artifact_id: freemarker
+  group_id: org.freemarker
+  version: 2.3.15
+- !ruby/object:Pom::Dependency 
+  artifact_id: commons-lang
+  group_id: commons-lang
+  version: "2.4"
+- !ruby/object:Pom::Dependency 
+  artifact_id: oro
+  group_id: oro
+  version: 2.0.8
+- !ruby/object:Pom::Dependency 
+  artifact_id: org.apache.commons.collections
+  group_id: org.apache.directory.studio
+  version: 3.2.1
+- !ruby/object:Pom::Dependency 
+  artifact_id: ehcache
+  group_id: net.sf.ehcache
+  version: 2.5.1
+- !ruby/object:Pom::Dependency 
+  artifact_id: ehcache-core
+  group_id: net.sf.ehcache
+  version: 2.5.1
+- !ruby/object:Pom::Dependency 
+  artifact_id: ehcache-terracotta
+  group_id: net.sf.ehcache
+  version: 2.5.1
+- !ruby/object:Pom::Dependency 
+  artifact_id: commonds-collections
+  group_id: commonds-collections-generic
+  version: "4.01"
+- !ruby/object:Pom::Dependency 
+  artifact_id: jetty
+  group_id: org.mortbay.jetty
+  version: 6.1.9
+- !ruby/object:Pom::Dependency 
+  artifact_id: jetty-util
+  group_id: org.mortbay.jetty
+  version: 6.1.9
+- !ruby/object:Pom::Dependency 
+  artifact_id: backport-util-concurrent
+  group_id: backport-util-concurrent
+  version: "3.1"
+- !ruby/object:Pom::Dependency 
+  artifact_id: xalan
+  group_id: xalan
+  version: 2.7.1
+- !ruby/object:Pom::Dependency 
+  artifact_id: xnap-commons
+  group_id: org.xnap.commons
+  version: 0.9.6
+- !ruby/object:Pom::Dependency 
+  artifact_id: gettext-commons
+  group_id: org.xnap.commons
+  version: 0.9.6

@@ -1,0 +1,68 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<digester-rules>
+
+	<pattern value="config">
+		<object-create-rule
+			classname="net.sqs2.omr.source.config.ConfigImpl" />
+		<set-properties-rule />
+		
+		<pattern value="sources/source">
+			<object-create-rule
+				classname="net.sqs2.omr.source.config.SourceConfig" />
+			<set-next-rule methodname="addSource" />
+			<set-properties-rule />
+			
+			<pattern value="frame">
+				<object-create-rule
+					classname="net.sqs2.omr.source.config.FrameConfig" />
+				<bean-property-setter-rule pattern="timestamp"
+					propertyname="timestamp" />
+
+				<pattern value="pageGuideArea">
+					<object-create-rule
+						classname="net.sqs2.omr.source.config.PageGuideAreaConfig" />
+					<set-properties-rule />
+
+					<pattern value="blockRecognitionFilter">
+						<object-create-rule
+							classname="net.sqs2.omr.source.config.BlockRecognitionFilterConfig" />
+						<set-properties-rule />
+						<set-next-rule
+							methodname="setBlockRecognitionFilterConfig" />
+					</pattern>
+
+					<pattern value="blockRecognition">
+						<object-create-rule
+							classname="net.sqs2.omr.source.config.BlockRecognitionConfig" />
+						<set-properties-rule />
+						<set-next-rule
+							methodname="setBlockRecognitionConfig" />
+					</pattern>
+
+					<set-next-rule methodname="setPageGuideAreaConfig" />
+					
+				</pattern>
+
+				<pattern value="validation">
+					<object-create-rule
+						classname="net.sqs2.omr.source.config.ValidationConfig" />
+					<set-properties-rule />
+					<set-next-rule methodname="setValidationConfig" />
+				</pattern>
+	
+				<set-next-rule methodname="setFrameConfig" />
+			</pattern>
+
+			<pattern value="markRecognition">
+				<object-create-rule
+					classname="net.sqs2.omr.source.config.MarkRecognitionConfig" />
+				<set-properties-rule />
+				<set-next-rule
+					methodname="setMarkRecognitionConfig" />
+			</pattern>
+
+		</pattern>
+
+	</pattern>
+
+</digester-rules>

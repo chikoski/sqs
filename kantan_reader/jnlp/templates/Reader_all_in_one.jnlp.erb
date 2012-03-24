@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp
+    spec="1.0+"
+    codebase="http://sqs.chikoski.info/kantan_reader"
+    href="Reader.jnlp">
+  <information>
+    <title>KantanReader</title>
+    <vendor>Community Management Research Project, KEIO University, Japan</vendor>
+    <homepage href="http://www.cmr.sfc.keio.ac.jp/">
+    </homepage>
+    <icon href="kaeru_icon1.gif" kind="default">
+    </icon>
+    <icon href="kaeru_icon1.gif" kind="splash">
+    </icon>
+    <icon href="kaeru_icon1.gif" kind="shortcut">
+    </icon>
+    
+    <update check="background" policy="prompt-update"/>
+    
+      <related-content href="LICENSE.txt">
+        <title>SMP's License</title>
+        <description>Apache License, Version 2</description>
+      </related-content>
+
+    <description>School Management Research Project</description>
+    <description kind="one-line">0</description>
+    <description kind="short">
+    </description>
+    <offline-allowed>
+    </offline-allowed>
+      <shortcut online="false">
+        <!--<desktop/>-->
+        <menu submenu="SESS"/>
+      </shortcut>
+  </information>
+
+  <security>
+    <all-permissions/>
+  </security>
+
+  <resources>
+    <j2se version="1.5+" max-heap-size="812m" initial-heap-size="32m" java-vm-args="-Dswing.aatext=true -Dawt.useSystemAAFontSettings=on"/>
+    <jar href="Reader-1.0-SNAPSHOT.jar" main="true"/>
+    <% @dependencies.each do |d| %>
+    <jar href="<%= d[:artifactId] %>-<%= d[:version] %>.jar"/>	
+    <% end %>
+  </resources>
+  <application-desc main-class="net.sqs2.omr.swing.app.MarkReaderGUILauncher">
+<!--    <argument>arg1</argument> -->
+<!--    <argument>arg2</argument> -->
+  </application-desc>
+</jnlp>

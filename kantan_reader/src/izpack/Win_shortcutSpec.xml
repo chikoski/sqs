@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<shortcuts>
+
+<skipIfNotSupported />
+
+<programGroup defaultName="学校評価支援システムSESS2008 $APP_VER"
+location="applications"/>
+
+<shortcut
+name="SQS SourceEditor2.0"
+target="$INSTALL_PATH\bin\SourceEditor.bat"
+commandLine=""
+workingDirectory="$INSTALL_PATH\bin"
+description="This starts SQS SourceEditor"
+iconFile="$INSTALL_PATH\bin\SourceEditor.ico"
+iconIndex="0"
+initialState="noShow"
+programGroup="yes"
+desktop="no"
+applications="no"
+startMenu="no"
+startup="no">
+<createForPack name="SourceEditor"/>
+</shortcut>
+
+<shortcut
+name="SQS MarkReader2.0"
+target="$INSTALL_PATH\bin\MarkReader.bat"
+commandLine=""
+workingDirectory="$INSTALL_PATH\bin"
+description="This starts SQS MarkReader"
+iconFile="$INSTALL_PATH\bin\MarkReader.ico"
+iconIndex="0"
+initialState="noShow"
+programGroup="yes"
+desktop="no"
+applications="no"
+startMenu="no"
+startup="no">
+<createForPack name="MarkReader"/>
+</shortcut>
+
+<shortcut
+name="学校評価支援システムSESS2008"
+target="$INSTALL_PATH\doc\portal.html"
+commandLine=""
+workingDirectory="$INSTALL_PATH\doc"
+description="SESS Portal"
+iconFile="$INSTALL_PATH\bin\SESS.ico"
+iconIndex="0"
+programGroup="yes"
+desktop="no"
+applications="no"
+startMenu="no"
+startup="no">
+<createForPack name="Workflow"/>
+</shortcut>
+
+</shortcuts>

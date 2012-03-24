@@ -1,0 +1,7 @@
+templates:
+  - "Editor.jnlp.erb"
+  - "libraries_editor.jnlp.erb"
+directories:
+  base: "."
+  target: "target"
+  template: "templates"

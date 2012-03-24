@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp
+    spec="1.0+"
+    codebase="http://sqs.chikoski.info/kantan_reader">
+  <information>
+    <title>KantanReader</title>
+    <vendor>Community Management Research Project, KEIO University, Japan</vendor>
+    <homepage href="http://www.cmr.sfc.keio.ac.jp/">
+    </homepage>
+  </information>
+
+  <security>
+    <all-permissions/>
+  </security>
+
+  <resources>
+    <jar href="itext-2.0.7.jar"/>
+  </resources>
+  <component-desc />
+</jnlp>

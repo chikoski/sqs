@@ -1,0 +1,113 @@
+--- 
+- !ruby/object:Pom::Dependency 
+  artifact_id: jnlp
+  group_id: jnlp
+  version: 1.6.0
+- !ruby/object:Pom::Dependency 
+  artifact_id: log4j
+  group_id: log4j
+  version: 1.2.12
+- !ruby/object:Pom::Dependency 
+  artifact_id: backport-util-concurrent
+  group_id: backport-util-concurrent
+  version: "3.1"
+- !ruby/object:Pom::Dependency 
+  artifact_id: jsr107cache
+  group_id: net.sf.jsr107cache
+  version: "1.0"
+- !ruby/object:Pom::Dependency 
+  artifact_id: jetty
+  group_id: org.mortbay.jetty
+  version: 6.1.9
+- !ruby/object:Pom::Dependency 
+  artifact_id: jetty-util
+  group_id: org.mortbay.jetty
+  version: 6.1.9
+- !ruby/object:Pom::Dependency 
+  artifact_id: servlet-api-2.5
+  group_id: org.mortbay.jetty
+  version: 6.1.9
+- !ruby/object:Pom::Dependency 
+  artifact_id: xercesImpl
+  group_id: xerces
+  version: 2.9.1
+- !ruby/object:Pom::Dependency 
+  artifact_id: xalan
+  group_id: xalan
+  version: 2.7.1
+- !ruby/object:Pom::Dependency 
+  artifact_id: serializer
+  group_id: xalan
+  version: 2.7.1
+- !ruby/object:Pom::Dependency 
+  artifact_id: xml-apis
+  group_id: xml-apis
+  version: 1.0.b2
+- !ruby/object:Pom::Dependency 
+  artifact_id: commons-io
+  group_id: commons-io
+  version: "1.4"
+- !ruby/object:Pom::Dependency 
+  artifact_id: commons-lang
+  group_id: commons-lang
+  version: "2.4"
+- !ruby/object:Pom::Dependency 
+  artifact_id: commons-codec
+  group_id: commons-codec
+  version: "1.3"
+- !ruby/object:Pom::Dependency 
+  artifact_id: commons-collections
+  group_id: commons-collections
+  version: 3.2.1
+- !ruby/object:Pom::Dependency 
+  artifact_id: collections-generic
+  group_id: net.sourceforge.collections
+  version: "4.01"
+- !ruby/object:Pom::Dependency 
+  artifact_id: gettext-commons
+  group_id: gettext-commons
+  version: 0.9.6
+- !ruby/object:Pom::Dependency 
+  artifact_id: testng
+  group_id: org.testng
+  version: "5.14"
+- !ruby/object:Pom::Dependency 
+  artifact_id: junit
+  group_id: junit
+  version: "4.10"
+- !ruby/object:Pom::Dependency 
+  artifact_id: pdfbox
+  group_id: org.apache.pdfbox
+  version: 1.0.0
+- !ruby/object:Pom::Dependency 
+  artifact_id: ehcache
+  group_id: net.sf.ehcache
+  version: 2.1.0
+- !ruby/object:Pom::Dependency 
+  artifact_id: ehcache-core
+  group_id: net.sf.ehcache
+  version: 2.1.0
+- !ruby/object:Pom::Dependency 
+  artifact_id: ehcache-terracotta
+  group_id: net.sf.ehcache
+  version: 2.1.0
+- !ruby/object:Pom::Dependency 
+  artifact_id: slf4j-simple
+  group_id: org.slf4j
+  version: 1.5.11
+- !ruby/object:Pom::Dependency 
+  artifact_id: slf4j-api
+  group_id: org.slf4j
+  version: 1.5.11
+- !ruby/object:Pom::Dependency 
+  artifact_id: slf4j-parent
+  group_id: org.slf4j
+  version: 1.5.8
+- !ruby/object:Pom::Dependency 
+  artifact_id: itext
+  group_id: com.lowagie
+  version: 2.0.6
+- !ruby/object:Pom::Dependency 
+  artifact_id: xmlgraphics-commons
+  group_id: org.apache.xmlgraphics
+  version: "1.4"

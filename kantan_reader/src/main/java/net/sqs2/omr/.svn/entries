@@ -1,0 +1,102 @@
+9
+
+dir
+1332
+svn+ssh://diaspora.prof.cuc.ac.jp/var/lib/svn/trunk/reader/src/main/java/net/sqs2/omr
+svn+ssh://diaspora.prof.cuc.ac.jp/var/lib/svn
+
+
+
+2009-02-23T07:47:41.559084Z
+1332
+hiroya
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b94aa2cb-a535-4e70-910f-d30b66ec2450
+
+
+
+
+
+
+0
+
+MarkReaderJarURIContext.java
+file
+
+
+
+
+2009-01-28T06:04:00.000000Z
+922c6ab9a560640f607af810cb16a935
+2009-02-17T00:51:45.949061Z
+1311
+hiroya
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1515
+
+app
+dir
+
+cache
+dir
+
+httpd
+dir
+
+logic
+dir
+
+master
+dir
+
+result
+dir
+
+session
+dir
+
+source
+dir
+
+swing
+dir
+
+task
+dir
+
+util
+dir
+

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp
+    spec="1.0+"
+    codebase="http://sqs.chikoski.info/kantan_reader"
+    href="Reader.jnlp">
+  <information>
+    <title>KantanReader</title>
+    <vendor>Community Management Research Project, KEIO University, Japan</vendor>
+    <homepage href="http://www.cmr.sfc.keio.ac.jp/">
+    </homepage>
+    <icon href="kaeru_icon1.gif" kind="default">
+    </icon>
+    <icon href="kaeru_icon1.gif" kind="splash">
+    </icon>
+    <icon href="kaeru_icon1.gif" kind="shortcut">
+    </icon>
+    
+    <update check="background" policy="prompt-update"/>
+    
+      <related-content href="LICENSE.txt">
+        <title>SMP's License</title>
+        <description>Apache License, Version 2</description>
+      </related-content>
+
+    <description>School Management Research Project</description>
+    <description kind="one-line">0</description>
+    <description kind="short">
+    </description>
+    <offline-allowed>
+    </offline-allowed>
+      <shortcut online="false">
+        <!--<desktop/>-->
+        <menu submenu="SESS"/>
+      </shortcut>
+  </information>
+
+  <security>
+    <all-permissions/>
+  </security>
+
+  <resources>
+    <j2se version="1.5+" max-heap-size="812m" initial-heap-size="32m" java-vm-args="-Dswing.aatext=true -Dawt.useSystemAAFontSettings=on"/>
+    <jar href="Reader-1.0-SNAPSHOT.jar" main="true"/>
+    
+    <jar href="junit-3.8.2.jar"/>	
+    
+    <jar href="jnlp-1.6.0.jar"/>	
+    
+    <jar href="sqs-util-1.3.22.jar"/>	
+    
+    <jar href="antlr-2.7.1.jar"/>	
+    
+    <jar href="batik-awt-util-1.6.jar"/>	
+    
+    <jar href="batik-swing-1.6.jar"/>	
+    
+    <jar href="batik-gvt-1.6.jar"/>	
+    
+    <jar href="batik-css-1.6.jar"/>	
+    
+    <jar href="batik-xml-1.6.jar"/>	
+    
+    <jar href="batik-ext-1.6.jar"/>	
+    
+    <jar href="batik-gui-util-1.6.jar"/>	
+    
+    <jar href="batik-util-1.6.jar"/>	
+    
+    <jar href="batik-bridge-1.6.jar"/>	
+    
+    <jar href="batik-svg-dom-1.6.jar"/>	
+    
+    <jar href="batik-dom-1.6.jar"/>	
+    
+    <jar href="batik-script-1.6.jar"/>	
+    
+    <jar href="batik-parser-1.6.jar"/>	
+    
+    <jar href="xml-apis-1.0.b2.jar"/>	
+    
+    <jar href="poi-3.2-FINAL.jar"/>	
+    
+    <jar href="commons-logging-1.1.jar"/>	
+    
+    <jar href="commons-io-1.4.jar"/>	
+    
+    <jar href="httpcore-4.0-beta2.jar"/>	
+    
+    <jar href="httpclient-4.0-beta2.jar"/>	
+    
+    <jar href="commons-beanutils-1.7.0.jar"/>	
+    
+    <jar href="commons-digester-1.8.jar"/>	
+    
+    <jar href="itext-2.0.4.jar"/>	
+    
+    <jar href="avalon-framework-api-4.2.0.jar"/>	
+    
+    <jar href="avalon-framework-impl-4.2.0.jar"/>	
+    
+    <jar href="logkit-1.0.1.jar"/>	
+    
+    <jar href="jfreechart-1.0.9.jar"/>	
+    
+    <jar href="jcommon-1.0.12.jar"/>	
+    
+    <jar href="velocity-1.6-beta1.jar"/>	
+    
+    <jar href="freemarker-2.3.15.jar"/>	
+    
+    <jar href="commons-lang-2.4.jar"/>	
+    
+    <jar href="oro-2.0.8.jar"/>	
+    
+    <jar href="org.apache.commons.collections-3.2.1.jar"/>	
+    
+    <jar href="ehcache-2.5.1.jar"/>	
+    
+    <jar href="commonds-collections-4.01.jar"/>	
+    
+    <jar href="jetty-6.1.9.jar"/>	
+    
+    <jar href="jetty-util-6.1.9.jar"/>	
+    
+    <jar href="backport-util-concurrent-3.1.jar"/>	
+    
+    <jar href="xalan-2.7.1.jar"/>	
+    
+  </resources>
+  <application-desc main-class="net.sqs2.omr.swing.app.MarkReaderGUILauncher">
+<!--    <argument>arg1</argument> -->
+<!--    <argument>arg2</argument> -->
+  </application-desc>
+</jnlp>

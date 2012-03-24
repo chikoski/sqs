@@ -1,0 +1,6 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.apache.xmlgraphics</groupId>
+  <artifactId>commons</artifactId>
+  <version>commons-1.4-sqs</version>
+</project>
