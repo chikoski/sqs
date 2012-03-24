@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1309/trunk/sqs-editor/src/main/resources/schema/reader
+END
+reader.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/1309/trunk/sqs-editor/src/main/resources/schema/reader/reader.xsd
+END
+reader.rng
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/1309/trunk/sqs-editor/src/main/resources/schema/reader/reader.rng
+END

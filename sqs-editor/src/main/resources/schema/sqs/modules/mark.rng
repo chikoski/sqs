@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:java="http://www.relaxer.org/xmlns/relaxer/java"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+         xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">
+
+<define name="warning">
+	<a:documentation>注意書</a:documentation>
+	<element name="warning" ns="http://sqs.cmr.sfc.keio.ac.jp/2004/sqs">
+		<ref name="warning.content"/>
+	</element>
+</define>
+
+<define name="warning.content">
+	<a:documentation>注意書の内容</a:documentation>
+       <zeroOrMore>
+		<choice>
+		       <ref name="Heading.class"/>
+		       <ref name="p"/>
+		       <ref name="marking-example"/>
+		</choice>
+       </zeroOrMore>
+</define>
+
+<define name="marking-example">
+	<a:documentation>マーク記入例</a:documentation>
+	<element name="marking-example" ns="http://sqs.cmr.sfc.keio.ac.jp/2004/sqs">
+		<empty/>
+	</element>
+</define>
+
+<define name="mark">
+	<a:documentation>マークのイメージ</a:documentation>
+	<a:documentation>mark</a:documentation>
+	<element name="mark" ns="http://sqs.cmr.sfc.keio.ac.jp/2004/sqs">
+        	<empty/>
+	</element>
+</define>
+
+<define name="WarningBlock.class">
+	<choice>
+		<ref name="warning"/>
+		<ref name="marking-example"/>
+	</choice>
+</define>
+
+<define name="Block.class" combine="choice">
+	<ref name="WarningBlock.class"/>
+</define>
+
+<define name="Inline.class" combine="choice">
+	<ref name="mark"/>
+</define>
+
+</grammar>

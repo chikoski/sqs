@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/2171/trunk/sqs-util/src/main/java/net/sqs2/swing
+END
+DocumentDialogModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/1444/trunk/sqs-util/src/main/java/net/sqs2/swing/DocumentDialogModel.java
+END
+MessageDialogModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/1444/trunk/sqs-util/src/main/java/net/sqs2/swing/MessageDialogModel.java
+END
+ProgressBarPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/1444/trunk/sqs-util/src/main/java/net/sqs2/swing/ProgressBarPanel.java
+END
+LicenseDocumentsTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/1444/trunk/sqs-util/src/main/java/net/sqs2/swing/LicenseDocumentsTable.java
+END
+HelpMenu.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/1444/trunk/sqs-util/src/main/java/net/sqs2/swing/HelpMenu.java
+END
+DocumentDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/1444/trunk/sqs-util/src/main/java/net/sqs2/swing/DocumentDialog.java
+END
+FileDropTargetDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/2171/trunk/sqs-util/src/main/java/net/sqs2/swing/FileDropTargetDecorator.java
+END

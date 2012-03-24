@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp
+    spec="1.0+"
+    codebase="http://sqs.chikoski.info/editor"
+    href="libraries.jnlp">
+  <information>
+    <title>Source Editor</title>
+    <vendor>Community Management Research Project, KEIO University, Japan</vendor>
+    <homepage href="http://www.cmr.sfc.keio.ac.jp/">
+    </homepage>
+  </information>
+
+  <security>
+    <all-permissions/>
+  </security>
+
+  <resources>
+    
+    <jar href="sqs-util-1.4.11.jar"/>	
+    
+    <jar href="sqs-translator-1.1.2.jar"/>	
+    
+    <jar href="ipafont-00303.jar"/>	
+    
+    <jar href="jnlp-1.6.0.jar"/>	
+    
+    <jar href="itext-2.0.7.jar"/>	
+    
+    <jar href="slf4j-simple-1.6.1.jar"/>	
+    
+    <jar href="slf4j-api-1.6.1.jar"/>	
+    
+    <jar href="log4j-1.2.12.jar"/>	
+    
+    <jar href="commons-logging-1.1.jar"/>	
+    
+    <jar href="commons-io-1.4.jar"/>	
+    
+    <jar href="avalon-framework-api-4.3.1.jar"/>	
+    
+    <jar href="avalon-framework-impl-4.3.1.jar"/>	
+    
+    <jar href="xalan-2.7.0.jar"/>	
+    
+    <jar href="serializer-2.7.1.jar"/>	
+    
+    <jar href="xml-apis-1.3.04.jar"/>	
+    
+    <jar href="xml-apis-ext-1.3.04.jar"/>	
+    
+    <jar href="xercesImpl-2.9.1.jar"/>	
+    
+    <jar href="xmlgraphics-commons-1.4-sqs.jar"/>	
+    
+	<jar href="batik-anim-1.7.jar" />
+	<jar href="batik-awt-util-1.7.jar" />
+	<jar href="batik-bridge-1.7.jar" />
+	<jar href="batik-css-1.7.jar" />
+	<jar href="batik-dom-1.7.jar" />
+	<jar href="batik-ext-1.7.jar" />
+	<jar href="batik-extension-1.7.jar" />
+	<jar href="batik-gui-util-1.7.jar" />
+	<jar href="batik-gvt-1.7.jar" />
+	<jar href="batik-js-1.7.jar" />
+	<jar href="batik-parser-1.7.jar" />
+	<jar href="batik-script-1.7.jar" />
+	<jar href="batik-slideshow-1.7.jar" />
+	<jar href="batik-svg-dom-1.7.jar" />
+	<jar href="batik-svggen-1.7.jar" />
+	<jar href="batik-swing-1.7.jar" />
+	<jar href="batik-transcoder-1.7.jar" />
+	<jar href="batik-util-1.7.jar" />
+	<jar href="batik-xml-1.7.jar" />
+
+    
+    <jar href="backport-util-concurrent-3.1.jar"/>	
+    
+    <jar href="commons-codec-1.2.jar"/>	
+    
+    <jar href="junit-4.5.jar"/>	
+    
+	<jar href="fop-1.0-sqs.jar"/>
+    
+    <jar href="fop-transcoder-1.0-sqs.jar"/>	
+    
+    <jar href="fop-sandbox-1.0-sqs.jar"/>	
+    
+    <jar href="fop-transcoder-allinone-1.0-sqs.jar"/>	
+    
+    <jar href="jetty-6.1.9.jar"/>	
+    
+    <jar href="jetty-util-6.1.9.jar"/>	
+
+	<jar href="servlet-api-2.5-6.1.9.jar" />
+    
+  </resources>
+  <component-desc />
+</jnlp>

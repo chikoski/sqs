@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>net.sqs2</groupId>
+	<artifactId>MarkReader</artifactId>
+	<packaging>jar</packaging>
+	<name>SQS MarkReader</name>
+	<version>2.1-SNAPSHOT</version>
+
+	<description>SQS MarkReader is an OMR processor.</description>
+	<url>http://sqs2.net/</url>
+	<inceptionYear>2003</inceptionYear>
+
+	<organization>
+		<name>SQS Development Project</name>
+		<url>http://sqs2.net/</url>
+	</organization>
+
+  <mailingLists>
+      <mailingList>
+      <name>${project.name} User List</name>
+      <subscribe>http://groups.google.co.jp/group/sqs-users/subscribe</subscribe>
+      <archive>http://groups.google.co.jp/group/sqs-users</archive>
+    </mailingList>
+  </mailingLists>
+
+	<developers>
+		<developer>
+			<name>Hiroya KUBO</name>
+			<email>hiroya@cuc.ac.jp</email>
+			<organization>Chiba University of Commerce</organization>
+			<organizationUrl>http://www.cuc.ac.jp/</organizationUrl>
+			<roles>
+				<role>Project Administrator</role>
+				<role>Developer</role>
+			</roles>
+			<timezone>-9</timezone>
+		</developer>
+	</developers>
+
+	<licenses>
+		<license>
+			<name>The Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+   
+<!--
+	<distributionManagement>
+		<repository>
+		 <id>scp-repository</id>
+		 <url>scp://diaspora.prof.cuc.ac.jp/var/www/maven2</url> 
+		</repository>
+	</distributionManagement>
+-->
+	<distributionManagement>
+		<repository>
+		 <id>localhost</id>
+		 <url>file:///home/chiko/dev/sqs/jars/repository</url> 
+		</repository>
+	</distributionManagement>
+   
+<!--
+	<scm>
+		<connection>
+			scm:svn:http://diaspora.prof.cuc.ac.jp/svn/trunk/sqs-reader
+		</connection>
+		<developerConnection>
+			scm:svn:svn+ssh://diaspora.prof.cuc.ac.jp/var/lib/svn/trunk/sqs-reader
+		</developerConnection>
+		<url>http://diaspora.prof.cuc.ac.jp/svn/trunk/sqs-reader</url>
+	</scm>
+-->
+
+<!--
+	<pluginRepositories>
+		<pluginRepository>
+			<id>codehaus repository</id>
+			<url>http://repository.codehaus.org/</url>
+		</pluginRepository>
+	</pluginRepositories>
+-->
+	<pluginRepositories>
+		<pluginRepository>
+			<id>codehaus local repository</id>
+			<url>file://home/chiko/dev/sqs/jars/repository</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>maven central plugin repository</id>
+			<url>http://repo1.maven.org/maven2</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<build>
+		<sourceDirectory>src/main/java</sourceDirectory>
+		<testSourceDirectory>src/test/java</testSourceDirectory>
+		
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>false</filtering>
+				<includes>
+					<include>**/*.png</include>
+					<include>**/*.ttf</include>
+					<include>**/*.gif</include>
+					<include>**/*.png</include>
+					<include>**/*.jpg</include>
+					<include>**/*.ico</include>
+					<include>**/*.wav</include>
+					<include>**/*.css</include>
+					<include>**/*.js</include>
+					<include>**/*.properties</include>
+				</includes>
+			</resource>
+
+			<resource>
+				<directory>src/main/java</directory>
+				<filtering>false</filtering>
+				<includes>
+					<include>**/*.properties</include>
+				</includes>
+			</resource>
+
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+				<includes>
+					<include>**/*.ftl</include>
+					<include>**/*.vm</include>
+					<include>**/*.txt</include>
+					<include>**/*.html</include>
+					<include>**/*.xhtml</include>
+					<include>**/*.xml</include>
+					<include>**/*.sqs</include>
+					<include>**/*.xslt</include>
+					<include>**/*.xsl</include>
+				</includes>
+			</resource>
+
+		</resources>
+
+
+ <plugins>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>2.4.3</version>
+        <configuration>
+          <encoding>UTF-8</encoding>
+        </configuration>
+      </plugin>
+
+            <plugin>
+                <!--
+                    There are both junit4 and testNG tests, so these separate executions
+                    cause both sets to be run.
+                -->
+    				<groupId>org.apache.maven.plugins</groupId>
+    				<artifactId>maven-surefire-plugin</artifactId>
+    				<version>2.8</version>
+
+                <configuration>
+          			<suiteXmlFiles>
+            			<suiteXmlFile>testng.xml</suiteXmlFile>
+          			</suiteXmlFiles>
+        		</configuration>
+        		
+                <executions>
+                    <execution>
+                        <id>TestNG-tests</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>test</goal>
+                        </goals>
+                        <configuration>
+                            <junitArtifactName>none:none</junitArtifactName>
+                            <includes>
+                              <include>**/*Test.java</include>
+                            </includes>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+			<plugin>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<dependencies>
+					<dependency>
+						<groupId>ant</groupId>
+						<artifactId>ant-nodeps</artifactId>
+						<version>1.6.5</version>
+					</dependency>
+				</dependencies>
+
+				<executions>
+				
+				<execution>
+				<id>copy-resources</id>
+					<phase>install</phase>
+					<goals>
+					<goal>run</goal>
+					</goals>
+					<configuration>
+					<tasks>
+					<property name="jnlp.dir"
+					value="target/jnlp" />
+					<property name="icon.dir"
+					value="src/main/resources/image" />
+					<copy file="${icon.dir}/${icon}" tofile="${jnlp.dir}/${icon}" />
+					<copy file="${licenseFile}" tofile="${jnlp.dir}/${licenseFile}" />
+					</tasks>
+					</configuration>
+				</execution>
+				
+				<execution>
+				<id>rsync</id>
+					<phase>install</phase>
+					<goals>
+					<goal>run</goal>
+					</goals>
+					<configuration>
+					<tasks>
+					<property name="RSYNC"
+					value="c:\cygwin\bin\rsync.exe" />
+					<property name="SSH"
+					value="c:\cygwin\bin\ssh.exe" />
+					<!-- 
+					<property name="RSYNC"
+					value="/usr/bin/rsync" />
+					<property name="SSH"
+					value="/usr/bin/ssh" />
+					 -->
+					<property name="jnlp.dir"
+					value="target/jnlp" />
+					<property name="LOGNAME"
+					value="hiroya"/>
+					<property name="HOST"
+					value="sqs2.net"/>
+					<property name="WEBAPP.dir"
+					value="/var/www/${date}"/>
+					
+					<echo message="${SSH} ${LOGNAME}@${HOST} mkdir -p ${WEBAPP.dir}"/>
+					
+					<exec executable="${SSH}">
+					<arg line="${LOGNAME}@${HOST} mkdir -p ${WEBAPP.dir}" />
+					</exec>
+					
+					<echo message="${RSYNC} -rR -E -e ${SSH} ${jnlp.dir} ${LOGNAME}@${HOST}:${WEBAPP.dir}"/>
+					<exec executable="${RSYNC}" dir="${basedir}/${jnlp.dir}">
+					<arg line="-rR -E -e ${SSH} . ${LOGNAME}@${HOST}:${WEBAPP.dir}" />
+					</exec>
+					<exec executable="${SSH}">
+					<arg line="${LOGNAME}@${HOST} chmod -R a+r ${WEBAPP.dir}" />
+					</exec>
+					</tasks>
+					</configuration>
+					</execution>
+				</executions>
+		
+			</plugin>
+
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.1</version>
+				<configuration>
+					<mainClass>${main.class}</mainClass>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.codehaus.mojo.webstart</groupId>
+				<artifactId>webstart-maven-plugin</artifactId>
+  				<version>1.0-beta-1</version>
+				
+   				<executions>
+				</executions>
+
+				<configuration>
+					<spec>1.0+</spec>
+					<dependencies>
+						<includes>
+							<include>net.sqs2:sqs-util</include>
+							<include>antlr:antlr</include>
+							<include>org.mortbay.jetty:jetty</include>
+							<include>org.mortbay.jetty:jetty-util</include>
+							<include>org.mortbay.jetty:servlet-api-2.5</include>
+							<include>xalan:xalan</include>
+							<include>org.apache.pdfbox:pdfbox</include>
+							<include>log4j:log4j</include>
+							<include>logkit:logkit</include>
+							<include>com.lowagie:itext</include>
+							<include>avalon-framework:avalon-framework-api</include>
+							<include>avalon-framework:avalon-framework-impl</include>
+							<include>net.sf.ehcache:ehcache-core</include>
+							<include>net.sf.ehcache:ehcache-terracotta</include>
+							<include>org.slf4j:slf4j-api</include>
+							<include>org.slf4j:slf4j-simple</include>
+							<include>org.slf4j:slf4j-parent</include>
+							<include>org.slf4j:slf4j-log4j12</include>
+							<include>net.sf.jsr107cache:jsr107cache</include>
+							<include>backport-util-concurrent:backport-util-concurrent</include>
+							<include>org.apache.xmlbeans:xmlbeans</include>
+							<include>org.apache.poi:poi</include>
+							<include>org.apache.poi:poi-ooxml</include>
+							<include>org.apache.poi:poi-ooxml-schemas</include>
+							<include>commons-collections:commons-collections</include>
+							<include>commons-logging:commons-logging</include>
+							<include>commons-lang:commons-lang</include>
+							<include>commons-codec:commons-codec</include>
+							<include>commons-digester:commons-digester</include>
+							<include>commons-beanutils:commons-beanutils</include>
+							<include>commons-io:commons-io</include>
+							<include>xerces:xercesImpl</include>
+							<include>xml-resolver:xml-resolver</include>
+							<include>net.sourceforge.collections:collections-generic</include>
+							<include>gettext-commons:gettext-commons</include>
+							<include>jfree:jfreechart</include>
+							<include>jfree:jcommon</include>
+							<include>org.apache.velocity:velocity</include>
+							<include>org.freemarker:freemarker</include>
+							<include>oro:oro</include>
+							<include>xalan:serializer</include>
+							<include>org.apache.xmlgraphics:xmlgraphics-commons</include>
+							<include>com.google.code.guice:guice</include>
+						</includes>
+					</dependencies>
+
+					<jnlp>
+						<version>1.0+</version>
+						<inputTemplate>src/main/jnlp/jnlp_template.vm</inputTemplate>
+						<outputFile>${project.artifactId}.jnlp
+						</outputFile>
+						<mainClass>${main.class}</mainClass>
+					</jnlp>
+
+					<sign>
+						<keystore>c:\verisign-cuc-2009.p12</keystore>
+						<keypass />
+						<storepass>L401</storepass>
+						<storetype>pkcs12</storetype>
+						<alias>chiba university of commerce の verisign, inc. id</alias>
+						<verify>false</verify>
+					</sign>
+
+					<allPermissions>true</allPermissions>
+					<offlineAllowed>true</offlineAllowed>
+					<usejnlpservlet>false</usejnlpservlet>
+					<verbose>false</verbose>
+
+				</configuration>
+			</plugin>
+
+			<plugin>
+        		<groupId>org.apache.maven.plugins</groupId>
+        		<artifactId>maven-compiler-plugin</artifactId>
+        		<version>2.3.1</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+<!-- 
+			<plugin>
+				<artifactId>maven-site-plugin</artifactId>
+				<configuration>
+					<locales>ja</locales>
+					<inputEncoding>UTF-8</inputEncoding>
+					<outputEncoding>UTF-8</outputEncoding>
+				</configuration>
+			</plugin>
+ -->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>appassembler-maven-plugin</artifactId>
+				<version>1.1</version>
+				<configuration>
+					<assembleDirectory>${project.build.directory}/${project.artifactId}
+					</assembleDirectory>
+					<extraJvmArguments>-Xmx512m</extraJvmArguments>
+					<plathomes>all</plathomes>
+					<showConsoleWindow>false</showConsoleWindow>
+					<programs>
+						<program>
+							<mainClass>${main.class}</mainClass>
+							<name>${project.artifactId}</name>
+						</program>
+					</programs>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.codehaus.izpack</groupId>
+				<artifactId>izpack-maven-plugin</artifactId>
+				<version>5.0.0-beta6</version>
+				
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>izpack</goal>
+						</goals>
+						<configuration>
+							<izpackFile>src/izpack/install.xml
+							</izpackFile>
+							<izpackBasedir>.</izpackBasedir>
+							<izpackOutputFile>target/${project.artifactId}.jar</izpackOutputFile>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+		</plugins>
+	</build>
+
+	<repositories>
+<!--  
+		<repository>
+			<id>central.maven2-repository</id>
+			<name>Central Maven2 Repository</name>
+			<url>http://repo1.maven.org/maven2</url>
+		</repository>
+
+		<repository>
+			<id>mvnrepository</id>
+			<url>http://mvnrepository.com/artifact</url>
+		</repository>
+
+		<repository>
+			<id>snapshots-codehaus</id>
+			<url>http://nexus.repository.codehaus.org/content/repositories/snapshots</url>
+		</repository>
+-->
+<!-- 
+		<repository>
+			<id>diaspora.prof.cuc.ac.jp</id>
+			<name>SQS Project Repository</name>
+			<url>http://diaspora.prof.cuc.ac.jp/maven2</url>
+		</repository>
+		 -->
+	</repositories>
+
+	<dependencies>
+	<dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>5.12.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+    
+    		<dependency>
+			<groupId>jnlp</groupId>
+			<artifactId>jnlp</artifactId>
+			<version>1.6.0</version>
+			 <scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>net.sqs2</groupId>
+			<artifactId>sqs-util</artifactId>
+			<version>1.4.11</version>
+		</dependency>
+
+		<dependency>
+			<groupId>antlr</groupId>
+			<artifactId>antlr</artifactId>
+			<version>2.7.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.pdfbox</groupId>
+			<artifactId>pdfbox</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>xml-apis</groupId>
+			<artifactId>xml-apis</artifactId>
+			<version>1.0.b2</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>1.4</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.7.0</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-digester</groupId>
+			<artifactId>commons-digester</artifactId>
+			<version>1.8</version>
+		</dependency>
+		<dependency>
+			<groupId>com.lowagie</groupId>
+			<artifactId>itext</artifactId>
+			<version>2.0.8</version>
+		</dependency>
+		<dependency>
+			<groupId>avalon-framework</groupId>
+			<artifactId>avalon-framework-api</artifactId>
+			<version>4.2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>avalon-framework</groupId>
+			<artifactId>avalon-framework-impl</artifactId>
+			<version>4.2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>logkit</groupId>
+			<artifactId>logkit</artifactId>
+			<version>1.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>jfree</groupId>
+			<artifactId>jfreechart</artifactId>
+			<version>1.0.9</version>
+		</dependency>
+		<dependency>
+			<groupId>jfree</groupId>
+			<artifactId>jcommon</artifactId>
+			<version>1.0.12</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.velocity</groupId>
+			<artifactId>velocity</artifactId>
+			<version>1.6-beta1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.freemarker</groupId>
+			<artifactId>freemarker</artifactId>
+			<version>2.3.15</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.4</version>
+		</dependency>
+		<dependency>
+			<groupId>oro</groupId>
+			<artifactId>oro</artifactId>
+			<version>2.0.8</version>
+		</dependency>
+
+		<dependency>
+			<groupId>rhino</groupId>
+			<artifactId>js</artifactId>
+			<version>1.7R1</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.7</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.7</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml-schemas</artifactId>
+			<version>3.7</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sourceforge.jwebunit</groupId>
+			<artifactId>jwebunit-core</artifactId>
+			<version>2.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+			<version>1.7</version>
+		</dependency>
+   		
+		<dependency>
+			<groupId>net.sf.ehcache</groupId>
+			<artifactId>ehcache</artifactId>
+			<version>2.3.2</version>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.ehcache</groupId>
+			<artifactId>ehcache-core</artifactId>
+			<version>2.3.2</version>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.ehcache</groupId>
+			<artifactId>ehcache-terracotta</artifactId>
+			<version>2.1.1</version>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.jsr107cache</groupId>
+			<artifactId>jsr107cache</artifactId>
+			<version>1.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>1.5.11</version>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.5.11</version>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-parent</artifactId>
+			<version>1.5.11</version>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+    		<groupId>org.slf4j</groupId>
+    		<artifactId>slf4j-log4j12</artifactId>
+    		<version>1.5.11</version>
+		</dependency>
+	<dependency>
+		<groupId>org.apache.httpcomponents</groupId>
+		<artifactId>httpcore</artifactId>
+		<version>4.0.1</version>
+		<scope>test</scope>
+	</dependency>
+	<dependency>
+		<groupId>org.apache.httpcomponents</groupId>
+		<artifactId>httpcore-nio</artifactId>
+		<version>4.0.1</version>
+		<scope>test</scope>
+	</dependency>
+	<dependency>
+		<groupId>org.apache.httpcomponents</groupId>
+		<artifactId>httpclient</artifactId>
+		<version>4.0.1</version>
+		<scope>test</scope>
+	</dependency>
+   		
+	<dependency>
+		<groupId>com.google.code.guice</groupId>
+		<artifactId>guice</artifactId>
+		<version>1.0</version>
+	</dependency>
+	
+	</dependencies>
+
+	<reporting>
+		<plugins>
+			<plugin>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.7</version>
+				<configuration>
+					<charset>UTF-8</charset>
+				</configuration>
+			</plugin>
+		</plugins>
+	</reporting>
+
+	<properties>
+		<license>Apache License, Version 2.0</license>
+  		<licenseFile>LICENSE.txt</licenseFile>
+  		<main.class>net.sqs2.omr.swing.app.MarkReaderGUILauncher</main.class>
+		<icon>omr.png</icon>
+		<maxHeapSize>812m</maxHeapSize>
+		<group>SQS</group>
+		<signingOrganizationName>Chiba University of Commerce</signingOrganizationName>
+		<signingOrganizationURL>http://www.cuc.ac.jp/</signingOrganizationURL>
+		<signedBy>Hiroya KUBO</signedBy>
+  		<date>2010/09/26</date>
+		<!--
+			<izpack.path>/usr/local/izpack</izpack.path>
+		-->
+		<izpack.path>c:\Program Files\Izpack</izpack.path>
+	</properties>
+
+</project>

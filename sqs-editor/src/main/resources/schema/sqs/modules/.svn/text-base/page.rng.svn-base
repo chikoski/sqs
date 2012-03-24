@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:java="http://www.relaxer.org/xmlns/relaxer/java"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+         xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">
+
+<define name="page">
+	<a:documentation>子要素内での改ページを禁止</a:documentation>
+	<element name="page" ns="http://sqs.cmr.sfc.keio.ac.jp/2004/sqs">
+		<ref name="Block.class"/>
+	</element>
+</define>
+
+<define name="newpage">
+	<a:documentation>強制改ページ</a:documentation>
+	<element name="newpage" ns="http://sqs.cmr.sfc.keio.ac.jp/2004/sqs">
+		<empty/>
+	</element>
+</define>
+
+<define name="vspace">
+	<a:documentation>垂直方向の間隔調整</a:documentation>
+	<element name="vspace" ns="http://sqs.cmr.sfc.keio.ac.jp/2004/sqs">
+		<attribute name="height" ns="http://sqs.cmr.sfc.keio.ac.jp/2004/sqs">
+			<data type="double"/>
+		</attribute>
+	</element>
+</define>
+
+<define name="PageControl.class">
+	<choice>
+		<ref name="page"/>
+		<ref name="newpage"/>
+		<ref name="vspace"/>
+	</choice>
+</define>
+
+<define name="Block.class" combine="choice">
+	<ref name="PageControl.class"/>
+</define>
+
+</grammar>

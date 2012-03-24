@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/resources
+END
+app-sqs.properties
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/2090/trunk/sqs-reader/src/main/resources/app-sqs.properties
+END
+app-smp_ja.properties
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/1820/trunk/sqs-reader/src/main/resources/app-smp_ja.properties
+END
+messages.properties
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/2213/trunk/sqs-reader/src/main/resources/messages.properties
+END
+config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/resources/config.xml
+END
+app-sqs_ja.properties
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/2090/trunk/sqs-reader/src/main/resources/app-sqs_ja.properties
+END
+commons-logging.properties
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/2213/trunk/sqs-reader/src/main/resources/commons-logging.properties
+END
+configRule.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/resources/configRule.xml
+END
+messages_ja.properties
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/2127/trunk/sqs-reader/src/main/resources/messages_ja.properties
+END
+log4j.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/2213/trunk/sqs-reader/src/main/resources/log4j.xml
+END

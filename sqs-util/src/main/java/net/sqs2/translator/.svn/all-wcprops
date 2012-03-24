@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/2101/trunk/sqs-util/src/main/java/net/sqs2/translator
+END
+XSLTranslator.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/2101/trunk/sqs-util/src/main/java/net/sqs2/translator/XSLTranslator.java
+END
+ParamEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/1806/trunk/sqs-util/src/main/java/net/sqs2/translator/ParamEntry.java
+END
+TranslatorException.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/1444/trunk/sqs-util/src/main/java/net/sqs2/translator/TranslatorException.java
+END
+Translator.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/2100/trunk/sqs-util/src/main/java/net/sqs2/translator/Translator.java
+END
+AbstractTranslator.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/2101/trunk/sqs-util/src/main/java/net/sqs2/translator/AbstractTranslator.java
+END

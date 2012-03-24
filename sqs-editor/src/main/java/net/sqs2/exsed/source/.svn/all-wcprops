@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1444/trunk/sqs-editor/src/main/java/net/sqs2/exsed/source
+END
+SourceException.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/1444/trunk/sqs-editor/src/main/java/net/sqs2/exsed/source/SourceException.java
+END
+DOMTreeSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/1444/trunk/sqs-editor/src/main/java/net/sqs2/exsed/source/DOMTreeSource.java
+END
+Source.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/1444/trunk/sqs-editor/src/main/java/net/sqs2/exsed/source/Source.java
+END
+DOMTreeWalkerTreeModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/1444/trunk/sqs-editor/src/main/java/net/sqs2/exsed/source/DOMTreeWalkerTreeModel.java
+END
+SourceFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/1444/trunk/sqs-editor/src/main/java/net/sqs2/exsed/source/SourceFactory.java
+END
+SourceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/1444/trunk/sqs-editor/src/main/java/net/sqs2/exsed/source/SourceManager.java
+END

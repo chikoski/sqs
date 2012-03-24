@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:java="http://www.relaxer.org/xmlns/relaxer/java"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+         xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">
+
+<define name="meta">
+	<a:documentation>調査票のメタデータ</a:documentation>
+	<element name="meta" ns="http://www.w3.org/2002/06/xhtml2">
+		<ref name="meta.attlist"/>
+		<empty/>
+	</element>
+</define>
+
+<define name="meta.attlist">
+	<optional>
+    	<attribute name="content">
+	    	<data type="string"/>
+	</attribute>
+	</optional>
+	<optional>
+    	<attribute name="name">
+	    	<data type="string"/>
+	</attribute>
+	</optional>
+	<optional>
+    	<attribute name="scheme">
+	    	<data type="string"/>
+	</attribute>
+	</optional>
+</define>
+
+<define name="head.content" combine="interleave">
+	<zeroOrMore>
+		<ref name="meta"/>
+	</zeroOrMore>
+</define>
+
+</grammar>

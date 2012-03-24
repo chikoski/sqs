@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+Created-By: 1.6.0_24-b07-334-10M3326 (Apple Inc.)
+Built-By: IzPack
+Main-Class: com.izforge.izpack.installer.Installer
+Class-Path: 
+

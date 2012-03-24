@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/2220/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/scan
+END
+SessionSourceScannerTaskProducer.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/2220/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/scan/SessionSourceScannerTaskProducer.java
+END
+PageTaskProducedEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/scan/PageTaskProducedEvent.java
+END
+DiffusedSessionSourceScanner.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/2220/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/scan/DiffusedSessionSourceScanner.java
+END
+PageNumberedSessionSourceScanner.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/2220/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/scan/PageNumberedSessionSourceScanner.java
+END
+SessionSourceScanner.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/2220/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/scan/SessionSourceScanner.java
+END

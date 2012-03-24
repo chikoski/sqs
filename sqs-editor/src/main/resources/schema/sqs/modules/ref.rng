@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:java="http://www.relaxer.org/xmlns/relaxer/java"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+         xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">
+ 
+<define name="id.attrib">
+	<optional>
+   	    <a:documentation>参照するID</a:documentation>
+	    	<attribute name="id" ns="http://sqs.cmr.sfc.keio.ac.jp/2004/sqs">
+	    	<text/>
+		</attribute>
+	</optional>    				
+</define>
+
+<define name="ref">
+	<a:documentation>参照ラベル</a:documentation>
+	<element name="ref" ns="http://sqs.cmr.sfc.keio.ac.jp/2004/sqs">
+		<a:documentation>参照先のID</a:documentation>
+	    	<attribute name="idref" ns="http://sqs.cmr.sfc.keio.ac.jp/2004/sqs">
+		    	<text/>
+	    	</attribute>
+	        <empty/>
+	</element>
+</define>
+
+<define name="Inline.class" combine="choice">
+	<ref name="ref"/>
+</define>
+
+<define name="Heading.attlist" combine="choice">
+	<ref name="id.attrib"/>
+</define>
+
+</grammar>

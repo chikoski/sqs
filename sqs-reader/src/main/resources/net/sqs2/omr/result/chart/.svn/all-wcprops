@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/2142/trunk/sqs-reader/src/main/resources/net/sqs2/omr/result/chart
+END
+PieChart.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/2142/trunk/sqs-reader/src/main/resources/net/sqs2/omr/result/chart/PieChart.java
+END
+StackedBarChart.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/2142/trunk/sqs-reader/src/main/resources/net/sqs2/omr/result/chart/StackedBarChart.java
+END
+BarChart.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/2142/trunk/sqs-reader/src/main/resources/net/sqs2/omr/result/chart/BarChart.java
+END
+LegendHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/2142/trunk/sqs-reader/src/main/resources/net/sqs2/omr/result/chart/LegendHandler.java
+END
+Legend.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/2142/trunk/sqs-reader/src/main/resources/net/sqs2/omr/result/chart/Legend.java
+END

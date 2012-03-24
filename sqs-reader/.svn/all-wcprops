@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/2220/trunk/sqs-reader
+END
+NOTICE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1820/trunk/sqs-reader/NOTICE.txt
+END
+install.sh
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1820/trunk/sqs-reader/install.sh
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1920/trunk/sqs-reader/.classpath
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/1820/trunk/sqs-reader/LICENSE.txt
+END
+testng.xml
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/2139/trunk/sqs-reader/testng.xml
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/2213/trunk/sqs-reader/.project
+END
+install.xml
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/2126/trunk/sqs-reader/install.xml
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/2217/trunk/sqs-reader/pom.xml
+END

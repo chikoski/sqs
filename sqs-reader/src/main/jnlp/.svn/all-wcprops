@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/2056/trunk/sqs-reader/src/main/jnlp
+END
+jnlp_template.vm
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/2056/trunk/sqs-reader/src/main/jnlp/jnlp_template.vm
+END
+sess.vm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1820/trunk/sqs-reader/src/main/jnlp/sess.vm
+END

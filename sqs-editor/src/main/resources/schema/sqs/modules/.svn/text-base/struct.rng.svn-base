@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:java="http://www.relaxer.org/xmlns/relaxer/java"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+         xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">
+
+<start>
+   <ref name="html"/>
+</start>
+
+<define name="head.content">
+	<ref name="title"/>
+</define>
+
+<define name="head">
+    <a:documentation>調査票の属性</a:documentation>
+    <element name="head" ns="http://www.w3.org/2002/06/xhtml2">
+	<ref name="head.content"/>
+    </element>
+</define>
+
+<define name="title">
+    <a:documentation>調査票のタイトル</a:documentation>
+    <element name="title" ns="http://www.w3.org/2002/06/xhtml2">
+	<text/>
+    </element>
+</define>
+
+<define name="body">
+    <a:documentation>調査票の本体</a:documentation>
+    <element name="body" ns="http://www.w3.org/2002/06/xhtml2">
+	<ref name="Block.model"/>
+    </element>
+</define>
+
+<define name="html">
+    <a:documentation>調査票</a:documentation>
+    <element name="html" ns="http://www.w3.org/2002/06/xhtml2">
+    	<ref name="head"/>
+    	<ref name="body"/>
+    </element>
+</define>
+
+</grammar>

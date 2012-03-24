@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/2110/trunk/sqs-util/src/main/java/net/sqs2/xml
+END
+PrefixResolverImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/1444/trunk/sqs-util/src/main/java/net/sqs2/xml/PrefixResolverImpl.java
+END
+XPathUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/1444/trunk/sqs-util/src/main/java/net/sqs2/xml/XPathUtil.java
+END
+XMLFilterUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/1444/trunk/sqs-util/src/main/java/net/sqs2/xml/XMLFilterUtil.java
+END
+XPathSelector.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/2110/trunk/sqs-util/src/main/java/net/sqs2/xml/XPathSelector.java
+END
+StaticPrefixResolver.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/1444/trunk/sqs-util/src/main/java/net/sqs2/xml/StaticPrefixResolver.java
+END
+DOMUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1444/trunk/sqs-util/src/main/java/net/sqs2/xml/DOMUtil.java
+END
+XMLUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1796/trunk/sqs-util/src/main/java/net/sqs2/xml/XMLUtil.java
+END

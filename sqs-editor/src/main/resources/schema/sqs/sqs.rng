@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:java="http://www.relaxer.org/xmlns/relaxer/java"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+         xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">
+  <!--
+  xmlns:xhtml="http://www.w3.org/2002/06/xhtml2"
+    xmlns:xforms="http://www.w3.org/2002/xforms"
+    xmlns:sqs="http://sqs.cmr.sfc.keio.ac.jp/2004/sqs"
+  -->
+ 
+<include href="modules/meta.rng"/>
+<include href="modules/text.rng"/>
+<include href="modules/list.rng"/>
+
+<include href="modules/ref.rng"/>
+<include href="modules/warning.rng"/>
+<include href="modules/counter.rng"/>
+
+<include href="modules/xforms.rng"/>
+<include href="modules/xforms-layout.rng"/>
+<include href="modules/matrix-forms.rng"/>
+
+<include href="modules/page.rng"/>
+
+<include href="modules/struct.rng"/>
+</grammar>

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/logic
+END
+TextAreaPreviewImageConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/1820/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/logic/TextAreaPreviewImageConstants.java
+END
+DeskewProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/logic/DeskewProcessor.java
+END
+MarkAreaPreviewImageConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/1820/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/logic/MarkAreaPreviewImageConstants.java
+END
+PageImageRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/logic/PageImageRenderer.java
+END
+PageProcessorResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/logic/PageProcessorResult.java
+END
+OMRProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/logic/OMRProcessor.java
+END
+PageProcessorSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/logic/PageProcessorSource.java
+END
+PageAreaResultListUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/logic/PageAreaResultListUtil.java
+END

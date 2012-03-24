@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:sqs="http://sqs.cmr.sfc.keio.ac.jp/2004/sqs" xmlns:xforms="http://www.w3.org/2002/xforms">
+<head lang="ja"> 
+ <title>Questionnaire about XML（2009-10-03）</title>
+ <meta content="Questionnaire about XML（2009-10-03）" name="DC.Title"/>
+ <meta content="2009-10-03" name="DC.Title.Short"/>
+ <meta content="Hiroya Kubo" name="DC.Creator"/>
+ <meta content="SVG Open 2009, XML, SQS" name="DC.Subject"/>
+ <meta content="2009-08-31" name="DCTERMS.Created" scheme="DCTERMS.W3CDTF"/>
+ <meta content="2009-08-31/2010-08-31" name="DCTERMS.Valid" scheme="DCTERMS.W3CDTF"/>
+</head> 
+<body>
+
+
+<h>Questionnaire about XML</h>
+
+<p>Please answer flollowing questions.</p>
+
+<sqs:warning>
+<p>
+This form is processed through machines. Please DO NOT write your answer outside of form area.
+</p>
+</sqs:warning>
+
+<xforms:select1>
+<!--xforms:label>(1)</xforms:label-->
+<xforms:help>SingleAnswer</xforms:help>
+<xforms:hint>Do you agree or disagree?:
+XHTML 2 Working Group expected to stop work for increasing resources on HTML 5.
+</xforms:hint>
+<xforms:item>
+  <xforms:label>agree</xforms:label>
+  <xforms:value>1</xforms:value>
+</xforms:item>	
+<xforms:item>
+  <xforms:label>disagree</xforms:label>
+  <xforms:value>2</xforms:value>
+</xforms:item>	
+<xforms:item>
+  <xforms:label>no idea</xforms:label>
+  <xforms:value>3</xforms:value>
+</xforms:item>	
+</xforms:select1>
+
+<xforms:select>
+<!--xforms:label>(2)</xforms:label-->
+<xforms:help>MultipleAnswer</xforms:help>
+<xforms:hint>Do you have sympathy for:</xforms:hint>
+
+<xforms:item>
+  <xforms:label>XML Gentry(more class consciousness XML users)</xforms:label>
+  <xforms:value>1</xforms:value>
+</xforms:item>	
+
+<xforms:item>
+  <xforms:label>XML Bohemians(less class consciousness XML users)</xforms:label>
+  <xforms:value>2</xforms:value>
+</xforms:item>	
+
+<xforms:item>
+  <xforms:label>no idea</xforms:label>
+  <xforms:value>3</xforms:value>
+</xforms:item>	
+
+</xforms:select>
+
+
+<xforms:textarea sqs:height="130" sqs:width="450">
+<!--<xforms:label>(3)</xforms:label>-->
+<xforms:help>FreeAnswer</xforms:help>
+<xforms:hint>What is the problem of XML standardization environment?</xforms:hint>
+</xforms:textarea>
+
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1911/trunk/sqs-util/src/main/java/net/sqs2/httpd
+END
+GenericHttpd.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/1911/trunk/sqs-util/src/main/java/net/sqs2/httpd/GenericHttpd.java
+END
+JarContentServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/1444/trunk/sqs-util/src/main/java/net/sqs2/httpd/JarContentServlet.java
+END

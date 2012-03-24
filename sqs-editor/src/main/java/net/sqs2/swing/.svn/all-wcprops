@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/2067/trunk/sqs-editor/src/main/java/net/sqs2/swing
+END
+IconFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/1444/trunk/sqs-editor/src/main/java/net/sqs2/swing/IconFactory.java
+END
+CompTitledBorder.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/1444/trunk/sqs-editor/src/main/java/net/sqs2/swing/CompTitledBorder.java
+END
+IconTitledPane.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/1444/trunk/sqs-editor/src/main/java/net/sqs2/swing/IconTitledPane.java
+END
+TextOverlayImageIcon.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/1444/trunk/sqs-editor/src/main/java/net/sqs2/swing/TextOverlayImageIcon.java
+END
+EditMenuTextField.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/1444/trunk/sqs-editor/src/main/java/net/sqs2/swing/EditMenuTextField.java
+END
+SwingUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/1444/trunk/sqs-editor/src/main/java/net/sqs2/swing/SwingUtil.java
+END
+EditMenuFeature.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/1794/trunk/sqs-editor/src/main/java/net/sqs2/swing/EditMenuFeature.java
+END
+EditMenuTextArea.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/1444/trunk/sqs-editor/src/main/java/net/sqs2/swing/EditMenuTextArea.java
+END
+SuffixBasedFileFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/1444/trunk/sqs-editor/src/main/java/net/sqs2/swing/SuffixBasedFileFilter.java
+END
+IconTitledBorder.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/1444/trunk/sqs-editor/src/main/java/net/sqs2/swing/IconTitledBorder.java
+END
+LoggerConsoleFrame.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/2067/trunk/sqs-editor/src/main/java/net/sqs2/swing/LoggerConsoleFrame.java
+END
+LoggerTextArea.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/1444/trunk/sqs-editor/src/main/java/net/sqs2/swing/LoggerTextArea.java
+END
+StateTransmitter.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/1444/trunk/sqs-editor/src/main/java/net/sqs2/swing/StateTransmitter.java
+END

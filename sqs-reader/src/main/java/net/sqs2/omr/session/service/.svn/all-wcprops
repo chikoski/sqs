@@ -1,0 +1,221 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/2220/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service
+END
+ServerDispatcherImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/ServerDispatcherImpl.java
+END
+SessionSourceServerDispatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/SessionSourceServerDispatcher.java
+END
+OutputEventRecieversFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/2211/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/OutputEventRecieversFactory.java
+END
+LocalSessionSourceServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/LocalSessionSourceServer.java
+END
+RemoteSessionDiscoveryService.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/RemoteSessionDiscoveryService.java
+END
+ServerDispatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/ServerDispatcher.java
+END
+SessionSourceServerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/2220/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/SessionSourceServerImpl.java
+END
+TaskTracker.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/TaskTracker.java
+END
+MarkReaderSession.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/2220/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/MarkReaderSession.java
+END
+PageTaskCommitServiceFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/PageTaskCommitServiceFactory.java
+END
+TaskExecutor.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/TaskExecutor.java
+END
+OutputResultTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/2220/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/OutputResultTask.java
+END
+SessionEventAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/SessionEventAdapter.java
+END
+PageTaskRecycleService.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/PageTaskRecycleService.java
+END
+PageTaskCommitService.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/PageTaskCommitService.java
+END
+SessionSourceServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/SessionSourceServer.java
+END
+PageTaskCommitRowGenerateService.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/2220/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/PageTaskCommitRowGenerateService.java
+END
+PageTaskExecutable.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/PageTaskExecutable.java
+END
+AbstractTaskTracker.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/AbstractTaskTracker.java
+END
+LocalPageTaskRecycleService.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/LocalPageTaskRecycleService.java
+END
+RemotePageTaskRecycleService.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/RemotePageTaskRecycleService.java
+END
+PageUpsideDownChecker.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/PageUpsideDownChecker.java
+END
+Checker.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/Checker.java
+END
+MarkReaderSessions.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/MarkReaderSessions.java
+END
+AbstractExecutable.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/AbstractExecutable.java
+END
+RemoteSessionSourceServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/2220/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/RemoteSessionSourceServer.java
+END
+PageTaskCommittedEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/PageTaskCommittedEvent.java
+END
+AbstractPageTaskCommitService.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/AbstractPageTaskCommitService.java
+END
+SessionTaskDaemons.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/SessionTaskDaemons.java
+END
+AbstractRemoteTaskTracker.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/AbstractRemoteTaskTracker.java
+END
+SessionSourceServerDispatcherImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/SessionSourceServerDispatcherImpl.java
+END
+RemoteTaskTrackerManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/RemoteTaskTrackerManager.java
+END
+PageTaskExecutionProgressModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/2211/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/PageTaskExecutionProgressModel.java
+END
+AbstractRemoteExecutorManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/AbstractRemoteExecutorManager.java
+END
+PageSequenceChecker.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/PageSequenceChecker.java
+END
+SessionEventListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/service/SessionEventListener.java
+END

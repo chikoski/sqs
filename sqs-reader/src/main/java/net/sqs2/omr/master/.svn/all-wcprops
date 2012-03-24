@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/master
+END
+FormMaster.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/2060/trunk/sqs-reader/src/main/java/net/sqs2/omr/master/FormMaster.java
+END
+NoPageMasterException.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/1861/trunk/sqs-reader/src/main/java/net/sqs2/omr/master/NoPageMasterException.java
+END
+FormMasterFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/1861/trunk/sqs-reader/src/main/java/net/sqs2/omr/master/FormMasterFactory.java
+END
+PageMaster.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/2056/trunk/sqs-reader/src/main/java/net/sqs2/omr/master/PageMaster.java
+END
+PageMasterMetadata.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1820/trunk/sqs-reader/src/main/java/net/sqs2/omr/master/PageMasterMetadata.java
+END
+NoConfigFilePageMasterException.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/1861/trunk/sqs-reader/src/main/java/net/sqs2/omr/master/NoConfigFilePageMasterException.java
+END
+FormArea.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/2115/trunk/sqs-reader/src/main/java/net/sqs2/omr/master/FormArea.java
+END
+FormMasterException.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/2007/trunk/sqs-reader/src/main/java/net/sqs2/omr/master/FormMasterException.java
+END
+InvalidPageMasterException.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/2007/trunk/sqs-reader/src/main/java/net/sqs2/omr/master/InvalidPageMasterException.java
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/2213/trunk/sqs-reader/src/main/java/net/sqs2/omr/swing/pagetask
+END
+PageTaskGUIConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/2213/trunk/sqs-reader/src/main/java/net/sqs2/omr/swing/pagetask/PageTaskGUIConstants.java
+END
+TaskQueueViewPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/2213/trunk/sqs-reader/src/main/java/net/sqs2/omr/swing/pagetask/TaskQueueViewPanel.java
+END
+PageTaskExecutionProgressMeter.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/2213/trunk/sqs-reader/src/main/java/net/sqs2/omr/swing/pagetask/PageTaskExecutionProgressMeter.java
+END
+TaskQueueModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/2213/trunk/sqs-reader/src/main/java/net/sqs2/omr/swing/pagetask/TaskQueueModel.java
+END
+PageTaskExecutionProgressController.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/2213/trunk/sqs-reader/src/main/java/net/sqs2/omr/swing/pagetask/PageTaskExecutionProgressController.java
+END
+PageTaskExecutionProgressBar.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/2213/trunk/sqs-reader/src/main/java/net/sqs2/omr/swing/pagetask/PageTaskExecutionProgressBar.java
+END

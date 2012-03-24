@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+         xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">
+
+<define name="FormControl.class">
+	<choice>
+		<ref name="select1"/>
+		<ref name="select"/>
+		<ref name="input"/>
+		<ref name="textarea"/>
+	</choice>
+</define>
+
+<define name="select1">
+	<a:documentation>択一選択式の設問</a:documentation>
+	<element name="select1" ns="http://www.w3.org/2002/xforms">
+		<ref name="SelectFormControl.model"/>
+	</element>
+</define>
+
+<define name="select">
+	<a:documentation>複数選択式の設問</a:documentation>
+	<element name="select" ns="http://www.w3.org/2002/xforms">
+		<ref name="SelectFormControl.model"/>
+	</element>
+</define>
+
+<define name="input">
+	<a:documentation>自由記述式の設問</a:documentation>
+	<element name="input" ns="http://www.w3.org/2002/xforms">
+		<ref name="InputFormControl.model"/>
+	</element>
+</define>
+
+<define name="textarea">
+	<a:documentation>自由記述式の設問</a:documentation>
+	<element name="textarea" ns="http://www.w3.org/2002/xforms">
+		<ref name="InputFormControl.model"/>
+	</element>
+</define>
+
+<define name="InputFormControl.model">
+  	<ref name="InputFormControl.attlist"/>
+	<ref name="FormControlCommon.model"/>
+</define>
+
+<define name="SelectFormControl.model">
+	<ref name="SelectFormControl.attlist"/>
+	<ref name="FormControlCommon.model"/>
+	<zeroOrMore>
+		<a:documentation>選択肢のリスト</a:documentation>
+		<ref name="item"/>
+	</zeroOrMore>
+</define>
+
+<define name="FormControlCommon.model">
+	<a:documentation>設問文</a:documentation>
+	<optional>
+		<ref name="label"/>
+	</optional>
+	<optional>
+		<ref name="hint"/>
+	</optional>		
+	<optional>
+		<ref name="help"/>
+	</optional>
+	<optional>
+		<ref name="alart"/>
+	</optional>
+</define>
+
+<define name="label">
+	<a:documentation>設問ラベル</a:documentation>
+	<element name="label" ns="http://www.w3.org/2002/xforms">
+		<ref name="label.attlist"/>
+		<ref name="Inline.model"/>
+	</element>
+</define>
+
+<define name="label.attlist">
+	<optional>
+		<empty/>
+	</optional>
+</define>
+
+<define name="hint">
+	<a:documentation>詳細な設問文</a:documentation>
+	<element name="hint" ns="http://www.w3.org/2002/xforms">
+		<ref name="Inline.model"/>
+	</element>
+</define>
+
+<define name="help">
+	<a:documentation>回答用の参考文</a:documentation>
+	<element name="help" ns="http://www.w3.org/2002/xforms">
+		<ref name="Inline.model"/>
+	</element>
+</define>
+
+<define name="alart">
+	<a:documentation>回答上の注意</a:documentation>
+	<element name="alart" ns="http://www.w3.org/2002/xforms">
+		<ref name="Inline.model"/>
+	</element>			
+</define>
+
+<define name="item">
+	<a:documentation>選択肢</a:documentation>
+	<element name="item" ns="http://www.w3.org/2002/xforms">
+		<ref name="item.attlist"/>
+		<ref name="item.content"/>
+	</element>
+</define>
+
+<define name="item.content">
+	<ref name="label"/>
+	<ref name="value"/>
+</define>
+
+<define name="label">
+	<element name="label" ns="http://www.w3.org/2002/xforms">
+		<ref name="id.attrib"/>
+		<a:documentation>選択肢の文</a:documentation>
+		<ref name="Inline.model"/>
+	</element>
+</define>
+
+<define name="value">
+	<element name="value" ns="http://www.w3.org/2002/xforms">
+		<a:documentation>選択肢の値</a:documentation>
+		<text/>
+	</element>
+</define>
+
+<define name="Block.class" combine="choice">
+  <ref name="FormControl.class"/>
+</define>
+
+<define name="SelectFormControl.attlist">
+	<optional>
+		<empty/>
+	</optional>
+</define>
+
+<define name="InputFormControl.attlist">
+	<optional>
+		<empty/>
+	</optional>
+</define>
+
+<define name="item.attlist">
+	<optional>
+		<empty/>
+	</optional>
+</define>
+
+</grammar>

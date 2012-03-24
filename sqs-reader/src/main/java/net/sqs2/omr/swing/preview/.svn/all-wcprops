@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/2220/trunk/sqs-reader/src/main/java/net/sqs2/omr/swing/preview
+END
+PageTaskErrorTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/2186/trunk/sqs-reader/src/main/java/net/sqs2/omr/swing/preview/PageTaskErrorTable.java
+END
+MarkAreasTableCellRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/swing/preview/MarkAreasTableCellRenderer.java
+END
+MarkReaderSessionTableConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/2169/trunk/sqs-reader/src/main/java/net/sqs2/omr/swing/preview/MarkReaderSessionTableConstants.java
+END
+PageTaskErrorTableCellRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/swing/preview/PageTaskErrorTableCellRenderer.java
+END
+TextAreasTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/2220/trunk/sqs-reader/src/main/java/net/sqs2/omr/swing/preview/TextAreasTable.java
+END
+PageTaskErrorPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/2169/trunk/sqs-reader/src/main/java/net/sqs2/omr/swing/preview/PageTaskErrorPanel.java
+END
+FormAreaTableCellRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/2169/trunk/sqs-reader/src/main/java/net/sqs2/omr/swing/preview/FormAreaTableCellRenderer.java
+END
+TextAreaTableCellRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/swing/preview/TextAreaTableCellRenderer.java
+END
+MarkAreasTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/2220/trunk/sqs-reader/src/main/java/net/sqs2/omr/swing/preview/MarkAreasTable.java
+END
+MarkAreasTablePanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/2186/trunk/sqs-reader/src/main/java/net/sqs2/omr/swing/preview/MarkAreasTablePanel.java
+END

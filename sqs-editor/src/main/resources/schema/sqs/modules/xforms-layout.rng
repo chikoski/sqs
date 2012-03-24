@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:java="http://www.relaxer.org/xmlns/relaxer/java"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+         xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">
+
+<define name="SelectFormControl.attlist" combine="choice">
+	<optional>
+		<a:documentation>選択肢を横に並べる数</a:documentation>	
+		<attribute name="cols" ns="http://sqs.cmr.sfc.keio.ac.jp/2004/sqs">
+			<data type="integer"/>
+		</attribute>
+	</optional>
+</define>
+
+<define name="InputFormControl.attlist" combine="interleave">
+	<a:documentation>欄の幅</a:documentation>
+	<attribute name="width" ns="http://sqs.cmr.sfc.keio.ac.jp/2004/sqs">
+		<data type="integer"/>
+	</attribute>
+	<a:documentation>欄の高さ</a:documentation>
+	<attribute name="height" ns="http://sqs.cmr.sfc.keio.ac.jp/2004/sqs">
+		<data type="integer"/>
+	</attribute>
+</define>
+
+<define name="item.attlist" combine="interleave">
+	<optional>
+		<a:documentation>表示幅</a:documentation>
+		<attribute name="colspan" ns="http://sqs.cmr.sfc.keio.ac.jp/2004/sqs">
+			<data type="integer"/>
+		</attribute>
+	</optional>
+	<optional>
+		<a:documentation>その他</a:documentation>
+		<attribute name="input-text" ns="http://sqs.cmr.sfc.keio.ac.jp/2004/sqs">
+			<data type="boolean"/>
+		</attribute>
+	</optional>
+</define>
+
+<define name="label.attlist" combine="interleave">
+	<optional>
+		<ref name="id.attrib"/>
+	</optional>
+</define>
+
+
+</grammar>

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/export/model
+END
+MarkAreasTableModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/export/model/MarkAreasTableModel.java
+END
+FormAreaTableCell.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/export/model/FormAreaTableCell.java
+END
+TextAreaTableCell.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/export/model/TextAreaTableCell.java
+END
+TableCellAddress.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/1852/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/export/model/TableCellAddress.java
+END
+MarkAreaErrorModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/export/model/MarkAreaErrorModel.java
+END
+MarkAreasTableCell.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/export/model/MarkAreasTableCell.java
+END

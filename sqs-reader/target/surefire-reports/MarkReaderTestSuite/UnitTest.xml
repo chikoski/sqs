@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="UnitTest" failures="0" tests="8" time="0.412" errors="0">
+  <properties/>
+  <testcase name="testExtend" time="0.013" classname="net.sqs2.omr.util.JarExtenderTest"/>
+  <testcase name="testEncodeBasic" time="0.001" classname="net.sqs2.omr.util.URLSafeRLEBase64Test"/>
+  <testcase name="testEncodeByteArray" time="0.001" classname="net.sqs2.omr.util.URLSafeRLEBase64Test"/>
+  <testcase name="testEncodeIntValue" time="0.001" classname="net.sqs2.omr.util.URLSafeRLEBase64Test"/>
+  <testcase name="testEncodeSequencialByteArray" time="0.001" classname="net.sqs2.omr.util.URLSafeRLEBase64Test"/>
+  <testcase name="testEncodeSequencialString" time="0.001" classname="net.sqs2.omr.util.URLSafeRLEBase64Test"/>
+  <testcase name="getDefaultTemplateTest" time="0.342" classname="net.sqs2.template.TemplateLoaderTest"/>
+  <testcase name="getUserCustomizedTemplateTest" time="0.025" classname="net.sqs2.template.TemplateLoaderTest"/>
+</testsuite>

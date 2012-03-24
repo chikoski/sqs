@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:java="http://www.relaxer.org/xmlns/relaxer/java"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+         xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">
+
+<!--                              -->
+<!--     matrix-forms module      -->
+<!--                              -->
+<define name="matrix-forms">
+	<a:documentation>複合的な設問のグループ</a:documentation>
+	<element name="matrix-forms" ns="http://sqs.cmr.sfc.keio.ac.jp/2004/sqs">
+		<ref name="matrix-forms.attlist"/>
+		<ref name="FormControlCommon.model"/>
+		<interleave>
+			<ref name="column-array"/>
+			<ref name="row-array"/>
+		</interleave>
+	</element>
+</define>
+
+<define name="column-array">
+	<element name="column-array" ns="http://sqs.cmr.sfc.keio.ac.jp/2004/sqs">
+		<a:documentation>設問のグループ(列)</a:documentation>
+		<zeroOrMore>
+			<ref name="MatrixFormControl.class"/>
+		</zeroOrMore>
+		<empty/>
+	</element>
+</define>
+
+<define name="group">
+	<element name="group" ns="http://www.w3.org/2002/xforms">
+		<ref name="FormControlCommon.model"/>
+	</element>
+</define>
+
+<define name="row-array">
+	<element name="row-array" ns="http://sqs.cmr.sfc.keio.ac.jp/2004/sqs">
+		<a:documentation>項目のグループ(行)</a:documentation>
+		<zeroOrMore>
+			<ref name="group"/>
+		</zeroOrMore>		
+	</element>
+</define>
+
+<define name="matrix-forms.attlist">
+	<optional>
+		<a:documentation>複合的な設問の表示幅の割合</a:documentation>
+		<attribute name="form-width-ratio" ns="http://sqs.cmr.sfc.keio.ac.jp/2004/sqs">
+			<data type="double"/>
+		</attribute>
+	</optional>
+</define>
+
+<define name="MatrixSelectFormControl.model">
+	<ref name="FormControlCommon.model"/>
+	<zeroOrMore>
+		<a:documentation>選択肢のリスト</a:documentation>
+		<ref name="item"/>
+	</zeroOrMore>
+</define>
+
+<define name="MatrixInputFormControl.model">
+	<ref name="InputFormControl.model"/>
+</define>
+
+<define name="MatrixFormControl.class">
+	<a:documentation>設問</a:documentation>
+	<choice>
+		<element name="select1" ns="http://sqs.cmr.sfc.keio.ac.jp/2004/sqs">
+			<ref name="MatrixSelectFormControl.model"/>
+		</element>
+		<element name="select" ns="http://sqs.cmr.sfc.keio.ac.jp/2004/sqs">
+			<ref name="MatrixSelectFormControl.model"/>
+		</element>
+		<element name="input" ns="http://sqs.cmr.sfc.keio.ac.jp/2004/sqs">
+			<ref name="MatrixInputFormControl.model"/>
+		</element>
+		<element name="textarea" ns="http://sqs.cmr.sfc.keio.ac.jp/2004/sqs">
+			<ref name="MatrixInputFormControl.model"/>
+		</element>
+	</choice>
+</define>
+
+<define name="FormControl.class" combine="choice">
+	<ref name="matrix-forms"/>
+</define>
+
+</grammar>

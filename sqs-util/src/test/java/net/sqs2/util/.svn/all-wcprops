@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/2110/trunk/sqs-util/src/test/java/net/sqs2/util
+END
+HTMLUtilTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/1501/trunk/sqs-util/src/test/java/net/sqs2/util/HTMLUtilTest.java
+END
+VersionUtilTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/2110/trunk/sqs-util/src/test/java/net/sqs2/util/VersionUtilTest.java
+END
+StringUtilTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/2012/trunk/sqs-util/src/test/java/net/sqs2/util/StringUtilTest.java
+END
+PathUtilTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/2110/trunk/sqs-util/src/test/java/net/sqs2/util/PathUtilTest.java
+END
+FileUtilTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/2110/trunk/sqs-util/src/test/java/net/sqs2/util/FileUtilTest.java
+END

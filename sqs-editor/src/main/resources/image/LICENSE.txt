@@ -1,0 +1,23 @@
+* Group 1
+
+ Copyright 2004 KUBO Hiroya (hiroya@sfc.keio.ac.jp).
+
+ *
+ *
+ *
+ *
+ *
+ *
+
+ 
+* Group 2
+
+ Public domain. Kevin Hughes, kevinh@eit.com, September 1995.
+
+ *
+ *
+ *
+ *
+ *
+ *
+

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/2104/trunk/sqs-translator
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2054/trunk/sqs-translator/.classpath
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1378/trunk/sqs-translator/LICENSE.txt
+END
+fop_0.95-sqs.patch
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1402/trunk/sqs-translator/fop_0.95-sqs.patch
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/2054/trunk/sqs-translator/.project
+END
+fop_1.0-sqs.patch
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/2095/trunk/sqs-translator/fop_1.0-sqs.patch
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/2102/trunk/sqs-translator/pom.xml
+END
+org.apache.xmlgraphics.xmlgraphics-commons-1.4.patch
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/2104/trunk/sqs-translator/org.apache.xmlgraphics.xmlgraphics-commons-1.4.patch
+END

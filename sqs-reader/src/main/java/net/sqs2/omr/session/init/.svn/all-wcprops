@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/2220/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/init
+END
+SessionSourceInitializationStopException.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/init/SessionSourceInitializationStopException.java
+END
+SessionException.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/init/SessionException.java
+END
+ImageFilesFoundEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/init/ImageFilesFoundEvent.java
+END
+ConfigFileFoundEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/init/ConfigFileFoundEvent.java
+END
+SourceDirectoryInitializeCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/init/SourceDirectoryInitializeCommand.java
+END
+SessionSourceInitializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/init/SessionSourceInitializer.java
+END
+InvalidSourceDirectoryErrorEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/init/InvalidSourceDirectoryErrorEvent.java
+END
+InvalidNumImagesException.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/init/InvalidNumImagesException.java
+END
+FormMasterFoundEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/init/FormMasterFoundEvent.java
+END
+SessionSourceInitializationEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/init/SessionSourceInitializationEvent.java
+END
+SessionSourceException.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/init/SessionSourceException.java
+END
+UnreadableSourceDirectoryErrorEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/init/UnreadableSourceDirectoryErrorEvent.java
+END
+SessionSourceInitializeCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/2220/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/init/SessionSourceInitializeCommand.java
+END
+NumOfImagesErrorEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/init/NumOfImagesErrorEvent.java
+END
+SessionSourceInitializationErrorEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/init/SessionSourceInitializationErrorEvent.java
+END
+MergedFormMasterFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/init/MergedFormMasterFactory.java
+END
+SessionSourceInitializationLifeCycleEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/init/SessionSourceInitializationLifeCycleEvent.java
+END

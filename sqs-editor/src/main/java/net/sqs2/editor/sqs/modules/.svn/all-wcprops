@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/2019/trunk/sqs-editor/src/main/java/net/sqs2/editor/sqs/modules
+END
+MatrixFormsEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/1732/trunk/sqs-editor/src/main/java/net/sqs2/editor/sqs/modules/MatrixFormsEditor.java
+END
+GroupFormEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/1732/trunk/sqs-editor/src/main/java/net/sqs2/editor/sqs/modules/GroupFormEditor.java
+END
+TextAreaFormEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/1732/trunk/sqs-editor/src/main/java/net/sqs2/editor/sqs/modules/TextAreaFormEditor.java
+END
+SelectFormEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/1732/trunk/sqs-editor/src/main/java/net/sqs2/editor/sqs/modules/SelectFormEditor.java
+END
+SelectFormColsEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/1732/trunk/sqs-editor/src/main/java/net/sqs2/editor/sqs/modules/SelectFormColsEditor.java
+END
+MetaEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1732/trunk/sqs-editor/src/main/java/net/sqs2/editor/sqs/modules/MetaEditor.java
+END
+AbstractFormEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/1732/trunk/sqs-editor/src/main/java/net/sqs2/editor/sqs/modules/AbstractFormEditor.java
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/2031/trunk/sqs-reader/src/main/resources/ftl/smp
+END
+textAreaColumn.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/1820/trunk/sqs-reader/src/main/resources/ftl/smp/textAreaColumn.ftl
+END
+textAreaRowRange.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/1820/trunk/sqs-reader/src/main/resources/ftl/smp/textAreaRowRange.ftl
+END
+textAreaIndex.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/1820/trunk/sqs-reader/src/main/resources/ftl/smp/textAreaIndex.ftl
+END
+index.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1820/trunk/sqs-reader/src/main/resources/ftl/smp/index.ftl
+END
+chartIndex.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/2031/trunk/sqs-reader/src/main/resources/ftl/smp/chartIndex.ftl
+END

@@ -1,0 +1,207 @@
+Index: src/java/org/apache/fop/render/pdf/SVGElementIDToPageRectangleMap.java
+===================================================================
+--- src/java/org/apache/fop/render/pdf/SVGElementIDToPageRectangleMap.java	(revision 0)
++++ src/java/org/apache/fop/render/pdf/SVGElementIDToPageRectangleMap.java	(revision 0)
+@@ -0,0 +1,61 @@
++package org.apache.fop.render.pdf;
++
++import java.util.HashMap;
++import java.util.LinkedHashMap;
++import java.util.Map;
++
++import org.apache.fop.apps.FOUserAgent;
++
++public class SVGElementIDToPageRectangleMap{
++	private static final long serialVersionUID = 0L;
++	private HashMap map = new HashMap();
++	
++	static SVGElementIDToPageRectangleMap singleton = null;
++	
++	public String toString(){
++		return map.toString();
++	}
++	
++	public static SVGElementIDToPageRectangleMap getInstance(){
++		if(SVGElementIDToPageRectangleMap.singleton == null){
++			synchronized (SVGElementIDToPageRectangleMap.class){
++				if(SVGElementIDToPageRectangleMap.singleton == null){
++					SVGElementIDToPageRectangleMap.singleton = new SVGElementIDToPageRectangleMap();
++				}
++			}
++		}
++		return SVGElementIDToPageRectangleMap.singleton;
++	}
++	
++	public Map remove(FOUserAgent ua, int pageIndex){
++		Map mapByUserAgent = null;
++		if((mapByUserAgent = (Map)this.map.get(ua)) != null){
++			return (Map)mapByUserAgent.remove(Integer.valueOf(pageIndex));
++		}
++		return null;
++	}
++	
++	public Map get(FOUserAgent ua, int pageIndex){
++		Map mapByUserAgent = null;
++		if((mapByUserAgent = (Map)this.map.get(ua)) != null){
++			return (Map)mapByUserAgent.get(Integer.valueOf(pageIndex));
++		}
++		return null;
++	}
++	
++	public void put(FOUserAgent ua, int pageIndex, String id, PageRectangle pageRectangle){
++		Map mapByUserAgent = null;
++		if((mapByUserAgent = (Map)this.map.get(ua)) == null){
++			mapByUserAgent = new LinkedHashMap();
++			this.map.put(ua, mapByUserAgent);
++		}
++		
++		Map mapByPageIndex = null;
++		if((mapByPageIndex = (Map)mapByUserAgent.get(Integer.valueOf(pageIndex))) == null){
++			mapByPageIndex = new LinkedHashMap();
++			mapByUserAgent.put(Integer.valueOf(pageIndex), mapByPageIndex);
++		}
++		mapByPageIndex.put(id, pageRectangle);
++	}
++	
++}
+Index: src/java/org/apache/fop/render/pdf/PDFImageHandlerSVG.java
+===================================================================
+--- src/java/org/apache/fop/render/pdf/PDFImageHandlerSVG.java	(revision 995863)
++++ src/java/org/apache/fop/render/pdf/PDFImageHandlerSVG.java	(working copy)
+@@ -22,6 +22,7 @@
+ import java.awt.Color;
+ import java.awt.Rectangle;
+ import java.awt.geom.AffineTransform;
++import java.awt.geom.Point2D;
+ import java.io.IOException;
+ 
+ import org.apache.batik.bridge.BridgeContext;
+@@ -46,6 +47,11 @@
+ import org.apache.fop.svg.PDFGraphics2D;
+ import org.apache.fop.svg.SVGEventProducer;
+ import org.apache.fop.svg.SVGUserAgent;
++import org.w3c.dom.Attr;
++import org.w3c.dom.Document;
++import org.w3c.dom.Element;
++import org.w3c.dom.Node;
++import org.w3c.dom.NodeList;
+ 
+ /**
+  * Image Handler implementation which handles SVG images.
+@@ -156,6 +162,16 @@
+         generator.getState().save();
+         generator.getState().concatenate(imageTransform);
+ 
++        // Calcurate where to set the origin point of SVG image
++        Point2D ctxo = generator.getState().getTransform().transform(new Point2D.Float(0, 0), null);
++        
++        storeSVGElementIDToPageRectangle(context.getUserAgent(), imageSVG.getDocument(), 
++                pdfContext.getPage().getPageIndex(),
++                (float)ctxo.getX(),
++                (float)ctxo.getY(),
++                (float)ctx.getDocumentSize().getWidth(),
++                (float)ctx.getDocumentSize().getHeight());
++
+         //Now that we have the complete transformation matrix for the image, we can update the
+         //transformation matrix for the AElementBridge.
+         PDFAElementBridge aBridge = (PDFAElementBridge)ctx.getBridge(
+@@ -181,6 +197,30 @@
+         generator.comment("SVG end");
+     }
+ 
++	private void storeSVGElementIDToPageRectangle(FOUserAgent ua, Document doc, int pageIndex, 
++			float x, float y, float w, float h) {
++		Node idNode = doc.getFirstChild().getAttributes().getNamedItem("id");
++        if(idNode != null){
++        	String id = ((Attr)idNode).getValue();
++        	SVGElementIDToPageRectangleMap map = SVGElementIDToPageRectangleMap.getInstance();
++        	map.put(ua, pageIndex, id, new PageRectangle(pageIndex, x, y, w, h, getMetadata(doc)));
++        }
++	}
++
++	private Node getMetadata(Document doc){
++		final String SVG_URI = "http://www.w3.org/2000/svg";
++		//return doc.getFirstChild().getFirstChild();
++		Node svgNode = doc.getFirstChild();//(Element)(doc.getElementsByTagNameNS(SVG_URI, "svg").item(0));
++		if(svgNode.getNodeType() == Node.ELEMENT_NODE){
++			NodeList metadataNodeList = ((Element)svgNode).getElementsByTagNameNS(SVG_URI, "metadata");
++			if(metadataNodeList == null || 0 == metadataNodeList.getLength()){
++				return null;
++			}
++			return metadataNodeList.item(0);
++		}
++		return null;
++	}
++
+     /** {@inheritDoc} */
+     public int getPriority() {
+         return 400;
+Index: src/java/org/apache/fop/render/pdf/PageRectangle.java
+===================================================================
+--- src/java/org/apache/fop/render/pdf/PageRectangle.java	(revision 0)
++++ src/java/org/apache/fop/render/pdf/PageRectangle.java	(revision 0)
+@@ -0,0 +1,43 @@
++package org.apache.fop.render.pdf;
++
++import java.awt.geom.Rectangle2D;
++
++import org.w3c.dom.Node;
++
++public class PageRectangle{
++	int pageIndex;
++	Rectangle2D.Float rectangle;
++	
++	Node svgMetadataNode;
++	
++	public PageRectangle(int pageIndex, float x, float y, float w, float h, Node svgMetadataNode){
++		this.pageIndex = pageIndex;
++		this.rectangle = new Rectangle2D.Float(x, y, w, h);
++		this.svgMetadataNode = svgMetadataNode; 
++	}
++	
++	public int getPageIndex(){
++		return this.pageIndex;
++	}
++	
++	public double getX(){
++		return this.rectangle.getX();
++	}
++	
++	public double getY(){
++		return this.rectangle.getY();
++	}
++	
++	public double getWidth(){
++		return this.rectangle.getWidth();
++	}
++	
++	public double getHeight(){
++		return this.rectangle.getHeight();
++	}
++	
++	public Node getSVGMetadataNode(){
++		return this.svgMetadataNode;
++	}
++
++}
+Index: src/java/org/apache/fop/render/pdf/PDFSVGHandler.java
+===================================================================
+--- src/java/org/apache/fop/render/pdf/PDFSVGHandler.java	(revision 995863)
++++ src/java/org/apache/fop/render/pdf/PDFSVGHandler.java	(working copy)
+@@ -21,11 +21,16 @@
+ 
+ import java.awt.Color;
+ import java.awt.geom.AffineTransform;
++import java.awt.geom.Point2D;
+ import java.io.IOException;
+ import java.io.OutputStream;
+ import java.util.Map;
+ 
++import org.w3c.dom.Attr;
+ import org.w3c.dom.Document;
++import org.w3c.dom.Element;
++import org.w3c.dom.Node;
++import org.w3c.dom.NodeList;
+ 
+ import org.apache.avalon.framework.configuration.Configuration;
+ import org.apache.batik.bridge.BridgeContext;

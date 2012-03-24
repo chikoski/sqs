@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:java="http://www.relaxer.org/xmlns/relaxer/java"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <start>
+   <ref name="readingState"/>
+  </start>
+  
+<define name="ImageFiles">
+    <element name="imagefiles" ns="http://sqs.cmr.sfc.keio.ac.jp/2004/reader">
+      <zeroOrMore>
+          <element name="imagefile" ns="http://sqs.cmr.sfc.keio.ac.jp/2004/reader">
+            <attribute name="filename" java:mapKey="true">
+              <text/>
+            </attribute>
+            <attribute name="mtime">
+                          <data type="dateTime"/>
+            </attribute>            
+            <optional>
+              <ref name="ScanFrame"/>
+            </optional>
+            <!--
+            <optional>
+              <ref name="ScanState"/>
+            </optional>
+            -->
+          </element>
+      </zeroOrMore>
+    </element>
+</define>
+
+<define name="ScanFrame">
+              <attribute name="x1">
+                        <data type="int"/>
+              </attribute>
+              <attribute name="y1">
+					<data type="int"/>
+              </attribute>              
+              <attribute name="x2">
+					<data type="int"/>
+              </attribute>                
+              <attribute name="y2">
+					<data type="int"/>
+              </attribute>                
+              <attribute name="x3">
+					<data type="int"/>
+              </attribute>                
+              <attribute name="y3">
+   					<data type="int"/>
+              </attribute>  
+              <attribute name="x4">
+					<data type="int"/>
+              </attribute>                
+              <attribute name="y4">
+					<data type="int"/>
+              </attribute> 
+              <optional>
+                <ref name="Page"/>
+              </optional>
+</define>
+
+<!--
+<define name="ScanState">
+               <attribute name="state">
+                  <choice>
+                    <value>not processed</value>
+                    <value>invalid page</value>
+                    <value>invalid page order</value>                    
+                    <value>valid</value>
+                  </choice>
+                </attribute>
+</define>
+-->
+
+
+<define name="Page">
+                <element name="page" ns="http://sqs.cmr.sfc.keio.ac.jp/2004/reader">
+                  <attribute name="sampleID">
+						<data type="int"/>
+	              </attribute>      
+                  <attribute name="number">
+						<data type="int"/>
+	              </attribute>                   
+
+                  <optional>
+                    <ref name="FormElements"/>
+                  </optional>
+
+                </element>
+</define>
+
+<define name="FormElements">
+               <zeroOrMore>
+                   <choice>
+                        <element name="markarea" ns="http://sqs.cmr.sfc.keio.ac.jp/2004/reader">
+                          <attribute name="ref" java:mapKey="true"><data type="string"/></attribute>
+                            <ref name="MarkDensity"/>
+                        </element>
+                        <element name="textarea" ns="http://sqs.cmr.sfc.keio.ac.jp/2004/reader">
+                          <attribute name="ref" java:mapKey="true"><data type="string"/></attribute>
+                            <ref name="TextareaImage"/>
+                        </element>                              
+                	</choice>
+              </zeroOrMore>
+</define>
+
+<define name="MarkDensity">
+	<element name="markDensity" ns="http://sqs.cmr.sfc.keio.ac.jp/2004/reader">
+		<data type="double"/>
+	</element>
+</define>
+
+<define name="TextareaImage">
+                            <element name="file" ns="http://sqs.cmr.sfc.keio.ac.jp/2004/reader">
+                              <attribute name="filename"><text/></attribute>
+                              <attribute name="mtime">
+                              	<data type="dateTime"/>              
+               	              </attribute>                              
+                            </element>
+</define>
+
+<define name="readingState">
+  <element name="readingState" ns="http://sqs.cmr.sfc.keio.ac.jp/2004/reader">
+    <attribute name="imagedir"><text/></attribute>
+    <attribute name="pdffile"><text/></attribute>
+    <attribute name="start">
+       <data type="dateTime"/>              
+    </attribute>                              
+    
+    <attribute name="end">
+       <data type="dateTime"/>              
+    </attribute>                              
+    
+
+    <optional>
+      <ref name="ImageFiles"/>
+    </optional>
+
+    <optional>
+      <element name="answers" ns="http://sqs.cmr.sfc.keio.ac.jp/2004/reader">
+        <empty/>
+      </element>
+   </optional>
+   </element>
+</define>
+</grammar>

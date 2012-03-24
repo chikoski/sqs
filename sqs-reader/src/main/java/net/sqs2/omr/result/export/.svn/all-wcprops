@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/2213/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/export
+END
+FreeMarkerHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/export/FreeMarkerHandler.java
+END
+HTMLWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/export/HTMLWriter.java
+END
+ResultDirectoryUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/export/ResultDirectoryUtil.java
+END
+SpreadSheetExportUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/export/SpreadSheetExportUtil.java
+END
+ColumnMetadata.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/1990/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/export/ColumnMetadata.java
+END
+MarkAreaAnswerValueUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/export/MarkAreaAnswerValueUtil.java
+END

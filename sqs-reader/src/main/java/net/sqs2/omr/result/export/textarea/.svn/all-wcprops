@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/export/textarea
+END
+TextAreaHTMLWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/export/textarea/TextAreaHTMLWriter.java
+END
+TextAreaImageItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/1820/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/export/textarea/TextAreaImageItem.java
+END
+TextAreaRowGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/export/textarea/TextAreaRowGroup.java
+END
+TextAreaRowRange.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/1820/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/export/textarea/TextAreaRowRange.java
+END
+TextAreaRowRangeMetadata.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/1820/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/export/textarea/TextAreaRowRangeMetadata.java
+END
+TextAreaExportModule.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/export/textarea/TextAreaExportModule.java
+END
+TextAreaColumn.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/1820/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/export/textarea/TextAreaColumn.java
+END
+FormAreaImageWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/export/textarea/FormAreaImageWriter.java
+END
+TextAreaColumnMetadata.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/1987/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/export/textarea/TextAreaColumnMetadata.java
+END
+FormAreaResultDirectoryUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/export/textarea/FormAreaResultDirectoryUtil.java
+END

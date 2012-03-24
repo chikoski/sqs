@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/2104/trunk/sqs-translator/src/main/resources/xslt
+END
+sqs2html.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/1481/trunk/sqs-translator/src/main/resources/xslt/sqs2html.xsl
+END
+marking-examples_en.svg
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/1521/trunk/sqs-translator/src/main/resources/xslt/marking-examples_en.svg
+END
+param.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/2104/trunk/sqs-translator/src/main/resources/xslt/param.xsl
+END
+convert1.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/1822/trunk/sqs-translator/src/main/resources/xslt/convert1.xsl
+END
+convert2.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/1880/trunk/sqs-translator/src/main/resources/xslt/convert2.xsl
+END
+convert3.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/2104/trunk/sqs-translator/src/main/resources/xslt/convert3.xsl
+END
+bookmark.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/1381/trunk/sqs-translator/src/main/resources/xslt/bookmark.xsl
+END
+cmpl-ref.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/1396/trunk/sqs-translator/src/main/resources/xslt/cmpl-ref.xsl
+END
+xhtmlToBookmark.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/1381/trunk/sqs-translator/src/main/resources/xslt/xhtmlToBookmark.xsl
+END
+embed-link.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/1381/trunk/sqs-translator/src/main/resources/xslt/embed-link.xsl
+END
+marking-examples_ja.svg
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/1403/trunk/sqs-translator/src/main/resources/xslt/marking-examples_ja.svg
+END
+cmpl-label.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/1381/trunk/sqs-translator/src/main/resources/xslt/cmpl-label.xsl
+END
+embed-counter.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/1381/trunk/sqs-translator/src/main/resources/xslt/embed-counter.xsl
+END

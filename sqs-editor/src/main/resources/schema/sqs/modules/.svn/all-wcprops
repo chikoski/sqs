@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1309/trunk/sqs-editor/src/main/resources/schema/sqs/modules
+END
+mark.rng
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/1309/trunk/sqs-editor/src/main/resources/schema/sqs/modules/mark.rng
+END
+list.rng
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/1309/trunk/sqs-editor/src/main/resources/schema/sqs/modules/list.rng
+END
+page.rng
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/1309/trunk/sqs-editor/src/main/resources/schema/sqs/modules/page.rng
+END
+ref.rng
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/1309/trunk/sqs-editor/src/main/resources/schema/sqs/modules/ref.rng
+END
+xforms.rng
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/1309/trunk/sqs-editor/src/main/resources/schema/sqs/modules/xforms.rng
+END
+counter.rng
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/1309/trunk/sqs-editor/src/main/resources/schema/sqs/modules/counter.rng
+END
+struct.rng
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/1309/trunk/sqs-editor/src/main/resources/schema/sqs/modules/struct.rng
+END
+text.rng
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/1309/trunk/sqs-editor/src/main/resources/schema/sqs/modules/text.rng
+END
+meta.rng
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/1309/trunk/sqs-editor/src/main/resources/schema/sqs/modules/meta.rng
+END
+matrix-forms.rng
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/1309/trunk/sqs-editor/src/main/resources/schema/sqs/modules/matrix-forms.rng
+END
+xforms-layout.rng
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/1309/trunk/sqs-editor/src/main/resources/schema/sqs/modules/xforms-layout.rng
+END

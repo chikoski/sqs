@@ -1,0 +1,20 @@
+org.apache.commons.logging.Log=org.apache.commons.logging.impl.SimpleLog
+org.apache.commons.logging.simplelog.log.org.apache.commons.digester.Digester=debug
+org.apache.commons.logging.simplelog.log.org.apache.commons.digester.Digester.sax=info
+
+# Error log - FOP Config File 
+# Set and change Default logging for FOP 
+handlers= java.util.logging.ConsoleHandler 
+
+java.util.logging.ConsoleHandler.level = FINEST 
+java.util.logging.ConsoleHandler.formatter = java.util.logging.SimpleFormatter 
+
+.level= INFO 
+
+# Well, the following line actually dances a little out of line :-( 
+FOP.level = INFO 
+
+# This sets all FOP logging to INFO. Only rendering information is logged on the FINE level. 
+org.apache.fop.level = INFO 
+org.apache.fop.render.level = FINE 
+# End of Custom 

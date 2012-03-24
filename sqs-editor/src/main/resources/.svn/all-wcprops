@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/2105/trunk/sqs-editor/src/main/resources
+END
+editor.properties
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1335/trunk/sqs-editor/src/main/resources/editor.properties
+END
+messages.properties
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/2037/trunk/sqs-editor/src/main/resources/messages.properties
+END
+commons-logging.properties
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/2105/trunk/sqs-editor/src/main/resources/commons-logging.properties
+END
+messages_ja.properties
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/2037/trunk/sqs-editor/src/main/resources/messages_ja.properties
+END

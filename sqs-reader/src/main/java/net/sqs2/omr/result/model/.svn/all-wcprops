@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/model
+END
+RowGroupItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/model/RowGroupItem.java
+END
+SpreadSheetGroupItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/model/SpreadSheetGroupItem.java
+END
+ErrorPageItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/1848/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/model/ErrorPageItem.java
+END
+FormAreaItemList.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/1848/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/model/FormAreaItemList.java
+END
+StatisticsItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/1877/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/model/StatisticsItem.java
+END
+ModelItemList.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/1901/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/model/ModelItemList.java
+END
+FormAreaItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/model/FormAreaItem.java
+END
+ModelItemMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1901/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/model/ModelItemMap.java
+END
+ModelItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/1848/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/model/ModelItem.java
+END
+Label.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/1889/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/model/Label.java
+END
+FreeAnswerItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/model/FreeAnswerItem.java
+END
+QuestionItemList.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/1889/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/model/QuestionItemList.java
+END
+RowItemList.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/1889/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/model/RowItemList.java
+END
+SpreadSheetItemList.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/1875/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/model/SpreadSheetItemList.java
+END
+ImageFileName.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/1877/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/model/ImageFileName.java
+END
+RowItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/model/RowItem.java
+END
+SpreadSheetItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/model/SpreadSheetItem.java
+END
+PageItemList.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1848/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/model/PageItemList.java
+END
+MarkAnswerItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/model/MarkAnswerItem.java
+END
+PageItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/1848/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/model/PageItem.java
+END
+FormMasterItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/1944/trunk/sqs-reader/src/main/java/net/sqs2/omr/result/model/FormMasterItem.java
+END

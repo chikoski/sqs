@@ -1,0 +1,302 @@
+/*
+   Copyright 2008 KUBO Hiroya (hiroya@cuc.ac.jp).
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ */
+
+* {
+  margin: 0; padding: 0;
+}
+html {
+  overflow: auto;
+}
+
+body {
+  overflow: auto;
+}
+
+#popupBar{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 15px;
+	margin: 0;
+	background-color: #008;
+	color: #efece6;
+	
+	border-width: 4px 0px 4px 4px;
+	border-color: #008 #008 #333 #008;
+	border-style: solid; 
+	padding-bottom: 3px;
+	
+	z-index: 3; 
+	white-space: nowrap;
+}
+
+.console{
+  position: fixed;
+  right: 0px;
+  top: 10px;
+   z-index: 3;   
+}
+.questionItem{
+	padding-top: 0.3em;
+}
+
+#consoleContentPanel{
+  margin: 16px 16px 32px 16px;
+  padding: 0 0 8px 0;
+  /*background-color: #ddd;*/
+}
+
+#showLinkDiv{
+  background-color: #ddd;
+}
+
+#consoleTitle{
+   cursor: move;
+   border: solid;
+   border-color: #aaa;
+   border-width:0 0 1px 0;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+
+.buttonItemIcon{
+	margin-right: 0.3em;
+}
+
+.box p, .box ul {
+		margin:0;
+		padding:4px 10px;
+		/*background:#efece6;*/		
+}
+.box ul{
+	   list-style-type: none;
+} 
+
+#consoleCloseButton{
+	  padding:  0 0.3em 0 0.5em;
+}
+
+.fixedAtSouthWestCorner{
+  position: fixed;
+  _position: absolute;
+  z-index: 2;
+  top: auto;
+  left: 0;
+  bottom: 0;
+  _bottom:expression(this.style.filter = '', '0');
+  _left:expression(
+      document.documentElement && document.documentElement.scrollLeft || 
+      document.body && body.scrollLeft || 0
+      + 0 + 'px'
+  );
+}
+.fixedAtSouthEastCorner, .fixedAtBottom{
+  position: fixed;
+  _position: absolute;
+  z-index: 2;
+  top: auto;
+  left: auto;
+  bottom: 0;   
+  right: 0;
+  _bottom:expression(this.style.filter = '', '0');
+  _right: expression(this.style.filter = '', '0');
+}
+
+.fixedAtBottom{
+  width: 100%;
+  color: #008;
+  /*background-color: transparent #888;*/
+  background-color: transparent;
+}
+
+#logger{
+ font-size: 80%;
+}
+
+/* ---------------------- */
+
+
+div.selector h4{
+ padding: 1px;
+ margin: 0;
+ margin-left:1px;
+ color: #008;
+ white-space: nowrap;
+}
+
+div.selector h4 input{
+ font-size: 90%;
+  margin: 0 0 0 0;
+  _margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+div.selector select{
+  background-color: #eee;
+}
+
+div.selector select option, div.selector select optgroup{
+  background-repeat: no-repeat;
+  padding-left: 18px;
+  background-color: #eee;
+}
+
+/* -------------------*/
+div#padding{
+  height: 30px;
+  background: url(/jar/image/hairline.gif) repeat;
+}
+div.padding{
+  height: 400px;
+  background: url(/jar/image/hairline.gif) repeat;
+}
+
+div#contentsPanel{
+  background-color: #eee;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+/* -------------------*/
+div#contentsPanel ul{
+	padding-left: 3em;
+	padding-bottom: 0.5em;
+	background-color: #ddd;
+}
+div#contentsPanel textarea{
+	background-color: #ddd;
+    margin: 0.5em;
+}
+div#contentsPanel textarea:focus{
+   background-color: #fec;
+}
+
+div#contentsPanel ul li{
+    font-size: 90%;
+	margin: 0;
+	padding: 0;
+	border-style: none;
+}
+div#contentsPanel p{
+   color: #444;
+}
+
+/* ---------------------- */
+.hasChanged{
+   color: #800;
+}
+li.m{/* marked */
+ 	background-color:#f97;
+}
+li.s{/* selected */
+	background-color:#ddf;
+}
+li.n{/* no answer */
+ 	background-color:#dd0;
+}
+
+li.Mm{/* manual: marked */
+ 	background-color:#f90;
+}
+li.Ms{/* manual : selected */
+ 	background-color:#99f;
+}
+li.M{/* manual : deselected */
+ 	background-color:#999;
+}
+li.Mn{/* manual: no answer */
+ 	background-color: #ff0;
+}
+
+/* ---------------------- */
+/*
+table.cross thead th{
+ 	background-color:#dfd;
+}
+table.cross tbody th{
+ 	background-color:#dfd;
+}
+table.cross tbody th.l{
+ 	background-color:#ddf;
+}
+table.simple tbody th{
+ 	background-color:#dfd;
+}*/
+
+div.simpleChartTable{
+  float: left;
+  width: 40%;
+}
+div.doubleChartTable{
+  float: left;
+  width: 40%;
+}
+
+img.simpleChartImage{
+  /*position: absolute;*/
+  left: 40%;
+}
+img.doubleChartImage{
+  /*position: absolute;*/
+  left: 40%;
+}
+
+th{
+}
+th.l{
+ 	background-color:#cfc;
+}
+th.na{
+	color:#555;
+}
+th.sum{
+ 	color:#dfd;
+ 	background-color: #666;
+}
+table.cross thead th.e{
+ 	background-color:#eee;
+}
+
+dt{
+  color: #311; 
+ /*font-style: strong;*/
+}
+
+dd{
+  color: #555;
+  font-size: 95%;
+  padding-left: 1em;
+  padding-bottom: 0.5em;
+}
+h3{
+  padding-top: 0.5em;
+ }
+ul{
+ padding-bottom: 0.5em;
+}
+hr{
+ margin-bottom: 0.5em;
+}
+span.per{
+  font-size: 66%;
+  color: #444;
+}
+table.simple tbody tr td{
+  text-align: right; 
+}
+table.cross tbody tr td{
+ text-align: right; 
+}

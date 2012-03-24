@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/2219/trunk/sqs-reader/src/test/java/net/sqs2/omr/app
+END
+AbstractMarkReaderSenarioTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/2213/trunk/sqs-reader/src/test/java/net/sqs2/omr/app/AbstractMarkReaderSenarioTest.java
+END
+ResultBrowserSenarioTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/2213/trunk/sqs-reader/src/test/java/net/sqs2/omr/app/ResultBrowserSenarioTest.java
+END
+MarkReaderStartAndStopSenarioTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/2113/trunk/sqs-reader/src/test/java/net/sqs2/omr/app/MarkReaderStartAndStopSenarioTest.java
+END
+PageImageRendererDemo.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/2213/trunk/sqs-reader/src/test/java/net/sqs2/omr/app/PageImageRendererDemo.java
+END
+MarkReaderExportTextAreaSenarioTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/2213/trunk/sqs-reader/src/test/java/net/sqs2/omr/app/MarkReaderExportTextAreaSenarioTest.java
+END

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+         xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">
+<define name="ul">
+	<a:documentation>箇条書き</a:documentation>
+	<element name="ul" ns="http://www.w3.org/2002/06/xhtml2">
+		<ref name="List.model"/>
+	</element>
+</define>
+
+<define name="ol">
+	<a:documentation>番号付き箇条書き</a:documentation>
+	<element name="ol" ns="http://www.w3.org/2002/06/xhtml2">
+		<ref name="List.model"/>
+	</element>
+</define>
+
+<define name="List.model">
+	<oneOrMore>
+		<ref name="li"/>
+	</oneOrMore>
+</define>
+
+<define name="li">
+	<a:documentation>箇条書き項目</a:documentation>
+	<element name="li" ns="http://www.w3.org/2002/06/xhtml2">
+		<ref name="Flow.model"/>
+	</element>
+</define>
+
+
+<define name="List.class">
+	<choice>
+		<ref name="ul"/>      
+		<ref name="ol"/>
+	</choice>
+</define>
+
+<define name="Block.class" combine="choice">
+	<ref name="List.class"/>
+</define>
+
+</grammar>

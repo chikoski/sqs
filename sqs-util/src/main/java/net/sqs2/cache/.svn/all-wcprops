@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/2218/trunk/sqs-util/src/main/java/net/sqs2/cache
+END
+PersistentCacheManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/2218/trunk/sqs-util/src/main/java/net/sqs2/cache/PersistentCacheManager.java
+END
+PersistentCacheAccessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/2066/trunk/sqs-util/src/main/java/net/sqs2/cache/PersistentCacheAccessor.java
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/1794/trunk/sqs-editor/src/main/java/net/sqs2/editor/base/modules
+END
+AbstractNodeEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/1767/trunk/sqs-editor/src/main/java/net/sqs2/editor/base/modules/AbstractNodeEditor.java
+END
+EditorUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/1732/trunk/sqs-editor/src/main/java/net/sqs2/editor/base/modules/EditorUtil.java
+END
+EmptyEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/1732/trunk/sqs-editor/src/main/java/net/sqs2/editor/base/modules/EmptyEditor.java
+END
+ContentTextEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/1794/trunk/sqs-editor/src/main/java/net/sqs2/editor/base/modules/ContentTextEditor.java
+END
+UpdateListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/1732/trunk/sqs-editor/src/main/java/net/sqs2/editor/base/modules/UpdateListener.java
+END
+ContainerEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/1732/trunk/sqs-editor/src/main/java/net/sqs2/editor/base/modules/ContainerEditor.java
+END
+UpdateTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/1732/trunk/sqs-editor/src/main/java/net/sqs2/editor/base/modules/UpdateTarget.java
+END

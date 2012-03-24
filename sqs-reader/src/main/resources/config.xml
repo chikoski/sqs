@@ -1,0 +1,64 @@
+<config version="2.1.1">
+	<sources>
+		<source>
+			<frame>
+
+				<!--
+					"deskewGuideArea" element describes header or footer of a target image which contains a set of black square marks called "Guide Block".
+					@param density  Extracting threshold density value(0.0-1.0) to find black pixels. The default value is 0.5.   
+					@param height     Extracting ratio(0.0-1.0) of page height. The default value is 0.10.
+					@param horizontalMargin    Side skip margin ratio(0.0-1.0) of page width. The default value is 0.10.
+					@param headerVerticalMargin    Header skip margin ratio(0.0-1.0) of page height. The default value is 0.005.
+					@param footerVerticalMargin    Footer skip margin ratio(0.0-1.0) of page height. The default value is 0.005.
+					@param debug      Debug information is shown in console when this param set to true. The default value is false.
+				-->
+				<deskewGuideArea density="0.5" height="0.12"
+					horizontalMargin="0.03" 
+					headerVerticalMargin="0.001" footerVerticalMargin="0.001"
+					debug="true">
+
+				</deskewGuideArea>
+
+				<!--
+					"validation" element describes page frame distortion validation threshold..
+					@param horizontalDistortion Horizontal distortion allowed threshold ratio(0.0-1.0). The default value is 0.03.
+					@param verticalDistortion   Vertical distortion allowed threshold ratio(0.0-1.0). The default value is 0.03.
+				-->
+				<validation
+					checkUpsideDown="true"
+					checkEvenOdd="true"
+					checkDistortion="true"
+					horizontalDistortion="0.03"
+					verticalDistortion="0.03" />
+	
+			</frame>
+			<!--
+				"markRecognition" element describes mark recognition related settings.
+				@param algorithm Mark recognition algorithm. See constants defined in class MarkRecognitionConfig. default is "convolution5x3AverageDensity"
+				
+				@param markRecognitionDensityThreshold default value is 0.94
+				@param doubleMarkErrorSuppressionThreshold default value is 0.10
+				@param noMarkErrorSuppressionThreshold default value is 0.10
+				
+				@param resolutionScale Scale factor of bitmap sampling resolution of mark fields. default value is 2.0
+				
+				@param horizontalTrim Horizontal shift trim value of mark fields. The unit is pixels(72dpi).The default value is 0.5.
+				@param verticalTrim Vertical shift trim value of mark fields. The unit is pixels(72dpi). The default value is 0.
+				
+				@param horizontalMargin Horizontal skip margin width of mark fields. The unit is pixels(72dpi). A negative value makes narrow the mark fields. The default value is 0.5.
+				@param verticalMargin Vertical skip margin height of mark fields. The unit is in pixels(72dpi). A negative value makes narrow the mark fields. The default value is -2.
+			-->
+			<markRecognition
+							  algorithm="convolution5x3AverageDensity"
+							  markRecognitionDensityThreshold="0.94"
+							  doubleMarkErrorSuppressionThreshold="0.0313"  
+							  noMarkErrorSuppressionThreshold="0.319"
+							  resolutionScale="2.0"
+							  horizontalTrim="0.5"
+							  verticalTrim="0"
+							  horizontalMargin="0.5"
+							  verticalMargin="-2" />
+		</source>
+	</sources>
+
+</config>

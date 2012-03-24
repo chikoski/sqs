@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/master/pdfbookmark
+END
+BookmarkToSQMTranslator.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/1820/trunk/sqs-reader/src/main/java/net/sqs2/omr/master/pdfbookmark/BookmarkToSQMTranslator.java
+END
+PDFBookMarkFormAreaFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/1820/trunk/sqs-reader/src/main/java/net/sqs2/omr/master/pdfbookmark/PDFBookMarkFormAreaFactory.java
+END
+PDFBookmarkFormMasterFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/2169/trunk/sqs-reader/src/main/java/net/sqs2/omr/master/pdfbookmark/PDFBookmarkFormMasterFactory.java
+END
+FormMasterConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/1820/trunk/sqs-reader/src/main/java/net/sqs2/omr/master/pdfbookmark/FormMasterConstants.java
+END
+PDFtoBookmarkTranslator.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/2115/trunk/sqs-reader/src/main/java/net/sqs2/omr/master/pdfbookmark/PDFtoBookmarkTranslator.java
+END
+PDFBookmarkToSQMTranslator.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/master/pdfbookmark/PDFBookmarkToSQMTranslator.java
+END

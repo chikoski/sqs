@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="MarkReaderTestSuite" verbose="1">
+  
+  <parameter name="debug" value="true"/>
+  
+  <test name="UnitTest">
+    <packages>
+      <package name="net.sqs2.template"/>
+      <package name="net.sqs2.omr.util"/>
+      
+      <package name="net.sqs2.omr.master"/>
+      <package name="net.sqs2.omr.config"/>
+      <package name="net.sqs2.omr.deskew"/>
+            
+    </packages>
+  </test>
+  
+  <test name="ComponentTest">
+    <packages>
+      <package name="net.sqs2.omr.session.logic"/>
+      <package name="net.sqs2.omr.session.broker.impl"/>
+    </packages>
+  </test>
+
+  <!--
+    <test name="ComponentTest">
+    <groups>
+      <run>
+        <exclue name="delete"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="sample.UserManagerTest"/>
+      <class name="..."/>
+    </classes>
+    <packages>
+      <package name="sample.performance"/>
+    </packages>
+  </test>
+  -->
+</suite>

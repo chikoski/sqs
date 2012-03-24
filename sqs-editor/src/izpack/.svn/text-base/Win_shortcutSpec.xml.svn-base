@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<shortcuts>
+<skipIfNotSupported />
+
+
+<programGroup defaultName="SQS SourceEditor"
+location="applications"/>
+
+<shortcut
+name="SQS SourceEditor"
+target="$INSTALL_PATH\bin\SourceEditor.bat"
+commandLine=""
+workingDirectory="$INSTALL_PATH\bin"
+description="This starts SQS SourceEditor"
+iconFile="$INSTALL_PATH\bin\SourceEditor.ico"
+iconIndex="0"
+initialState="noShow"
+programGroup="yes"
+desktop="no"
+applications="yes"
+startMenu="no"
+startup="no">
+  <createForPack name="Base"/>
+</shortcut>
+
+<shortcut
+name="SQS SourceEditor Document"
+target="$INSTALL_PATH\doc"
+commandLine=""
+workingDirectory="$INSTALL_PATH\doc"
+description="SQS SourceEditor Document"
+iconIndex="0"
+programGroup="yes"
+desktop="no"
+applications="no"
+startMenu="no"
+startup="no">
+  <createForPack name="Docs"/>
+</shortcut>
+
+
+</shortcuts>

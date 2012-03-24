@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:sqs="http://sqs.cmr.sfc.keio.ac.jp/2004/sqs" xmlns:xforms="http://www.w3.org/2002/xforms" >
+<head> 
+ <title>★★★★に関する調査（YY年MM月実施）</title>
+ <meta content="★★★★に関する調査（YY年MM月実施）" name="DC.Title"/>
+ <meta content="調査YY年MM月" name="DC.Title.Short"/>
+ <meta content="△△△△" name="DC.Creator"/>
+ <meta content="キーワード1,キーワード2,キーワード3" name="DC.Subject"/>
+ <meta content="対象範囲" name="DC.Coverage"/>
+ <meta content="YYYY-MM-DD" name="DCTERMS.Created" scheme="DCTERMS.W3CDTF"/>
+ <meta content="YYYY-MM-DD/YYYY-MM-DD" name="DCTERMS.Valid" scheme="DCTERMS.W3CDTF"/>
+ <meta content="class://net.sf.sqs_xml.anchor.TemplateAnchor/discover-importance-satisfaction.sqs" name="SQS.TemplateID" scheme="SQS.PDCA"/> 
+</head> 
+<body>
+
+
+<h>★★★★に関する調査</h>
+
+<p>　</p>
+
+<p>　★★★★に関する以下の項目について、あなたの考えをお聞かせください。</p>
+
+<p>　</p>
+
+<sqs:warning>
+
+<p>
+選択式の回答は、該当箇所のマーク<sqs:mark/>を塗りつぶしてご回答ください。
+</p>
+
+<sqs:marking-example/>
+
+<p>
+記述式の回答は、回答欄からはみ出さないように記入してください。</p>
+
+<p>
+この用紙は機械で処理します。回答欄以外に書き込みをしたり、用紙を汚したり、折り目を付けたりしないように注意してください。
+</p>
+
+</sqs:warning>
+
+
+<p>　</p>
+
+<sqs:matrix-forms sqs:form-width-ratio="0.5">
+
+<xforms:hint>【設問グループ】□□□□□についてお伺いします。以下の各項目について、あなたは「(A)どのくらい重要だと思うか【重要度】」と「(B)どれくらい満足しているか【満足度】」をお答えください。
+<br/>
+　（(A)と(B)の両方の該当する箇所（各項目１カ所づつ）を塗りつぶしてください）
+<br/>　<br/>
+</xforms:hint>
+
+<sqs:row-array>
+  <xforms:group>
+    <xforms:hint>□□が、△△△△△△△△をすること1</xforms:hint>
+  </xforms:group>
+  <xforms:group>
+    <xforms:hint>□□が、△△△△△△△△をすること2</xforms:hint>
+  </xforms:group>
+  <xforms:group>
+    <xforms:hint>□□が、△△△△△△△△をすること3</xforms:hint>
+  </xforms:group>
+  <xforms:group>
+    <xforms:hint>□□が、△△△△△△△△をすること4</xforms:hint>
+  </xforms:group>
+  <xforms:group>
+    <xforms:hint>□□が、△△△△△△△△をすること5</xforms:hint>
+  </xforms:group>
+  <xforms:group>
+    <xforms:hint>□□が、△△△△△△△△をすること6</xforms:hint>
+  </xforms:group>
+  <xforms:group>
+    <xforms:hint>□□が、△△△△△△△△をすること7</xforms:hint>
+  </xforms:group>
+  <xforms:group>
+    <xforms:hint>□□が、△△△△△△△△をすること8</xforms:hint>
+  </xforms:group>
+  <xforms:group>
+    <xforms:hint>□□が、△△△△△△△△をすること9</xforms:hint>
+  </xforms:group>
+  <xforms:group>
+    <xforms:hint>□□が、△△△△△△△△をすること10</xforms:hint>
+  </xforms:group>
+  <xforms:group>
+    <xforms:hint>□□が、△△△△△△△△をすること11</xforms:hint>
+  </xforms:group>
+  <xforms:group>
+    <xforms:hint>□□が、△△△△△△△△をすること12</xforms:hint>
+  </xforms:group>
+  <xforms:group>
+    <xforms:hint>□□が、△△△△△△△△をすること13</xforms:hint>
+  </xforms:group>
+  <xforms:group>
+    <xforms:hint>□□が、△△△△△△△△をすること14</xforms:hint>
+  </xforms:group>
+  <xforms:group>
+    <xforms:hint>□□が、△△△△△△△△をすること15</xforms:hint>
+  </xforms:group>
+  <xforms:group>
+    <xforms:hint>□□が、△△△△△△△△をすること16</xforms:hint>
+  </xforms:group>
+  <xforms:group>
+    <xforms:hint>□□が、△△△△△△△△をすること17</xforms:hint>
+  </xforms:group>
+  <xforms:group>
+    <xforms:hint>□□が、△△△△△△△△をすること18</xforms:hint>
+  </xforms:group>
+
+</sqs:row-array>
+	
+<sqs:column-array>
+
+ <sqs:select1>
+ <xforms:hint>(A)重要度 </xforms:hint>
+ <xforms:item>
+   <xforms:label>大変重要である</xforms:label>
+   <xforms:value>1</xforms:value>
+ </xforms:item>
+ <xforms:item>
+   <xforms:label>やや重要である</xforms:label>
+   <xforms:value>2</xforms:value>
+ </xforms:item>
+ <xforms:item>
+   <xforms:label>あまり重要でない</xforms:label>
+   <xforms:value>3</xforms:value>
+ </xforms:item>
+ <xforms:item>
+   <xforms:label>重要でない</xforms:label>
+   <xforms:value>4</xforms:value>
+ </xforms:item>
+ </sqs:select1>
+
+ <sqs:select1>
+   <xforms:hint>(B)満足度</xforms:hint>
+ <xforms:item>
+   <xforms:label>大変満足している</xforms:label>
+   <xforms:value>1</xforms:value>
+ </xforms:item>
+ <xforms:item>
+   <xforms:label>やや満足している</xforms:label>
+   <xforms:value>2</xforms:value>
+ </xforms:item>
+ <xforms:item>
+   <xforms:label>あまり満足していない</xforms:label>
+   <xforms:value>3</xforms:value>
+ </xforms:item>
+ <xforms:item>
+   <xforms:label>全く満足していない</xforms:label>
+   <xforms:value>4</xforms:value>
+ </xforms:item>
+<xforms:item>
+   <xforms:label>わからない</xforms:label>
+   <xforms:value>5</xforms:value>
+ </xforms:item>
+ </sqs:select1>
+
+
+</sqs:column-array>
+
+</sqs:matrix-forms>
+
+<p>　</p>
+
+<h>【参考】以下、質問形式の例です。編集・複製して利用してください。</h>
+
+<p>　</p>
+	
+<xforms:select1 sqs:cols="6">
+
+<xforms:hint>【択一選択設問】あなたの年齢は？</xforms:hint> 	
+
+<xforms:item>
+  <xforms:label>20〜29歳</xforms:label>
+  <xforms:value>1</xforms:value>
+</xforms:item>	
+
+<xforms:item>
+  <xforms:label>30〜39歳</xforms:label>
+  <xforms:value>2</xforms:value>
+</xforms:item>	
+
+<xforms:item>
+  <xforms:label>40〜49歳</xforms:label>
+  <xforms:value>3</xforms:value>
+</xforms:item>	
+
+<xforms:item>
+  <xforms:label>50〜59歳</xforms:label>
+  <xforms:value>4</xforms:value>
+</xforms:item>
+
+<xforms:item>
+  <xforms:label>60〜69歳</xforms:label>
+  <xforms:value>5</xforms:value>
+</xforms:item>	
+
+<xforms:item>
+  <xforms:label>70歳以上</xforms:label>
+  <xforms:value>6</xforms:value>
+</xforms:item>	
+
+</xforms:select1>
+
+<p>　</p>
+
+<xforms:select1 sqs:cols="1">
+
+<xforms:hint>【択一選択設問】□□□□□についてお伺いします。以下の項目から、あなたの考えに合うものを１つ選んでください。（１つにマーク）
+</xforms:hint>
+
+<xforms:item>
+  <xforms:label>□□が、△△△△△△△△をすること1</xforms:label>
+  <xforms:value>1</xforms:value>
+</xforms:item>	
+
+<xforms:item>
+  <xforms:label>□□が、△△△△△△△△をすること2</xforms:label>
+  <xforms:value>2</xforms:value>
+</xforms:item>	
+
+<xforms:item>
+  <xforms:label>□□が、△△△△△△△△をすること3</xforms:label>
+  <xforms:value>3</xforms:value>
+</xforms:item>	
+
+<xforms:item>
+  <xforms:label>□□が、△△△△△△△△をすること4</xforms:label>
+  <xforms:value>4</xforms:value>
+</xforms:item>
+
+<xforms:item>
+  <xforms:label>□□が、△△△△△△△△をすること5</xforms:label>
+  <xforms:value>5</xforms:value>
+</xforms:item>
+
+
+<xforms:item>
+  <xforms:label>□□が、△△△△△△△△をすること6</xforms:label>
+  <xforms:value>6</xforms:value>
+</xforms:item>
+
+</xforms:select1>
+
+<p>　</p>
+
+<xforms:select sqs:cols="5">
+
+<xforms:hint>【複数選択設問】お子さんが通う学校は？（複数回答可）
+</xforms:hint>
+
+<xforms:item>
+  <xforms:label>小学校</xforms:label>
+  <xforms:value>1</xforms:value>
+</xforms:item>	
+
+<xforms:item>
+  <xforms:label>中学校</xforms:label>
+  <xforms:value>2</xforms:value>
+</xforms:item>	
+
+<xforms:item>
+  <xforms:label>高校</xforms:label>
+  <xforms:value>3</xforms:value>
+</xforms:item>	
+
+<xforms:item>
+  <xforms:label>専門学校・予備校</xforms:label>
+  <xforms:value>4</xforms:value>
+</xforms:item>
+
+<xforms:item>
+  <xforms:label>大学</xforms:label>
+  <xforms:value>5</xforms:value>
+</xforms:item>	
+
+</xforms:select>
+
+
+<p>　</p>
+<xforms:textarea sqs:height="130" sqs:width="450">
+<xforms:hint>【自由記述設問】□□□に関してご意見・ご感想がございましたら、ご記入ください</xforms:hint>
+</xforms:textarea>
+
+
+</body>
+</html>

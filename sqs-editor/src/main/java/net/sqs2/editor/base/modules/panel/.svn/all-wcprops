@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/1732/trunk/sqs-editor/src/main/java/net/sqs2/editor/base/modules/panel
+END
+ContentTextPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/1732/trunk/sqs-editor/src/main/java/net/sqs2/editor/base/modules/panel/ContentTextPanel.java
+END
+AbstractNodeEditorPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/1732/trunk/sqs-editor/src/main/java/net/sqs2/editor/base/modules/panel/AbstractNodeEditorPanel.java
+END
+AbstractSingleNodeEditorPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/1732/trunk/sqs-editor/src/main/java/net/sqs2/editor/base/modules/panel/AbstractSingleNodeEditorPanel.java
+END

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!--
+		Licensed to the Apache Software Foundation (ASF) under one or more
+		contributor license agreements. See the NOTICE file distributed with
+		this work for additional information regarding copyright ownership.
+		The ASF licenses this file to You under the Apache License, Version
+		2.0 (the "License"); you may not use this file except in compliance
+		with the License. You may obtain a copy of the License at
+
+		http://www.apache.org/licenses/LICENSE-2.0 Unless required by
+		applicable law or agreed to in writing, software distributed under the
+		License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+		CONDITIONS OF ANY KIND, either express or implied. See the License for
+		the specific language governing permissions and limitations under the
+		License.
+	-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>net.sqs2</groupId>
+	<artifactId>sqs-util</artifactId>
+	<version>1.4.11</version>
+	<packaging>jar</packaging>
+
+	<name>SQS Utilities</name>
+
+	<!--
+		<parent> <groupId>net.sqs2</groupId> <artifactId>sqs</artifactId>
+		<version>2.0-SNAPSHOT</version> </parent>
+	-->
+	<url>http://sqs2.net/</url>
+
+	<description>
+  </description>
+
+	<inceptionYear>2003</inceptionYear>
+
+  <mailingLists>
+      <mailingList>
+      <name>${project.name} User List</name>
+      <subscribe>http://groups.google.co.jp/group/sqs-users/subscribe</subscribe>
+      <archive>http://groups.google.co.jp/group/sqs-users</archive>
+    </mailingList>
+  </mailingLists>
+
+	<developers>
+		<developer>
+			<name>Hiroya KUBO</name>
+			<email>hiroya@cuc.ac.jp</email>
+			<organization>Chiba University of Commerce</organization>
+			<organizationUrl>http://www.cuc.ac.jp/</organizationUrl>
+			<roles>
+				<role>Project Manager</role>
+				<role>Java Developer</role>
+			</roles>
+			<timezone>-9</timezone>
+		</developer>
+	</developers>
+
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<scm>
+		<connection>scm:svn:http://diaspora.prof.cuc.ac.jp/svn/trunk/sqs-util</connection>
+		<developerConnection>scm:svn:svn+ssh://diaspora.prof.cuc.ac.jp/var/lib/svn/trunk/sqs-util</developerConnection>
+		<url>http://diaspora.prof.cuc.ac.jp/svn/trunk/sqs-util</url>
+	</scm>
+
+
+	<organization>
+		<name>sqs2.net</name>
+		<url>http://sqs2.net/</url>
+	</organization>
+		
+	<build>
+		<sourceDirectory>src/main/java</sourceDirectory>
+		<testSourceDirectory>src/test/java</testSourceDirectory>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.1</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+	        <plugin>
+    	    	<groupId>org.apache.maven.plugins</groupId>
+        		<artifactId>maven-resources-plugin</artifactId>
+        		<version>2.4.3</version>
+        		<configuration>
+          			<encoding>UTF-8</encoding>
+        		</configuration>
+      		</plugin>
+			<plugin>
+    			<groupId>org.apache.maven.plugins</groupId>
+    			<artifactId>maven-surefire-plugin</artifactId>
+        		<version>2.6</version>
+  			</plugin>
+			
+		</plugins>
+  
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+         <artifactId>wagon-ssh-external</artifactId>
+         <version>1.0-beta-6</version>
+      </extension>
+    </extensions>
+		
+	</build>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>codehaus repository</id>
+			<url>http://repository.codehaus.org/</url>
+		</pluginRepository>
+		<!--
+			<pluginRepository> <id>local repository</id>
+			<url>file:///home/hiroya/.m2/repository</url> </pluginRepository>
+		-->
+	</pluginRepositories>
+
+	<repositories>
+		<repository>
+			<id>mvnrepository</id>
+			<url>http://mvnrepository.com/artifact</url>
+		</repository>
+
+<!-- 
+		<repository>
+			<id>diaspora.prof.cuc.ac.jp</id>
+			<name>SQS Project Repository</name>
+			<url>scp://diaspora.prof.cuc.ac.jp/var/www/maven2</url>
+		</repository>
+		 -->
+	</repositories>
+
+	<reporting>	
+		<plugins>
+			<plugin>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.7</version>
+				<configuration>
+					<charset>UTF-8</charset>
+				</configuration>
+			</plugin>
+		</plugins>
+	</reporting>
+	<dependencyManagement>
+		<dependencies>
+		</dependencies>
+	</dependencyManagement>
+
+	<distributionManagement>
+		<repository>
+			<id>scp-repository</id>
+			<url>scp://diaspora.prof.cuc.ac.jp:/var/www/maven2</url>
+		</repository>
+	</distributionManagement>
+
+	<dependencies>
+
+		<!-- misc jar -->
+		<dependency>
+			<groupId>jnlp</groupId>
+			<artifactId>jnlp</artifactId>
+			<version>1.6.0</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.12</version>
+		</dependency>
+		<dependency>
+			<groupId>backport-util-concurrent</groupId>
+			<artifactId>backport-util-concurrent</artifactId>
+			<version>3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.jsr107cache</groupId>
+			<artifactId>jsr107cache</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mortbay.jetty</groupId>
+			<artifactId>jetty</artifactId>
+			<version>6.1.9</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mortbay.jetty</groupId>
+			<artifactId>jetty-util</artifactId>
+			<version>6.1.9</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mortbay.jetty</groupId>
+			<artifactId>servlet-api-2.5</artifactId>
+			<version>6.1.9</version>
+		</dependency>
+		<dependency>
+			<groupId>xerces</groupId>
+			<artifactId>xercesImpl</artifactId>
+			<version>2.9.1</version>
+		</dependency>
+		<dependency>
+			<groupId>xalan</groupId>
+			<artifactId>xalan</artifactId>
+			<version>2.7.1</version>
+		</dependency>
+		<dependency>
+			<groupId>xalan</groupId>
+			<artifactId>serializer</artifactId>
+			<version>2.7.1</version>
+		</dependency>
+		<dependency>
+			<groupId>xml-apis</groupId>
+			<artifactId>xml-apis</artifactId>
+			<version>1.0.b2</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>1.4</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.4</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>1.3</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+			<version>3.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sourceforge.collections</groupId>
+			<artifactId>collections-generic</artifactId>
+			<version>4.01</version>
+		</dependency>
+	<dependency>
+			<groupId>gettext-commons</groupId>
+			<artifactId>gettext-commons</artifactId>
+			<version>0.9</version>
+		</dependency>
+		
+	<dependency>
+		<groupId>org.testng</groupId>
+		<artifactId>testng</artifactId>
+		<version>5.14</version>
+		<scope>test</scope>
+
+	</dependency>
+
+		<!-- Ehcache jar -->
+
+		<!-- Jetty jar -->
+
+		<!-- Apache XML jar -->
+
+		<dependency>
+			<groupId>org.apache.pdfbox</groupId>
+			<artifactId>pdfbox</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>net.sf.ehcache</groupId>
+			<artifactId>ehcache</artifactId>
+			<version>2.1.0</version>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.ehcache</groupId>
+			<artifactId>ehcache-core</artifactId>
+			<version>2.1.0</version>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.ehcache</groupId>
+			<artifactId>ehcache-terracotta</artifactId>
+			<version>2.1.0</version>
+			<type>pom</type>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>1.5.11</version>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.5.11</version>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-parent</artifactId>
+			<version>1.5.8</version>
+			<type>pom</type>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.lowagie</groupId>
+			<artifactId>itext</artifactId>
+			<version>2.0.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.xmlgraphics</groupId>
+			<artifactId>xmlgraphics-commons</artifactId>
+			<version>1.4</version>
+		</dependency>
+		
+	</dependencies>
+
+</project>

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/output
+END
+MarkReadStatusOutputModule.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/output/MarkReadStatusOutputModule.java
+END
+DummyExportModule.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/output/DummyExportModule.java
+END
+OutputEventAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/output/OutputEventAdapter.java
+END
+OutputStopException.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/2185/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/output/OutputStopException.java
+END
+OutputModule.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/output/OutputModule.java
+END
+OutputGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/output/OutputGenerator.java
+END
+OutputEventFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/2185/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/output/OutputEventFilter.java
+END
+MarkReadStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/2185/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/output/MarkReadStatus.java
+END
+InsideSpreadSheetOutputEventFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/2185/trunk/sqs-reader/src/main/java/net/sqs2/omr/session/output/InsideSpreadSheetOutputEventFilter.java
+END

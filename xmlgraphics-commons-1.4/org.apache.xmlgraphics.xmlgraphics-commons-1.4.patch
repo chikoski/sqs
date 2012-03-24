@@ -1,0 +1,49 @@
+Index: src/java/org/apache/xmlgraphics/image/loader/spi/ImageImplRegistry.java
+===================================================================
+--- src/java/org/apache/xmlgraphics/image/loader/spi/ImageImplRegistry.java	(revision 996566)
++++ src/java/org/apache/xmlgraphics/image/loader/spi/ImageImplRegistry.java	(working copy)
+@@ -105,21 +105,44 @@
+     public void discoverClasspathImplementations() {
+         //Dynamic registration of ImagePreloaders
+         Iterator iter = Service.providers(ImagePreloader.class, true);
++        boolean MANUAL_REGISTRATION_OF_FOPCLASSES = true;
+         while (iter.hasNext()) {
+             registerPreloader((ImagePreloader)iter.next());
+         }
++        if(MANUAL_REGISTRATION_OF_FOPCLASSES){
++        	try{
++        		registerPreloader((ImagePreloader)Class.forName("org.apache.fop.image.loader.batik.PreloaderSVG").newInstance());
++        	}catch(IllegalAccessException ignore){
++        	}catch(InstantiationException ignore){
++        	}catch(ClassNotFoundException ignore){}
++        }
+ 
+         //Dynamic registration of ImageLoaderFactories
+         iter = Service.providers(ImageLoaderFactory.class, true);
+         while (iter.hasNext()) {
+             registerLoaderFactory((ImageLoaderFactory)iter.next());
+         }
++        if(MANUAL_REGISTRATION_OF_FOPCLASSES){
++        	try{
++        		registerLoaderFactory((ImageLoaderFactory)Class.forName("org.apache.fop.image.loader.batik.ImageLoaderFactorySVG").newInstance());
++        	}catch(IllegalAccessException ignore){
++        	}catch(InstantiationException ignore){
++        	}catch(ClassNotFoundException ignore){}
++
++        }
+ 
+         //Dynamic registration of ImageConverters
+         iter = Service.providers(ImageConverter.class, true);
+         while (iter.hasNext()) {
+             registerConverter((ImageConverter)iter.next());
+         }
++        if(MANUAL_REGISTRATION_OF_FOPCLASSES){
++        	try{
++        		registerConverter((ImageConverter)Class.forName("org.apache.fop.image.loader.batik.ImageConverterSVG2G2D").newInstance());
++        	}catch(IllegalAccessException ignore){
++        	}catch(InstantiationException ignore){
++        	}catch(ClassNotFoundException ignore){}
++        }
+     }
+ 
+     /**

@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fop version="1.0">
+
+  <!-- Base URL for resolving relative URLs -->
+  <base>class://IPAFont/font/</base>
+
+  <!-- Font Base URL for resolving relative font URLs -->
+  <font-base>class://IPAFont/font/</font-base>
+
+  <!-- Source resolution in dpi (dots/pixels per inch) for determining the size of pixels in SVG and bitmap images, default: 72dpi -->
+  <source-resolution>72</source-resolution>
+  <!-- Target resolution in dpi (dots/pixels per inch) for specifying the target resolution for generated bitmaps, default: 72dpi -->
+  <target-resolution>72</target-resolution>
+
+  <!-- default page-height and page-width, in case
+       value is specified as auto -->
+  <default-page-settings height="auto" width="auto"/>
+  
+  <renderers>
+    <renderer mime="application/pdf">
+      <filterList>
+        <!-- provides compression using zlib flate (default is on) -->
+        <value>flate</value>
+      </filterList>
+
+      <auto-rotate-landscape>true</auto-rotate-landscape>
+
+      <fonts>
+   
+   <font metrics-url="ipag.xml" embed-url="ipag.ttf" kerning="yes">
+    <font-triplet name="Gothic" style="normal" weight="normal"/>
+    <font-triplet name="Gothic" style="normal" weight="bold"/>
+    <font-triplet name="Gothic" style="italic" weight="normal"/>
+    <font-triplet name="Gothic" style="italic" weight="bold"/>
+   </font>
+   
+   <font metrics-url="ipam.xml" embed-url="ipam.ttf" kerning="yes">
+    <font-triplet name="Mincho" style="normal" weight="normal"/>
+    <font-triplet name="Mincho" style="normal" weight="bold"/>
+    <font-triplet name="Mincho" style="italic" weight="normal"/>
+    <font-triplet name="Mincho" style="italic" weight="bold"/>
+   </font>
+
+   <font metrics-url="ipagp.xml" embed-url="ipagp.ttf" kerning="yes">
+    <font-triplet name="PGothic" style="normal" weight="normal"/>
+    <font-triplet name="PGothic" style="normal" weight="bold"/>
+    <font-triplet name="PGothic" style="italic" weight="normal"/>
+    <font-triplet name="PGothic" style="italic" weight="bold"/>
+   </font>
+   <font metrics-url="ipamp.xml" embed-url="ipamp.ttf" kerning="yes">
+    <font-triplet name="PMincho" style="normal" weight="normal"/>
+    <font-triplet name="PMincho" style="normal" weight="bold"/>
+    <font-triplet name="PMincho" style="italic" weight="normal"/>
+    <font-triplet name="PMincho" style="italic" weight="bold"/>
+   </font>
+
+      <auto-detect/>
+
+
+      </fonts>
+    </renderer>
+
+<!--
+    <renderer mime="application/postscript">-->
+      <!-- This option forces the PS renderer to rotate landscape pages -->
+      <!--auto-rotate-landscape>true</auto-rotate-landscape-->
+      
+      <!-- This option lets you specify additional options on an XML handler -->
+      <!--xml-handler namespace="http://www.w3.org/2000/svg">
+        <stroke-text>false</stroke-text>
+      </xml-handler-->
+<!--    </renderer>-->
+
+<!--
+    <renderer mime="application/vnd.hp-PCL">
+    </renderer>
+-->
+
+    <!-- MIF does not have a renderer
+    <renderer mime="application/vnd.mif">
+    </renderer>
+    -->
+
+<!--
+    <renderer mime="image/svg+xml">
+      <format type="paginated"/>
+      <link value="true"/>
+      <strokeText value="false"/>
+    </renderer>
+-->
+
+    <renderer mime="application/awt">
+    </renderer>
+
+    <renderer mime="text/xml">
+    </renderer>
+
+    <!-- RTF does not have a renderer
+    <renderer mime="text/rtf">
+    </renderer>
+    -->
+
+<renderer mime="image/png">
+  <transparent-page-background>true</transparent-page-background>
+  <fonts><!-- described elsewhere --></fonts>
+</renderer>
+<renderer mime="image/tiff">
+  <transparent-page-background>true</transparent-page-background>
+  <compression>PackBits<!--CCITT T.6--></compression>
+  <fonts><!-- described elsewhere --></fonts>
+</renderer>
+
+<!--
+    <renderer mime="text/plain">
+      <pageSize columns="80"/>
+    </renderer>
+-->
+
+  </renderers>
+
+</fop>

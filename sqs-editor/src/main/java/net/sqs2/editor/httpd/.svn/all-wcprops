@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/2106/trunk/sqs-editor/src/main/java/net/sqs2/editor/httpd
+END
+SQSHttpdManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/2106/trunk/sqs-editor/src/main/java/net/sqs2/editor/httpd/SQSHttpdManager.java
+END
+TempFileContentServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/1767/trunk/sqs-editor/src/main/java/net/sqs2/editor/httpd/TempFileContentServlet.java
+END
+SourceEditorHttpd.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/1794/trunk/sqs-editor/src/main/java/net/sqs2/editor/httpd/SourceEditorHttpd.java
+END

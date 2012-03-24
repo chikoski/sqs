@@ -1,0 +1,178 @@
+hour.label=hour 
+min.label=min 
+sec.label=sec
+item.master.label=Master
+item.folder.label=Table
+item.rowgroup.label=RowGroup
+item.row.label=Row
+
+menu.File=File
+menu.File.Open=Open...
+menu.File.LogOpen=Open Log...
+menu.File.deleteResultFolders=Delete ResultFolders...
+menu.File.deleteResultFolders.confirm=Do you want to delete all of ResultFolders in the specified folder?
+menu.File.Quit=Quit
+
+menu.Config=Config
+menu.Config.sourceFolder=MarkRecognition config..
+menu.Config.SearchAncestorDirectory=Search PDF in upper folder
+menu.Config.Sound=Sound Enabled
+menu.Config.ExportTextAreaImage=Export FreeAnswer Images
+menu.Config.ExportChartImage=Export Chart Images
+menu.Config.ExportSpreadSheet=Export Tabular Data Files
+menu.Config.OpenResultBrowser=Open Result Browser
+menu.Config.EnableCluster=Parallel Distributed Execution
+menu.Config.ResultFolderName=ResultFolderName...
+
+menu.Help=Help
+menu.Help.HelpMenu=Help Menu
+menu.Help.About=About...
+menu.Help.LicenseTerms=License Terms...
+
+exit.confirmation.label=Exit Confirmation
+exit.confirmation.message=Exit Application. OK?
+session.prompt.message1=<html><p>To start OMR engine, Drag & Drop your folder in this window,  
+session.prompt.message2=<ul><li>The folder must contain:<ul><li>a PDF file(OMR Form print master)</li><li>a number of scanned image files(OMR form answer sheet)</li></ul></li></ul>
+session.prompt.message3=</html>
+
+session.process.config.default.label=Default Configuration
+session.process.config.folder.label=Configuration
+session.process.recognition.title=Mark Recognition Configuration
+session.process.recognition.density.label=<html>Mark Recognition Density Threshold: marked(black) or not(white)</html>
+session.process.recognition.doublemark.suppression.label=Double mark error suppression
+session.process.recognition.nomark.suppression.label=No mark error suppression
+session.process.recognition.density.tooltip=Move left to decrese no mark errors, right to decrese double mark errors
+session.process.recognition.doublemark.suppression.tooltip=Move left to decrese double mark errrors
+session.process.recognition.nomark.suppression.tooltip=Move left to decrese no mark errrors
+
+session.start.label=Start
+session.restart.label=Restart
+session.config.label=Config
+session.stop.label=Stop
+
+session.read.label=Read
+session.error1.label=PageErrorCorrection
+session.error2.label=MarkErrorCorrection
+session.export.label=Export
+session.result.label=Result
+session.close.label=Close this session
+session.close.tooltip=Close this session
+session.stop.tooltip=Stop this session
+session.restart.tooltip=Restart this session
+session.config.tooltip=Configure this session
+
+session.finish.label=Finish session
+session.finish.message=The session has finished.
+session.export.message=The result has exported in:
+session.browse.prompt.message=Open the result with browser?
+
+session.process.numFiles.total=Total
+session.process.numFiles.reused=Reused
+session.process.numFiles.prepared=Prepared
+session.process.numFiles.leasedLocal=LeasedLocally
+session.process.numFiles.leasedRemote=LeasedRemotely
+session.process.numFiles.submitted=Submitted
+session.process.numFiles.error=Error
+session.process.numFiles.externalized=Finished
+
+session.process.timeElapsed=TimeElapsed
+session.process.timeRemains=TimeLeft
+session.process.rate=Rate
+session.process.rate.unit=files/sec
+session.process.sec=sec
+
+session.error.label=Errors
+
+omr.sessionFinishedMessage=Session finished.
+omr.sessionFinishedOpenBrowserPromptMessage=Browse result?
+omr.sessionFinishedTitle=Session finished
+
+dialog.ExitConfirmationMessage=Really exit?
+dialog.ExitConfirmationTitle=ExitConfirmation
+dialog.NoPdfSourceFolderWarningMessage=There is no .pdf file. \n     Shall I search .pdf files from ancestor/descenant folders?
+dialog.StartNewSessionConfirmationMessage=Start new session?
+dialog.StartNewSessionConfirmationTitle=Confirmation
+dialog.InvalidSourceFolderErrorMessage=a invalid source folder!
+dialog.InvalidSourceFolderErrorTitle=Error
+omr.SessionHasNotStartedErrorMessage=ERROR: session has not started.
+omr.folderDepth=Folder Depth
+
+session.error.invalidSourceFolder=Invalid contents in this folder.
+session.error.noPdfSourceFolder=Warning: No pdf file in this folder.
+session.prompt.pdfSearch=Will you want recursive folder search to find pdf files?
+session.error.pageFrameDistortion=PageFrameDistortion
+session.error.pageSequenceInvalid=PageSequenceInvalid
+session.error.pageUpsideDown=PageUpsideDown
+session.error.pageGuideBlockMissing=PageGuideBlockMissing
+
+session.error.unreadable=Unable to read selected folder.
+session.error.invalidNumOfImages=Num of images in the folder cannot divide num of pages.
+session.error.numOfImages.label=Num of Images
+session.error.numOfPages.label=Num of pages
+
+export.inprogress.label=now exporting...
+export.finished.label=Finished
+
+export.status.label=Progress of Export
+export.stat.mark.numTotal.label=num of answer areas
+export.stat.select.detail.label=num of answers/areas (multiple answers)
+export.stat.select.label=[Multi] num of questionnaire areas
+export.stat.select1.detail.label=([Single]OK+NA+MUL)/TOTAL
+export.stat.select1.label=[Single] num of questionnaire areas
+export.statistics.label=Summary
+export.statistics.numPages=Total num of pages: 
+export.statistics.numQuestions.total=Total num of answer area:  
+export.statistics.numQuestions.select1= \u3000[Single](OK+NA+MUL)/TOTAL: 
+export.statistics.numQuestions.select=\u3000[Multiple](OK)/TOTAL: 
+
+result.browser.button.label=ResultBrowser
+result.master.label=OMR form master
+result.table.label=Tables
+result.textarea.label=FreeAnswerImages
+result.chart.label=Charts
+
+result.folder.depth.label=Depth of Folders
+result.noAnswer.label=No Answer
+result.mulAnswer.label=Multiple Answers
+result.unit.label=unit
+result.select.item.label=questionnaire items(multiple answers)
+result.select.category.label=num of answers
+
+pagetask.error.dialog.title=Warning: Read Errors
+pagetask.error.restartOnAll.label=Process All Files
+pagetask.error.restartOnUpdated.label=Process Updated Files
+pagetask.error.cancel.label=Cancel
+pagetask.error.continue.label=Finish
+pagetask.error.dialog.title=Warning: Recognition Errors
+pagetask.error.table.id.col.label=ID
+pagetask.error.table.page.col.label=Page
+pagetask.error.table.image.col.label=Img
+pagetask.error.table.reason.col.label=Reason
+
+markarea.error.table.id.col.label=ID
+markarea.error.table.table.col.label=Table
+markarea.error.table.row.col.label=Row
+markarea.error.table.page.col.label=Page
+markarea.error.table.question.col.label=Question
+markarea.error.table.markimg.col.label=MarkAreas
+markarea.errror.dialog.msg=Please check and correct errors. 
+
+result.directoryIndex.folderPrefixLabel=Folder
+result.directoryIndex.contentsOfResultLabel=Contents of Result
+result.directoryIndex.listOfSpreadSheetsLabel=View SpreadSheet
+result.directoryIndex.xlsSpreadSheetLabel=Microsoft Office Excel(.xls)
+result.directoryIndex.csvSpreadSheetLabel=CSV(tab separated, UTF-16LE-BOM)
+result.directoryIndex.listOfResultsLabel=List of Result
+result.directoryIndex.listOfFreeAnswersLabel=List of FreeAnswerAreas
+result.directoryIndex.listOfStatisticsLabel=List of Charts
+result.directoryIndex.subFoldersLabel=SubFolders
+result.chartIndex.noAnswerLabel=no answer
+result.chartIndex.errorLabel=multiple answer error
+result.chartIndex.totalLabel=total
+result.chartIndex.unitLabel=
+result.chartIndex.selectSingleLabel=SingleAnswerQuestion
+result.chartIndex.selectMultipleLabel=MultipleAnswerQuestion
+result.chartIndex.exceptErrorDescriptionLabel= excepted
+result.textAreaIndex.rowNumberPrefixLabel=row 
+result.textAreaIndex.rowNumberSuffixLabel=
+

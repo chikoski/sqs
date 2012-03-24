@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://sqs.cmr.sfc.keio.ac.jp/2004/reader" xmlns:reader="http://sqs.cmr.sfc.keio.ac.jp/2004/reader">
+  <xs:element name="imagefiles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="reader:imagefile"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="imagefile">
+    <xs:complexType>
+      <xs:group minOccurs="0" ref="reader:ScanFrame"/>
+      <xs:attribute name="filename" use="required"/>
+      <xs:attribute name="mtime" use="required" type="xs:dateTime"/>
+      <xs:attribute name="x1" type="xs:int"/>
+      <xs:attribute name="y1" type="xs:int"/>
+      <xs:attribute name="x2" type="xs:int"/>
+      <xs:attribute name="y2" type="xs:int"/>
+      <xs:attribute name="x3" type="xs:int"/>
+      <xs:attribute name="y3" type="xs:int"/>
+      <xs:attribute name="x4" type="xs:int"/>
+      <xs:attribute name="y4" type="xs:int"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:group name="ScanFrame">
+    <xs:sequence>
+      <xs:element minOccurs="0" ref="reader:page"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:attributeGroup name="ScanFrame">
+    <xs:attribute name="x1" use="required" type="xs:int"/>
+    <xs:attribute name="y1" use="required" type="xs:int"/>
+    <xs:attribute name="x2" use="required" type="xs:int"/>
+    <xs:attribute name="y2" use="required" type="xs:int"/>
+    <xs:attribute name="x3" use="required" type="xs:int"/>
+    <xs:attribute name="y3" use="required" type="xs:int"/>
+    <xs:attribute name="x4" use="required" type="xs:int"/>
+    <xs:attribute name="y4" use="required" type="xs:int"/>
+  </xs:attributeGroup>
+  <!--
+    <define name="ScanState">
+                   <attribute name="state">
+                      <choice>
+                        <value>not processed</value>
+                        <value>invalid page</value>
+                        <value>invalid page order</value>                    
+                        <value>valid</value>
+                      </choice>
+                    </attribute>
+    </define>
+  -->
+  <xs:element name="page">
+    <xs:complexType>
+      <xs:group minOccurs="0" ref="reader:FormElements"/>
+      <xs:attribute name="sampleID" use="required" type="xs:int"/>
+      <xs:attribute name="number" use="required" type="xs:int"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:group name="FormElements">
+    <xs:sequence>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="reader:markarea"/>
+        <xs:element ref="reader:textarea"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  <xs:element name="markarea">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="reader:MarkDensity">
+          <xs:attribute name="ref" use="required" type="xs:string"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="textarea">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="reader:TextareaImage">
+          <xs:attribute name="ref" use="required" type="xs:string"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="MarkDensity">
+    <xs:sequence>
+      <xs:element ref="reader:markDensity"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="markDensity" type="xs:double"/>
+  <xs:complexType name="TextareaImage">
+    <xs:sequence>
+      <xs:element ref="reader:file"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="file">
+    <xs:complexType>
+      <xs:attribute name="filename" use="required"/>
+      <xs:attribute name="mtime" use="required" type="xs:dateTime"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="readingState">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="reader:imagefiles"/>
+        <xs:element minOccurs="0" ref="reader:answers"/>
+      </xs:sequence>
+      <xs:attribute name="imagedir" use="required"/>
+      <xs:attribute name="pdffile" use="required"/>
+      <xs:attribute name="start" use="required" type="xs:dateTime"/>
+      <xs:attribute name="end" use="required" type="xs:dateTime"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="answers">
+    <xs:complexType/>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1640/trunk/sqs-editor/src/main/java/net/sqs2/source
+END
+SQSSourceFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/1640/trunk/sqs-editor/src/main/java/net/sqs2/source/SQSSourceFactory.java
+END
+SQSSourceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/1444/trunk/sqs-editor/src/main/java/net/sqs2/source/SQSSourceManager.java
+END
+SQSSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/1444/trunk/sqs-editor/src/main/java/net/sqs2/source/SQSSource.java
+END

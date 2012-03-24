@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/2102/trunk/sqs-translator/src/main/java/net/sqs2/translator/impl
+END
+XSLTFileBaseUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/2102/trunk/sqs-translator/src/main/java/net/sqs2/translator/impl/XSLTFileBaseUtil.java
+END
+SQMSchemeException.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/2033/trunk/sqs-translator/src/main/java/net/sqs2/translator/impl/SQMSchemeException.java
+END
+PDFAttachmentReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/1466/trunk/sqs-translator/src/main/java/net/sqs2/translator/impl/PDFAttachmentReader.java
+END
+SQSToPreviewTranslator.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/2102/trunk/sqs-translator/src/main/java/net/sqs2/translator/impl/SQSToPreviewTranslator.java
+END
+SQSToPDFTranslatorCore.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/2102/trunk/sqs-translator/src/main/java/net/sqs2/translator/impl/SQSToPDFTranslatorCore.java
+END
+SQSToHTMLTranslator.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/1481/trunk/sqs-translator/src/main/java/net/sqs2/translator/impl/SQSToHTMLTranslator.java
+END
+PageSetting.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/2061/trunk/sqs-translator/src/main/java/net/sqs2/translator/impl/PageSetting.java
+END
+TranslatorJarURIContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/2102/trunk/sqs-translator/src/main/java/net/sqs2/translator/impl/TranslatorJarURIContext.java
+END
+PageSettingImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/2095/trunk/sqs-translator/src/main/java/net/sqs2/translator/impl/PageSettingImpl.java
+END
+PreviewFrame.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/1809/trunk/sqs-translator/src/main/java/net/sqs2/translator/impl/PreviewFrame.java
+END
+SQSToPDFTranslator.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/2102/trunk/sqs-translator/src/main/java/net/sqs2/translator/impl/SQSToPDFTranslator.java
+END
+FOPTranslator.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/2102/trunk/sqs-translator/src/main/java/net/sqs2/translator/impl/FOPTranslator.java
+END

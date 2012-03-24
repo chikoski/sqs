@@ -1,0 +1,53 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<digester-rules>
+
+	<pattern value="config">
+		<object-create-rule
+			classname="net.sqs2.omr.model.ConfigImpl" />
+		<set-properties-rule />
+		
+		<pattern value="sources/source">
+			<object-create-rule
+				classname="net.sqs2.omr.model.SourceConfig" />
+			<set-next-rule methodname="addSource" />
+			<set-properties-rule />
+			
+			<pattern value="frame">
+				<object-create-rule
+					classname="net.sqs2.omr.model.FrameConfig" />
+				<bean-property-setter-rule pattern="timestamp"
+					propertyname="timestamp" />
+
+				<pattern value="deskewGuideArea">
+					<object-create-rule
+						classname="net.sqs2.omr.model.DeskewGuideAreaConfig" />
+					<set-properties-rule />
+
+
+					<set-next-rule methodname="setDeskewGuideAreaConfig" />
+					
+				</pattern>
+
+				<pattern value="validation">
+					<object-create-rule
+						classname="net.sqs2.omr.model.ValidationConfig" />
+					<set-properties-rule />
+					<set-next-rule methodname="setValidationConfig" />
+				</pattern>
+	
+				<set-next-rule methodname="setFrameConfig" />
+			</pattern>
+
+			<pattern value="markRecognition">
+				<object-create-rule
+					classname="net.sqs2.omr.model.MarkRecognitionConfig" />
+				<set-properties-rule />
+				<set-next-rule
+					methodname="setMarkRecognitionConfig" />
+			</pattern>
+
+		</pattern>
+
+	</pattern>
+
+</digester-rules>

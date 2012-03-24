@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/java/net/sqs2/omr/app/command
+END
+AbstractCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/app/command/AbstractCommand.java
+END
+CountRemovableResultFoldersCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/app/command/CountRemovableResultFoldersCommand.java
+END
+FinishSessionCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/app/command/FinishSessionCommand.java
+END
+OpenResultBrowserCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/app/command/OpenResultBrowserCommand.java
+END
+CreateSessionCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/java/net/sqs2/omr/app/command/CreateSessionCommand.java
+END
+StopSessionCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/app/command/StopSessionCommand.java
+END
+ClearSessionCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/app/command/ClearSessionCommand.java
+END
+CloseSessionSourceCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/app/command/CloseSessionSourceCommand.java
+END
+RemoveResultFoldersCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/app/command/RemoveResultFoldersCommand.java
+END
+ShutdownCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/java/net/sqs2/omr/app/command/ShutdownCommand.java
+END

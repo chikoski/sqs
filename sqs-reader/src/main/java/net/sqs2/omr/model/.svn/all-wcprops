@@ -1,0 +1,365 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/2220/trunk/sqs-reader/src/main/java/net/sqs2/omr/model
+END
+CacheConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/CacheConstants.java
+END
+SourceDirectoryConfigurations.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/SourceDirectoryConfigurations.java
+END
+FormMasterAccessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/FormMasterAccessor.java
+END
+MarkAreaAnswer.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/MarkAreaAnswer.java
+END
+ConfigUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/ConfigUtil.java
+END
+SessionSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/2220/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/SessionSource.java
+END
+MarkReaderConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/MarkReaderConfiguration.java
+END
+SessionSourceState.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/2220/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/SessionSourceState.java
+END
+ConfigSchemeException.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/ConfigSchemeException.java
+END
+MarkReaderConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/MarkReaderConstants.java
+END
+AbstractSessionSourceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/2220/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/AbstractSessionSourceImpl.java
+END
+FrameConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/FrameConfig.java
+END
+MarkRecognitionConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/MarkRecognitionConfig.java
+END
+GenericSourceConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/GenericSourceConfig.java
+END
+SourceConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/SourceConfig.java
+END
+ConfigImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/ConfigImpl.java
+END
+PageTaskFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/PageTaskFactory.java
+END
+SourceDirectoryConfigurationFactoryImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/SourceDirectoryConfigurationFactoryImpl.java
+END
+AbstractSessionSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/AbstractSessionSource.java
+END
+PageID.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/PageID.java
+END
+ConfigXMLFileFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/ConfigXMLFileFilter.java
+END
+PageTaskHolder.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/PageTaskHolder.java
+END
+MarkAreaAnswerItemSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/MarkAreaAnswerItemSet.java
+END
+PageTaskResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/PageTaskResult.java
+END
+Answer.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/Answer.java
+END
+PageTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/PageTask.java
+END
+PageTaskExceptionModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/PageTaskExceptionModel.java
+END
+SourceDirectoryConfigurationImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/SourceDirectoryConfigurationImpl.java
+END
+ConfigManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/ConfigManager.java
+END
+DeskewPageTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/DeskewPageTask.java
+END
+PageAreaResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/PageAreaResult.java
+END
+Config.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/Config.java
+END
+SourceDirectoryConfigurationFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/SourceDirectoryConfigurationFactory.java
+END
+Row.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/Row.java
+END
+SpreadSheet.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/SpreadSheet.java
+END
+PageTaskNumberCounter.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/PageTaskNumberCounter.java
+END
+ContentIndexerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/ContentIndexerImpl.java
+END
+OMRPageTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/OMRPageTask.java
+END
+AppConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/AppConstants.java
+END
+SourceDirectoryConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/SourceDirectoryConfiguration.java
+END
+PageTaskException.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/PageTaskException.java
+END
+PageTaskExceptionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/PageTaskExceptionTest.java
+END
+DeskewGuideAreaConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/DeskewGuideAreaConfig.java
+END
+ContentAccessorImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/ContentAccessorImpl.java
+END
+PageImageExceptionModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/PageImageExceptionModel.java
+END
+ValidationConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/ValidationConfig.java
+END
+MarkAreaAnswerItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/MarkAreaAnswerItem.java
+END
+PageTaskAccessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/PageTaskAccessor.java
+END
+AbstractPageTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/2216/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/AbstractPageTask.java
+END
+Ticket.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/Ticket.java
+END
+SourceDirectory.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/SourceDirectory.java
+END
+SessionSourceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/2220/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/SessionSourceImpl.java
+END
+SessionSources.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/2220/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/SessionSources.java
+END
+ContentIndexer.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/ContentIndexer.java
+END
+RowAccessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/RowAccessor.java
+END
+FormAreaResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/FormAreaResult.java
+END
+AbstractRow.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/AbstractRow.java
+END
+DensityHistgramAnswerItemEntryMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/DensityHistgramAnswerItemEntryMap.java
+END
+ContentAccessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/ContentAccessor.java
+END
+TextAreaAnswer.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/2208/trunk/sqs-reader/src/main/java/net/sqs2/omr/model/TextAreaAnswer.java
+END

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:java="http://www.relaxer.org/xmlns/relaxer/java"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+         xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">
+
+<define name="counter">
+  <a:documentation>通し番号</a:documentation>
+    <element name="counter" ns="http://sqs.cmr.sfc.keio.ac.jp/2004/sqs">
+         <empty/>
+    </element>
+</define>
+
+<define name="Inline.class" combine="choice">
+	<ref name="counter"/>
+</define>
+
+</grammar>
