@@ -318,8 +318,8 @@ http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<pluginRepositories>
                 <pluginRepository>
-                        <id>codehaus local repository</id>
-                        <url>file:///home/chiko/dev/kantan_reader/repository</url>
+                        <id>local repository</id>
+                        <url>file:///home/chiko/mvn/repository</url>
                 </pluginRepository>
                 <pluginRepository>
                         <id>maven central plugin repository</id>
@@ -331,7 +331,7 @@ http://maven.apache.org/maven-v4_0_0.xsd">
 		<repository>
         	<id>localhost</id>
 			<name>Local Maven2 Repository</name>
-            <url>file:///home/chiko/dev/kantan_reader/repository</url>
+            <url>file:///home/chiko/mvn/repository</url>
         </repository>
 		<repository>
 			<id>central.maven2-repository</id>
@@ -585,8 +585,8 @@ http://maven.apache.org/maven-v4_0_0.xsd">
 		</dependency>
 
 		<dependency>
-			<groupId>commonds-collections-generic</groupId>
-			<artifactId>commonds-collections</artifactId>
+			<groupId>commons-collections-generic</groupId>
+			<artifactId>commons-collections</artifactId>
 			<version>4.01</version>
 		</dependency>
 	
