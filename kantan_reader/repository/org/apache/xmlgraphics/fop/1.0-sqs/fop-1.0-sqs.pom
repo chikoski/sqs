@@ -1,6 +1,0 @@
-<project>
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>org.apache.xmlgraphics</groupId>
-  <artifactId>fop</artifactId>
-  <version>1.0-sqs</version>
-</project>
