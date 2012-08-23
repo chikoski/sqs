@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="2" time="1.954" errors="0" skipped="0" tests="2" name="net.sqs2.translator.impl.SQSToPDFTranslatorTest">
+<testsuite failures="2" time="1.043" errors="0" skipped="0" tests="2" name="net.sqs2.translator.impl.SQSToPDFTranslatorTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/opt/local/share/jdk1.7.0_03/jre/lib/amd64"/>
@@ -57,7 +57,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.024" classname="junit.framework.TestSuite$1" name="warning">
+  <testcase time="0.01" classname="junit.framework.TestSuite$1" name="warning">
     <failure message="Exception in constructor: testVersion (java.lang.NullPointerException
 	at net.sqs2.translator.impl.FOPTranslator.createFOBytes(FOPTranslator.java:115)
 	at net.sqs2.translator.impl.FOPTranslator.execute(FOPTranslator.java:143)
@@ -248,7 +248,7 @@ Caused by: java.lang.ClassNotFoundException: javax.jnlp.UnavailableServiceExcept
 	... 11 more
 </system-err>
   </testcase>
-  <testcase time="0.004" classname="junit.framework.TestSuite$1" name="warning">
+  <testcase time="0.006" classname="junit.framework.TestSuite$1" name="warning">
     <failure message="Exception in constructor: testRectWidthHeight (java.lang.NullPointerException
 	at net.sqs2.translator.impl.FOPTranslator.createFOBytes(FOPTranslator.java:115)
 	at net.sqs2.translator.impl.FOPTranslator.execute(FOPTranslator.java:143)

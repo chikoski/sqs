@@ -15,7 +15,6 @@
   <!-- default page-height and page-width, in case
        value is specified as auto -->
   <default-page-settings height="auto" width="auto"/>
-  
    
   <renderers>
     <renderer mime="application/pdf">
@@ -27,7 +26,6 @@
       <auto-rotate-landscape>true</auto-rotate-landscape>
 
       <fonts>
-<!-- 
    <font metrics-url="ipag.xml" embed-url="ipag.ttf" kerning="yes">
     <font-triplet name="Gothic" style="normal" weight="normal"/>
     <font-triplet name="Gothic" style="normal" weight="bold"/>
@@ -54,7 +52,7 @@
     <font-triplet name="PMincho" style="italic" weight="normal"/>
     <font-triplet name="PMincho" style="italic" weight="bold"/>
    </font>
- -->
+
       <auto-detect/>
 
       </fonts>
