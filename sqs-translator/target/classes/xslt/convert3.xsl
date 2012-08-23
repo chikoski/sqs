@@ -370,6 +370,7 @@ xsl:use-attribute-sets="zero">
 		</xsl:if>
 	</fo:block>
 	</fo:block-container>
+         <xsl:apply-templates mode='head' select='//sqs:qrcode[@position="head"]'/>
 
 	<fo:block-container 
 width="{$deskewGuideBlockWidth}px"
@@ -388,7 +389,7 @@ xsl:use-attribute-sets="zero">
 				<svg:g style="stroke:black; fill:black;">
 					<xsl:if test="$showMarkingExample = 'true'">
 						<xsl:element name="svg:image">
-							<xsl:attribute name="xlink:href">class://net.sqs2.impl.TranslatorJarURIContext/xslt/marking-examples_<xsl:value-of select="$language"/>.svg</xsl:attribute>
+							<xsl:attribute name="xlink:href">class://net.sqs2.impl.TranslatorJarURIContext/xslt/marking-examples<xsl:value-of select="$localeSuffix"/>.svg</xsl:attribute>
 							<xsl:attribute name="x"><xsl:value-of select="0"/></xsl:attribute>
 							<xsl:attribute name="y"><xsl:value-of select="0"/></xsl:attribute>
 							<xsl:attribute name="width"><xsl:value-of select="$markingExampleWidth"/></xsl:attribute>
@@ -473,7 +474,7 @@ xsl:use-attribute-sets="zero">
 		</xsl:if>
 			</fo:block>
 		  </fo:block-container>
-
+         <xsl:apply-templates mode='foot' select='//sqs:qrcode[@position="foot"]'/>
 		  <fo:block-container
 width="{$deskewGuideBlockWidth}px"
 height="{$deskewGuideBlockHeight}px"
@@ -573,13 +574,13 @@ xsl:use-attribute-sets="zero">
 	</xsl:template>
 
 	<xsl:template match="xhtml2:table">
-		<fo:table table-layout="fixed" width="100%">
+		<fo:table table-layout="fixed">
 			<xsl:apply-templates/>
 		</fo:table>
 	</xsl:template>
 
 	<xsl:template match="xhtml2:table[@xhtml2:class='form']">
-		<fo:table table-layout="fixed" width="100%">
+		<fo:table table-layout="fixed">
 			<fo:table-column column-width="{$regionBodyWidth * 0.04}px"/>
 			<fo:table-column column-width="{$regionBodyWidth * 0.96}px"/>
 			<xsl:apply-templates/>
@@ -587,10 +588,9 @@ xsl:use-attribute-sets="zero">
 	</xsl:template>
 
 	<xsl:template match="xhtml2:table[@xhtml2:class='form-compact']">
-		<fo:table table-layout="fixed" width="100%">
+		<fo:table table-layout="fixed">
 
 			<fo:table-column column-width="{$qid-label-width}px"/>
-			 
 			<fo:table-column column-width="{($regionBodyWidth - $qid-label-width) * (1.0 - number(@sqs:form-width-ratio))}px"/>
 			<fo:table-column column-width="{($regionBodyWidth - $qid-label-width) * (number(@sqs:form-width-ratio))}px"/>
 			<xsl:apply-templates/>
@@ -598,7 +598,7 @@ xsl:use-attribute-sets="zero">
 	</xsl:template>
 
 	<xsl:template match="xhtml2:table[@xhtml2:class='matrix-forms']">
-		<fo:table table-layout="fixed" width="100%" xsl:use-attribute-sets="matrix-forms">
+		<fo:table table-layout="fixed" xsl:use-attribute-sets="matrix-forms">
 			<xsl:variable name="label-width"
 				select="floor(($regionBodyWidth - $qid-label-width) * (1.0 - @sqs:form-width-ratio))"/>
 			<xsl:variable name="form-width"
@@ -632,7 +632,7 @@ xsl:use-attribute-sets="zero">
 
 
 	<xsl:template match="xhtml2:table[@xhtml2:class='itemset']">
-		<fo:table table-layout="fixed" width="100%" start-indent="6pt">
+		<fo:table table-layout="fixed" start-indent="6pt">
 			<!-- 
 		<xsl:comment><xsl:value-of select="number(@sqs:cols)"/></xsl:comment>
 			<xsl:call-template name="xsl-function-loop">
@@ -653,7 +653,7 @@ xsl:use-attribute-sets="zero">
 			<fo:table-column column-width="{$item-label-width}px"/>
 		-->
 			<fo:table-column
-				column-width="{floor(number(parent::xhtml2:td/@xhtml2:colspan) * ($regionBodyWidth - $qid-label-width) div number(ancestor::xhtml2:table/@sqs:cols)) - $item-form-width - $item-label-width}px"/>
+				column-width="{floor(number(parent::xhtml2:td/@xhtml2:colspan) * ($regionBodyWidth - $qid-label-width) div number(ancestor::xhtml2:table/@sqs:cols))}px"/>
 			<xsl:apply-templates/>
 		</fo:table>
 	</xsl:template>
@@ -831,18 +831,28 @@ xsl:use-attribute-sets="zero">
 		</xsl:choose>
 	</xsl:template>
 
-	<xsl:template match="xhtml2:span[@xhtml2:class='bold']">
-		<fo:inline font-weight="bold">
+	<xsl:template match="xhtml2:div">
+		<fo:block>
 			<xsl:apply-templates/>
-		</fo:inline>
+		</fo:block>
 	</xsl:template>
-	<xsl:template match="xhtml2:span[@class='small']">
+	<xsl:template match="xhtml2:span">
+      <fo:inline>
+         <xsl:apply-templates/>
+      </fo:inline>
+   </xsl:template>
+   <xsl:template match="xhtml2:span[@xhtml2:class='bold']">
+      <fo:inline font-weight="bold">
+         <xsl:apply-templates/>
+      </fo:inline>
+   </xsl:template>
+   <xsl:template match="xhtml2:span[@class='small']">
 		<fo:inline xsl:use-attribute-sets="small">
 			<xsl:apply-templates/>
 		</fo:inline>
 	</xsl:template>
 	<xsl:template match="xhtml2:strong">
-		<fo:inline text-decoration="underline">
+		<fo:inline font-weight="bold" text-decoration="underline" font-style="italic">
 			<xsl:apply-templates/>
 		</fo:inline>
 	</xsl:template>
@@ -852,15 +862,69 @@ xsl:use-attribute-sets="zero">
 		</fo:block>
 	</xsl:template>
 	<xsl:template match="xhtml2:em">
-		<fo:inline font-style="italic" font-weight="bold">
+		<fo:inline font-style="italic">
 			<xsl:apply-templates/>
 		</fo:inline>
 	</xsl:template>
-	<xsl:template match="xhtml2:img">
-		<fo:block>
-			<fo:external-graphic src="{@src}" content-width="{@width}" content-height="{@height}"/>
-		</fo:block>
-	</xsl:template>
+   <xsl:template match="xhtml2:b">
+      <fo:inline font-weight="bold">
+         <xsl:apply-templates/>
+      </fo:inline>
+   </xsl:template>
+   <xsl:template match="xhtml2:u">
+      <fo:inline text-decoration="underline">
+         <xsl:apply-templates/>
+      </fo:inline>
+   </xsl:template>
+   <!--  support at least outputing text of links -->
+	<xsl:template match="xhtml2:a">
+      <fo:inline font-style="italic" text-decoration="underline">
+         <xsl:apply-templates/> 
+         <!--  could show link like this [<xsl:value-of select='@href'/>] -->
+      </fo:inline>
+   </xsl:template>
+   
+   <xsl:template match="text">
+      <fo:inline>
+      <xsl:copy-of select="."/>
+      </fo:inline>
+   </xsl:template>
+   
+   <!--  note: here was not(@sqs:virtual) but 
+   then I placed lower and with high priority @sqs:virtual-->
+   <xsl:template match="xhtml2:img[@src]">
+      
+      <xsl:choose>
+      <xsl:when test='@sqs:inline'>
+            <fo:inline >
+            <fo:external-graphic src="{@src}" >
+                  <xsl:if test='@width'><xsl:attribute name='content-width'><xsl:value-of select='@width'/></xsl:attribute></xsl:if>
+                  <xsl:if test='@height'><xsl:attribute name='content-height'><xsl:value-of select='@height'/></xsl:attribute></xsl:if>
+            </fo:external-graphic>
+            </fo:inline>
+            
+      </xsl:when>
+      <xsl:otherwise>
+         <fo:block-container>
+           <!--  copy the fo:attributes found on the html2:img on the block-container -->
+           <xsl:for-each select="@fo:*">
+               <xsl:attribute name="{local-name()}">
+                  <xsl:value-of select="."/>
+               </xsl:attribute>
+            </xsl:for-each>
+               
+            <fo:block>  
+               <fo:external-graphic src="{@src}">
+                  <xsl:if test='@width'><xsl:attribute name='content-width'><xsl:value-of select='@width'/></xsl:attribute></xsl:if>
+                  <xsl:if test='@height'><xsl:attribute name='content-height'><xsl:value-of select='@height'/></xsl:attribute></xsl:if>
+               </fo:external-graphic>
+            </fo:block>
+         </fo:block-container>
+      </xsl:otherwise>
+      </xsl:choose>      
+      
+   </xsl:template>
+   
 	<xsl:template match="xhtml2:sup">
 		<fo:inline baseline-shift="super">
 			<xsl:apply-templates/>
@@ -879,7 +943,9 @@ xsl:use-attribute-sets="zero">
 				</fo:block>
 			</xsl:when>
 			<xsl:otherwise>
+                <fo:block>
 				<xsl:apply-templates/>
+                </fo:block>
 			</xsl:otherwise>
 		</xsl:choose>
 		<xsl:if
@@ -897,6 +963,15 @@ xsl:use-attribute-sets="zero">
 			<fo:inline font-size="50%">(<xsl:apply-templates/>)</fo:inline>
 		</xsl:for-each>
 	</xsl:template>
+   
+   <!--  
+      @sqs:virtual marks an html component that must not be printed 
+      but instead its children elements must have templates applied 
+   -->
+   <xsl:template match="xhtml2:*[@sqs:virtual]" priority='100'>
+      <xsl:apply-templates select='*'/>
+   </xsl:template>
+   
 	<!--
   <fo:inline-container baseline-indentifier="text-after-edge"
     text-indent="0mm" last-line-end-indent="0mm" start-indent="0mm" end-indent="0mm"
@@ -912,7 +987,7 @@ xsl:use-attribute-sets="zero">
 
 	<xsl:template match="xforms:textarea">
 		<fo:block>
-			<fo:table table-layout="fixed" width="100%">
+			<fo:table table-layout="fixed">
 				<fo:table-column column-width="{number(@sqs:width)+10}px"/>
 
 				<fo:table-body>
@@ -964,6 +1039,179 @@ xsl:use-attribute-sets="zero">
 		</xsl:if>
 		</fo:block>
 	</xsl:template>
+   
+   
+  <xsl:template match="sqs:qrcode" mode='head'>
+   <xsl:call-template name='qrcode'/>
+  </xsl:template>
+  <xsl:template match="sqs:qrcode" mode='foot'>
+  <xsl:call-template name='qrcode'/>
+  </xsl:template>
+  <xsl:template match="sqs:qrcode" >
+  <xsl:if test='not(@position) or @position="body"'><xsl:call-template name='qrcode'/></xsl:if>
+  </xsl:template>
+  
+  <xsl:template name="qrcode" >
+  <xsl:variable name='hasPosition' select='@top or @left or @right or @bottom'/>
+  <xsl:choose>
+   <xsl:when test='$hasPosition'>
+      <fo:block-container
+         absolute-position="absolute">
+         <xsl:if test='@left'><xsl:attribute name='left'><xsl:value-of select='@left'/></xsl:attribute></xsl:if>
+         <xsl:if test='@right'><xsl:attribute name='right'><xsl:value-of select='@right'/></xsl:attribute></xsl:if>
+         <xsl:if test='@top'><xsl:attribute name='top'><xsl:value-of select='@top'/></xsl:attribute></xsl:if>
+         <xsl:if test='@bottom'><xsl:attribute name='bottom'><xsl:value-of select='@bottom'/></xsl:attribute></xsl:if>
+         <xsl:call-template name='qrcode-content'/>
+      </fo:block-container>
+   </xsl:when>
+   <xsl:otherwise>
+     <xsl:call-template name='qrcode-content'/>
+   </xsl:otherwise>
+  </xsl:choose>
+  </xsl:template>
+  <xsl:template name="qrcode-content" >
+      <xsl:variable name='width'><xsl:choose><xsl:when test='@width'><xsl:value-of select='@width'/></xsl:when>
+         <xsl:otherwise>100</xsl:otherwise></xsl:choose></xsl:variable>
+      <xsl:variable name='height'><xsl:choose><xsl:when test='@height'><xsl:value-of select='@height'/></xsl:when>
+         <xsl:otherwise>100</xsl:otherwise></xsl:choose></xsl:variable>
+      <!--  note that the id is given by the cmpl-ref.xsl, usually 1 as is the first element -->
+      <xsl:variable name='qid'><xsl:choose><xsl:when test='@sqs:qid'><xsl:value-of select='@sqs:qid'/></xsl:when>
+         <xsl:otherwise>qrcode</xsl:otherwise></xsl:choose></xsl:variable>
+      <xsl:variable name='qr-code'><xsl:choose><xsl:when test='0 != string-length($qr-code-text)'><xsl:value-of select='$qr-code-text'/></xsl:when>
+         <xsl:otherwise><xsl:value-of select='@value'/></xsl:otherwise></xsl:choose></xsl:variable>
+      <xsl:variable name='url'>qrcode:<xsl:value-of select="$width"/>x<xsl:value-of select="$height"/>:<xsl:value-of select='$qr-code'/></xsl:variable>
+      <fo:block  
+          padding='0'
+          background-repeat="no-repeat"
+          background-position-horizontal="0">
+          <xsl:if test="0 != string-length($qr-code)">
+          <xsl:attribute name='background-image'>url(<xsl:value-of select="$url"/>)</xsl:attribute>  
+          </xsl:if>
+          <fo:table table-layout="fixed" width='100%'>
+            <fo:table-column column-width="{number($width)+10}px"/>
+
+            <fo:table-body>
+               <fo:table-row>
+                  <fo:table-cell>
+                     <fo:block> 
+                      <fo:instream-foreign-object>
+                           
+                           <xsl:element name="svg:svg">
+                            <xsl:attribute name="width"><xsl:value-of select="$width"/>px</xsl:attribute>
+                           <xsl:attribute name="height"><xsl:value-of select="$height"/>px</xsl:attribute>
+                           <xsl:attribute name="id">textarea<xsl:value-of select="$qid"/></xsl:attribute>
+                           
+                           
+                           
+                           <svg:metadata>
+                           <!--  
+                           <xsl:copy-of select="."/>
+                           -->
+                              <xforms:textarea sqs:height="{$height}" sqs:qid="{$qid}" sqs:width="{$width}">
+                                 <xforms:hint/>
+                                 <xforms:label></xforms:label> 
+                                 
+                              </xforms:textarea>
+                           </svg:metadata>
+                           
+                              
+                              <xsl:choose>
+                     <xsl:when test='0 != string-length($qr-code)'>
+                        <!-- 
+                        <fo:external-graphic width="100pt" height="100pt" content-width="100pt" content-height="100pt">
+                           <xsl:attribute name='src'><xsl:value-of select='$url'/></xsl:attribute>
+                        </fo:external-graphic>
+                         -->
+                        <!-- svg:image does not work.. almost same error of xml graphics (start to hate it)
+                        - See following log, first line says that the uri resolver loads the StreamSource
+                        - The next one I think says no loader/converter in xml graphics, like ImageIO is not enough ?
+                          would be strange since is the same that loads it for FOP, where works. 
+                          
+                        RETURN GOOGLE QRCODE source https://chart.googleapis.com/chart?chs=100x100&cht=qr&choe=UTF-8&chld=H&chl=1335072149440+Renzo+Tramaglino+Solari+Srl.
+                        [ERROR] FOUserAgent - SVG error: Cannot load image (no suitable loader/converter combination available) for file:/C:/eclipsework/sqs-translator/
+                              qrcode:1335072149440 Renzo Tramaglino Solari Srl. (image/png)
+                        [ERROR] FOUserAgent - SVG graphic could not be built. Reason: org.apache.batik.bridge.BridgeException: file:/C:/eclipsework/sqs-translator/:0
+                        The URI "file:/C:/eclipsework/sqs-translator/
+                              qrcode:1335072149440 Renzo Tramaglino Solari Srl."
+                        on element <image> can't be opened because:
+                        The URI can't be opened:
+                        C:\eclipsework\sqs-translator\qrcode:1335072149440 Renzo Tramaglino Solari Srl. (La sintassi del nome del file, della directory o del volume non è corretta)
+                                                
+                        <svg:image x="0" y="0" xlink:href="$url" >
+                           <xsl:attribute name="width"><xsl:value-of select="$width"/></xsl:attribute>
+                           <xsl:attribute name="height"><xsl:value-of select="$height"/></xsl:attribute>
+                           <xsl:attribute name="xlink:href"><xsl:value-of select="$url"/></xsl:attribute>
+                        </svg:image> 
+                        
+                         -->
+                        
+                       <svg:g>
+                        <xsl:variable name='borderColor'><xsl:choose><xsl:when test='@border-color'><xsl:value-of select='@border-color'/></xsl:when><xsl:otherwise>silver</xsl:otherwise></xsl:choose></xsl:variable>
+					    <xsl:variable name='borderWidth'><xsl:choose><xsl:when test='@border-width'><xsl:value-of select='@border-width'/></xsl:when><xsl:otherwise>1</xsl:otherwise></xsl:choose></xsl:variable>
+                        <xsl:variable name='borderRadius'><xsl:choose><xsl:when test='@border-radius'><xsl:value-of select='@border-radius'/></xsl:when><xsl:otherwise>5</xsl:otherwise></xsl:choose></xsl:variable>
+                        <xsl:variable name='backgroundColor'><xsl:choose><xsl:when test='@background-color'><xsl:value-of select='@background-color'/></xsl:when><xsl:otherwise>white</xsl:otherwise></xsl:choose></xsl:variable>
+                        <xsl:variable name='opacity'><xsl:choose><xsl:when test='@background-opacity'><xsl:value-of select='@background-opacity'/></xsl:when><xsl:otherwise>0</xsl:otherwise></xsl:choose></xsl:variable>
+                        <xsl:attribute name='style'>stroke:<xsl:value-of select='$borderColor'/>; stroke-width: <xsl:value-of select='$borderWidth'/>; fill:<xsl:value-of select='$backgroundColor'/>;fill-opacity:<xsl:value-of select='$opacity'/>;<xsl:if test='@style'><xsl:value-of select='@style'/></xsl:if></xsl:attribute>
+                        <xsl:element name="svg:rect">
+                           <xsl:attribute name="x">0</xsl:attribute>
+                           <xsl:attribute name="y">0</xsl:attribute>
+                           <xsl:attribute name="rx"><xsl:value-of select="$borderRadius"/></xsl:attribute>
+                           <xsl:attribute name="ry"><xsl:value-of select="$borderRadius"/></xsl:attribute>
+                           <xsl:attribute name="width"><xsl:value-of select="$width"/>px</xsl:attribute>
+                           <xsl:attribute name="height"><xsl:value-of select="$height"/>px</xsl:attribute>
+                        </xsl:element>
+         
+                        </svg:g>
+                        
+                     </xsl:when>
+                     <xsl:otherwise>
+                        <svg:text x='0' y='20' >
+                           ERROR823
+                        </svg:text>
+                        <svg:text x='0' y='30' >
+                           sqs:qrcode present
+                        </svg:text>
+                        <svg:text x='0' y='40' >
+                           with no @value.
+                        </svg:text>
+                        <svg:text x='0' y='50' >
+                           and no $qr-code-text 
+                        </svg:text>
+                        <svg:text x='0' y='60' >
+                           parameter for XSLT.
+                        </svg:text>
+                     </xsl:otherwise>
+                     </xsl:choose>
+                     <!-- 
+                              <xsl:attribute name="width"><xsl:value-of select="$width"/>px</xsl:attribute>
+                              <xsl:attribute name="height"><xsl:value-of select="$height"/>px</xsl:attribute>
+                              <xsl:attribute name="id">textarea<xsl:value-of select="$qid"/></xsl:attribute>
+            
+                              <svg:metadata>
+                                 <xsl:copy-of select="."/>
+                              </svg:metadata>
+                              
+                              <svg:g style="stroke:black; stroke-width: 1pt; fill:white;">
+                                 <xsl:element name="svg:rect">
+                                    <xsl:attribute name="x">0</xsl:attribute>
+                                    <xsl:attribute name="y">0</xsl:attribute>
+                                    <xsl:attribute name="rx">5</xsl:attribute>
+                                    <xsl:attribute name="ry">5</xsl:attribute>
+                                    <xsl:attribute name="width"><xsl:value-of select="$width"/>px</xsl:attribute>
+                                    <xsl:attribute name="height"><xsl:value-of select="$height"/>px</xsl:attribute>
+                                 </xsl:element>
+                              </svg:g>
+                               -->
+                           </xsl:element>
+                        </fo:instream-foreign-object>  
+                    </fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+            </fo:table-body>
+         </fo:table>
+      </fo:block>
+    </xsl:template>
+   
 
 	
 <!-- //////////////////////////////////////////////////////////////////// -->

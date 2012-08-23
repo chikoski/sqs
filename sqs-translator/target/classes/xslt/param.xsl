@@ -16,6 +16,7 @@
 	version="1.0">
 
 <xsl:param name="language">en</xsl:param>
+<xsl:param name="localeSuffix">_en</xsl:param>
 
 	<!--  hagaki size
 		<xsl:param name="pageMasterPageWidth">284</xsl:param>
@@ -30,13 +31,15 @@
 		<xsl:param name="pageMasterMarginRight">0</xsl:param>
 		<xsl:param name="regionBodyMarginTop">50</xsl:param>
 		<xsl:param name="regionBodyMarginBottom">50</xsl:param>
-		<xsl:param name="regionBodyMarginLeft">44</xsl:param><!-- 14 -->
-		<xsl:param name="regionBodyMarginRight">44</xsl:param><!-- 14 -->
+		<xsl:param name="regionBodyMarginLeft">0</xsl:param><!-- 14 -->
+		<xsl:param name="regionBodyMarginRight">0</xsl:param><!-- 14 -->
 		<xsl:param name="regionBeforeExtent">0</xsl:param>
 		<xsl:param name="regionAfterExtent">0</xsl:param>
 		<xsl:param name="regionStartExtent">0</xsl:param>
 		<xsl:param name="regionEndExtent">0</xsl:param>
-		<xsl:param name="regionBodyWidth"><xsl:value-of select="number($pageMasterPageWidth) - number($regionBodyMarginLeft) - number($regionBodyMarginRight) - number($regionBeforeExtent) - number($regionAfterExtent)"/></xsl:param>
+<!-- 	<xsl:param name="regionBodyWidth"><xsl:value-of select="number($pageMasterPageWidth) - number($regionBodyMarginLeft) - number($regionBodyMarginRight) - number($regionBeforeExtent) - number($regionAfterExtent)"/></xsl:param>-->
+		<!-- <xsl:param name="regionBodyWidth"><xsl:value-of select="number($pageMasterPageWidth) - number($regionBeforeExtent) - number($regionAfterExtent)"/></xsl:param>-->
+     <xsl:param name="regionBodyWidth"><xsl:value-of select="number($pageMasterPageWidth) - 90 "/></xsl:param>		
 
 	<xsl:param name="pageSideStartingFrom">left</xsl:param>
 	<xsl:param name="showStapleMark">true</xsl:param>
@@ -68,11 +71,13 @@
 	<xsl:param name="enableMarkSheetMode">true</xsl:param>
 
 	<xsl:variable name="fontFamily">Gothic</xsl:variable>
-	<xsl:variable name="baseFontSizePt">11</xsl:variable>
+	<xsl:variable name="baseFontSizePt">10</xsl:variable>
 
 	<xsl:param name="qid-label-width">20</xsl:param>
 	<xsl:param name="item-form-width">9</xsl:param>
 	<xsl:param name="item-label-width">12</xsl:param>
+
+    <xsl:param name="qr-code-text"></xsl:param>
 
 	<xsl:attribute-set name="page-number">
 		<xsl:attribute name="font-family"><xsl:value-of select="$fontFamily"/></xsl:attribute>
@@ -134,6 +139,7 @@
 	<xsl:attribute-set name="textbox">
 		<xsl:attribute name="margin-left">5pt</xsl:attribute>
 		<xsl:attribute name="margin-right">5pt</xsl:attribute>
+		<xsl:attribute name="margin-bottom">5pt</xsl:attribute>
 		<xsl:attribute name="padding-top">1pt</xsl:attribute>
 		<xsl:attribute name="padding-bottom">1pt</xsl:attribute>
 		<xsl:attribute name="padding-left">1pt</xsl:attribute>

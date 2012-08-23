@@ -22,12 +22,12 @@
 		</xsl:copy>
 	</xsl:template>
 
-	<xsl:template match="xforms:select | xforms:select1 | xforms:input | xforms:textarea | xforms:range | sqs:matrix-forms">
+	<xsl:template match="xforms:select | xforms:select1 | xforms:input | xforms:textarea | xforms:range | sqs:matrix-forms | sqs:qrcode">
 		<xsl:element name="{name()}">
 			<xsl:apply-templates select="@*"/>
 			<xsl:if test="0 = string-length(@sqs:qid)">
 	</xsl:if>
-			<xsl:attribute name="sqs:qid"><xsl:number level="any" from="/" count="xforms:select | xforms:select1 | xforms:input | xforms:textarea | xforms:range | sqs:matrix-forms" format="1"/></xsl:attribute>
+			<xsl:attribute name="sqs:qid"><xsl:number level="any" from="/" count="xforms:select | xforms:select1 | xforms:input | xforms:textarea | xforms:range | sqs:matrix-forms | sqs:qrcode" format="1"/></xsl:attribute>
 			<xsl:apply-templates/>
 		</xsl:element>
 	</xsl:template>

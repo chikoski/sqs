@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jnlp
     spec="1.0+"
-    codebase="http://sqs.chikoski.info/editor">
+    codebase="http://sqs.chikoski.info/source_editor">
   <information>
     <title>Source Editor</title>
     <vendor>Community Management Research Project, KEIO University, Japan</vendor>
@@ -41,7 +41,6 @@
     <j2se version="1.5+" max-heap-size="812m" initial-heap-size="32m" java-vm-args="-Dswing.aatext=true -Dawt.useSystemAAFontSettings=on"/>
     <jar href="SourceEditor-2.1-SNAPSHOT.jar" main="true"/>
     <extension name="libraries" href="editor_libraries.jnlp"/>
-<!--    <extension name="itext" href="itext.jnlp"/> -->
   </resources>
   <application-desc main-class="net.sqs2.editor.sqs.swing.SourceEditorLauncher">
 <!--    <argument>arg1</argument> -->

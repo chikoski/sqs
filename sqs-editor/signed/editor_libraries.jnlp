@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jnlp
     spec="1.0+"
-    codebase="http://sqs.chikoski.info/editor"
+    codebase="http://sqs.chikoski.info/source_editor"
     href="libraries.jnlp">
   <information>
     <title>Source Editor</title>
