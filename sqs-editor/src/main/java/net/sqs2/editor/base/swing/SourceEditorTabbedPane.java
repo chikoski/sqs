@@ -115,6 +115,11 @@ public abstract class SourceEditorTabbedPane extends JTabbedPane {
 	}
 
 	public SourceEditorSplitPane getCurrentSplitPane() {
+		// XXXX quick fix
+		int index = this.getSelectedIndex();
+		if(index < 0 || this.getComponentCount() <= index){
+			return null;
+		}
 		return (SourceEditorSplitPane) this.getComponentAt(this.getSelectedIndex());
 	}
 

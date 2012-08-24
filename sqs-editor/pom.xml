@@ -454,7 +454,7 @@
 		<dependency>
 			<groupId>ipafont</groupId>
 			<artifactId>ipafont</artifactId>
-			<version>00301</version>
+			<version>00303</version>
 		</dependency>
 		<dependency>
 			<groupId>jnlp</groupId>
