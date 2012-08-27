@@ -13,7 +13,7 @@ public class SourceEditorLauncher {
 	public static void main(String[] args) throws Exception {
 		
 		System.setProperty("file.encoding", "UTF-8");
-	    
+
 		if (args.length == 0) {
 			new SQSSourceEditorMediator();
 		} else if (args.length == 1) {

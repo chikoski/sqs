@@ -146,7 +146,11 @@ public abstract class SourceEditorMediator {
 	}
 
 	public JScrollPane getCurrentEditorScrollPane() {
-		return getSourceEditorTabbedPane().getCurrentSplitPane().getEditorScrollPane();
+		SourceEditorSplitPane pane = getSourceEditorTabbedPane().getCurrentSplitPane();
+		if(pane != null){
+			return pane.getEditorScrollPane();
+		}
+		return null;
 	}
 
 	public JComponent getCurrentEditorPane() {
