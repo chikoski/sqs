@@ -42,6 +42,8 @@ import javax.swing.JPopupMenu;
 import javax.swing.JViewport;
 import javax.swing.SwingUtilities;
 import javax.swing.tree.TreePath;
+// XXX
+import javax.swing.JScrollPane;
 
 import net.sqs2.editor.base.modules.AbstractNodeEditor;
 import net.sqs2.editor.base.modules.ContainerEditor;
@@ -375,7 +377,14 @@ public abstract class NodeTreePane extends AbstractNodeTreePane {
 	}
 
 	private int getEditorExtentHeight() {
-		return mediator.getCurrentEditorScrollPane().getViewport().getExtentSize().height;
+		// XXXX
+		JScrollPane pane = mediator.getCurrentEditorScrollPane();
+//		SourceEditorSplitPane pane = mediator.getCurrentEditorScrollPane();
+		if(pane == null){
+			return 0;
+		}else{
+			return pane.getViewport().getExtentSize().height;
+		}
 	}
 
 	private void updatePreferredSize(int[] rows, int paneHeight, int totalHeight, AbstractNodeEditor pane) {
