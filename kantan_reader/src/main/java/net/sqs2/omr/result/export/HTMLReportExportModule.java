@@ -211,6 +211,9 @@ public class HTMLReportExportModule extends SpreadSheetExportEventAdapter {
 		
 	chartDirectoryFile.mkdirs();
 
+	// XXX
+	this.cssFileExportModule.export(resultDirectoryFile);
+
 	File resultDirectoryIndexFile = new File(resultDirectoryFile, "index.html");
 
 	PrintWriter resultDirectoryIndexWriter = createPrintWriter(resultDirectoryIndexFile);
