@@ -17,6 +17,7 @@ public class CSSFileExportModule{
     public boolean export(File resultDirectoryFile) throws IOException{
 	File cssDirectoryFile = new File(resultDirectoryFile, "css"); // XXX
 	FileUtils.copyDirectory(this.origin, cssDirectoryFile);
+	return true;
     }
 
 }
