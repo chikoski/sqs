@@ -38,16 +38,16 @@ public class CSSFileExportModule{
 	return true;
     }
 
-	protected void copyInputStreamToFile(InputStream in, File dest) throws IOException{ 
-		FileOutputStream out = new FileOutputStream(dest);
-		int bufferSize = 1024 * 4;
-		byte[] buffer = new byte[bufferSize];
-		int readSize = -1;
-		while((readSize = in.read(buffer)) != -1){
-			out.write(buffer, 0, readSize);
-		}
-		in.close();
-		out.close();
-	} 
+    protected void copyInputStreamToFile(InputStream in, File dest) throws IOException{ 
+	FileOutputStream out = new FileOutputStream(dest);
+	int bufferSize = 1024 * 4;
+	byte[] buffer = new byte[bufferSize];
+	int readSize = -1;
+	while((readSize = in.read(buffer)) != -1){
+	    out.write(buffer, 0, readSize);
+	}
+	in.close();
+	out.close();
+    } 
 
 }
