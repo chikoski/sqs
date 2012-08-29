@@ -39,6 +39,7 @@ public class HTMLReportExportModule extends SpreadSheetExportEventAdapter {
 	
     TextAreaImageFileExportModule textAreaImageFileExportModule;
     ChartImageFileExportModule chartImageFileExportModule;
+    CSSFileExportModule cssFileExportModule;
 	
     float densityThreshold;
     float recognitionMargin;
@@ -54,6 +55,9 @@ public class HTMLReportExportModule extends SpreadSheetExportEventAdapter {
 	this.skin = skin;
 	this.textAreaImageFileExportModule = new TextAreaImageFileExportModule();
 	this.chartImageFileExportModule = new ChartImageFileExportModule();
+	
+	// XXX
+	this.cssFileExportModule = new CSSFileExportModule();
     }
 	
     PrintWriter createPrintWriter(File file) throws IOException {
@@ -231,8 +235,7 @@ public class HTMLReportExportModule extends SpreadSheetExportEventAdapter {
 	resultDirectoryIndexWriter.close();
     }
 	
-    private void exportReportCore(
-				  SpreadSheetEvent spreadSheetEvent, SourceDirectoryEvent sourceDirectoryEvent, String skin) throws IOException, TemplateException{
+    private void exportReportCore(SpreadSheetEvent spreadSheetEvent, SourceDirectoryEvent sourceDirectoryEvent, String skin) throws IOException, TemplateException{
 		
 	File textAreaDirectoryFile = this.textAreaImageFileExportModule.createTextAreaDirectoryFile(sourceDirectoryEvent.getSourceDirectory());
 	File chartDirectoryFile = this.chartImageFileExportModule.createChartDirectoryFile(sourceDirectoryEvent.getSourceDirectory());
