@@ -2,6 +2,7 @@ package net.sqs2.omr.result.export;
 
 import java.io.File;
 import java.io.IOException;
+import org.apache.commons.io.FileUtils;
 
 import net.sqs2.omr.app.MarkReaderConstants;
 
@@ -14,14 +15,8 @@ public class CSSFileExportModule{
     }
 
     public boolean export(File resultDirectoryFile) throws IOException{
-	this.createDirectory(resultDirectoryFile);
-	return true;
-    }
-
-    protected boolean createDirectory(File resultDirectoryFile) throws IOException{
 	File cssDirectoryFile = new File(resultDirectoryFile, "css"); // XXX
-	cssDirectoryFile.mkdirs();
-	return true;
+	FileUtils.copyDirectory(this.origin, cssDirectoryFile);
     }
 
 }
