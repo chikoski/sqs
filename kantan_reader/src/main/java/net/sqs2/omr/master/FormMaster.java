@@ -22,6 +22,7 @@
 package net.sqs2.omr.master;
 
 import java.awt.Rectangle;
+import java.io.File;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -197,17 +198,25 @@ public class FormMaster extends PageMaster implements Serializable {
     // XXX 
     public String getName(){
 	FileResourceID id = this.getFileResourceID();
-	String name = extractNAmeFrom(id);
+	String name = extractNameFrom(id);
 	return name;
     }
     
-    protected static String extractNameFrom(FileResource id){
+    protected static String extractNameFrom(FileResourceID id){
 	String name = "";
 	if(id != null){
 	    File f = new File(id.getRelativePath());
-	    name = f.getName();
+	    name = removeExtentionFromFileName(f.getName());
 	}
 	return name;
+    }
+
+    protected static String removeExtentionFromFileName(String filename){
+        int index = filename.lastIndexOf(".");
+        if(index != -1){
+             filename = filename.substring(0, index);
+        }
+        return filename;
     }
     
 }
