@@ -178,20 +178,36 @@ public class FormMaster extends PageMaster implements Serializable {
     	this.footerCheckArea = footerCheckArea;
     }
 
-	public int getHorizontalOffset() {
-		return horizontalOffset;
-	}
+    public int getHorizontalOffset() {
+	return horizontalOffset;
+    }
+    
+    public void setHorizontalOffset(int horizontalOffset) {
+	this.horizontalOffset = horizontalOffset;
+    }
+    
+    public int getVerticalOffset() {
+	return verticalOffset;
+    }
+    
+    public void setVerticalOffset(int verticalOffset) {
+	this.verticalOffset = verticalOffset;
+    }
 
-	public void setHorizontalOffset(int horizontalOffset) {
-		this.horizontalOffset = horizontalOffset;
+    // XXX 
+    public String getName(){
+	FileResourceID id = this.getFileResourceID();
+	String name = extractNAmeFrom(id);
+	return name;
+    }
+    
+    protected static String extractNameFrom(FileResource id){
+	String name = "";
+	if(id != null){
+	    File f = new File(id.getRelativePath());
+	    name = f.getName();
 	}
-
-	public int getVerticalOffset() {
-		return verticalOffset;
-	}
-
-	public void setVerticalOffset(int verticalOffset) {
-		this.verticalOffset = verticalOffset;
-	}
+	return name;
+    }
     
 }
