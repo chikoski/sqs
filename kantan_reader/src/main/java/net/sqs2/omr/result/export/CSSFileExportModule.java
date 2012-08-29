@@ -9,17 +9,15 @@ import net.sqs2.omr.app.MarkReaderConstants;
 
 public class CSSFileExportModule{
 
-    protected File origin;
     protected ClassLoader loader;
 
     public CSSFileExportModule(){
-	this.origin = new File(MarkReaderConstants.USER_CUSTOMIZE_CONSTANTS_DIR, "css");
 	this.loader = getClass().getClassLoader();
     }
 
     public boolean export(File resultDirectoryFile) throws IOException{
 	File cssDirectoryFile = createCSSExportDirectory(resultDirectoryFile);
-	copyCSSFile("base.css", cssDirectoryFile);
+	copyCSSFile("base.css", cssDirectoryFile); // XXX 
 	return true;
     }
 
