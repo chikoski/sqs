@@ -139,7 +139,8 @@ class ChartExportModule extends TemplateExporter{
 				}
 			}
 		}
-		
+
+		map.put("title", master.getTitle());
 		map.put("exportChartImageMode", isExportChartImageMode);
 		map.put("path", sourceDirectory.getPath());
 		map.put("master", master);
