@@ -35,8 +35,8 @@ public class SpreadSheetExportModule extends SpreadSheetExportEventAdapter {
 	public static String createSpreadSheetFileName(SpreadSheetEvent spreadSheetEvent, String suffix) throws IOException {
 	    String masterName = spreadSheetEvent.getFormMaster().getName();
 	    File masterFile = new File(new File(spreadSheetEvent.getSpreadSheet().getSourceDirectory().getDirectory(),
-				App.getResultDirectoryName()), masterName);
-		return FileUtil.getSuffixReplacedFilePath(masterFile, suffix);
+						App.getResultDirectoryName()), masterName);
+	    return FileUtil.getSuffixReplacedFilePath(masterFile, suffix);
 	}
 
 }

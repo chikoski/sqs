@@ -206,17 +206,9 @@ public class FormMaster extends PageMaster implements Serializable {
 	String name = "";
 	if(id != null){
 	    File f = new File(id.getRelativePath());
-	    name = removeExtentionFromFileName(f.getName());
+	    name = f.getName();
 	}
 	return name;
-    }
-
-    protected static String removeExtentionFromFileName(String filename){
-        int index = filename.lastIndexOf(".");
-        if(index != -1){
-             filename = filename.substring(0, index);
-        }
-        return filename;
     }
     
 }

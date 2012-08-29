@@ -271,7 +271,15 @@ public class HTMLReportExportModule extends SpreadSheetExportEventAdapter {
     }
 
     public static String createReportTitle(SpreadSheetEvent event){
-	return event.getFormMaster().getName();
+	return removeExtentionFromFileName(event.getFormMaster().getName());
+    }
+
+    protected static String removeExtentionFromFileName(String filename){
+        int index = filename.lastIndexOf(".");
+        if(index != -1){
+             filename = filename.substring(0, index);
+        }
+        return filename;
     }
 
 }
