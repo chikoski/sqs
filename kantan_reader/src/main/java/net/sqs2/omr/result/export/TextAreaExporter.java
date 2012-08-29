@@ -257,6 +257,7 @@ class TextAreaExporter extends TemplateExporter{
 			}
 		}
 		registTextAreaIndexEntry(map, master, path, textareas);
+		map.put("title", master.getTitle());
 		map.put("textareas", textareas);
 		PrintWriter textAreaIndexWriter = this.reportExportModule.createPrintWriter(textareaIndexFile);
 		this.textAreaIndexTemplate.process(map, textAreaIndexWriter);
