@@ -97,10 +97,10 @@ tr.total {
 
 <#assign formArea = chart.getDefaultFormArea()>
 <#assign questionIDNum = chart.getDefaultFormArea().getColumnIndex() + 1 >
-<#assign labelLevel0 = chart.getDefaultFormArea().getLabel().split("/")[0]>
+<#assign labelLevel0 = chart.getDefaultFormArea().getLabel()>
 
 <#if labelLevel0 != prevLabelLevel0>  
- <h3 class="question">(${labelLevel0?html}) ${formArea.getHints()[0]}</h3>
+ <h3 class="question">${labelLevel0?html} ${formArea.getHints()[0]}</h3>
  <#assign prevLabelLevel1 = -1>
  <#assign prevLabelLevel2 = "-">
 </#if>
