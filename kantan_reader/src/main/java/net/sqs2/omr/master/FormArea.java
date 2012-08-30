@@ -60,7 +60,6 @@ public class FormArea implements Serializable{
 	
     String itemClazz = null;
 
-    
 
     public FormArea() {
     }
@@ -214,5 +213,5 @@ public class FormArea implements Serializable{
 	this.itemIndex = itemIndex; 
 	this.areaIndexInPage = areaIndexInPage;
     }
-	
+
 }
