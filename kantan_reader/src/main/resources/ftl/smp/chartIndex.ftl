@@ -97,7 +97,7 @@ tr.total {
 
 <#assign formArea = chart.getDefaultFormArea()>
 <#assign questionIDNum = chart.getDefaultFormArea().getColumnIndex() + 1 >
-<#assign labelLevel0 = chart.getDefaultFormArea().getLabelArray()[0]>
+<#assign labelLevel0 = chart.getDefaultFormArea().getLabel()>
 
 <#if labelLevel0 != prevLabelLevel0>  
  <h3 class="question">${labelLevel0?html} ${formArea.getHints()[0]}</h3>
@@ -105,7 +105,8 @@ tr.total {
  <#assign prevLabelLevel2 = "-">
 </#if>
 
-<#if 1 < chart.getDefaultFormArea().getLabelArray()?size>
+<!--
+<#if chart.getDefaultFormArea().getLabelArray()?size>
  <#assign labelLevel1 = chart.getDefaultFormArea().getLabelArray()[1]>
  <#if labelLevel1 != prevLabelLevel1>  
   <h4 class="s_question" style="page-break-before:avoid;">${labelLevel1?html}. ${formArea.getHints()[1]}</h4>
@@ -119,6 +120,7 @@ tr.total {
   <h4 style="page-break-before:avoid;">${formArea.getHints()[2]}</h4>
  </#if>
 </#if>
+-->
 
 <!-- 
  <p style="page-break-before:avoid;">(
@@ -280,12 +282,14 @@ ${hint}<br/>
 
 
 <#assign prevLabelLevel0 = labelLevel0>
+<!--
 <#if 1 < chart.getDefaultFormArea().getLabelArray()?size>
  <#assign prevLabelLevel1 = labelLevel1>
   <#if 2 < chart.getDefaultFormArea().getLabelArray()?size>
    <#assign prevLabelLevel2 = labelLevel2>
  </#if>
 </#if>
+-->
 
 		</div><!--class:container end-->
 
