@@ -38,10 +38,10 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 <#assign barchart_url = "http://chart.apis.google.com/chart?chs=640x200&cht=bhg">
 
 <#assign labelLevel0 = "">
-<#assign labelLevel1 = -1>
+<#assign labelLevel1 = "">
 <#assign labelLevel2 = "">
 <#assign prevLabelLevel0 = "-">
-<#assign prevLabelLevel1 = -1>
+<#assign prevLabelLevel1 = "-">
 <#assign prevLabelLevel2 = "-">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <title>${title?html}:${folderPrefix}${path}: 集計結果一覧 </title>
@@ -97,16 +97,16 @@ tr.total {
 
 <#assign formArea = chart.getDefaultFormArea()>
 <#assign questionIDNum = chart.getDefaultFormArea().getColumnIndex() + 1 >
-<#assign labelLevel0 = chart.getDefaultFormArea().getLabel()>
+<#assign labelLevel0 = chart.getDefaultFormArea().getLabel()?replace("/.*", "", "r")>
 
 <#if labelLevel0 != prevLabelLevel0>  
- <h3 class="question">${chart.getDefaultFormArea().getLabel()?replace("/.*", "", "r")} ${formArea.getHints()[0]}</h3>
- <#assign prevLabelLevel1 = -1>
+ <h3 class="question">${labelLevel0?html} ${formArea.getHints()[0]}</h3>
+ <#assign prevLabelLevel1 = "-">
  <#assign prevLabelLevel2 = "-">
 </#if>
 
 <#if 1 < chart.getDefaultFormArea().getHints()?size>
- <#assign labelLevel1 = chart.getDefaultFormArea().getItemIndex() + 1>
+ <#assign labelLevel1 = chart.getDefaultFormArea().getLabel()?replace("^[^/]+/", "", "r")?replace("/.*", "", "r")>
  <#if labelLevel1 != prevLabelLevel1>  
   <h4 class="s_question" style="page-break-before:avoid;">${labelLevel1?html}. ${formArea.getHints()[1]}</h4>
   <#assign prevLabelLevel2 = "-">
