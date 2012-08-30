@@ -105,8 +105,8 @@ tr.total {
  <#assign prevLabelLevel2 = "-">
 </#if>
 
-<#if chart.getItemLabel() != null> 
-  <#assign labelLevel1 = chart.getItemLabel() />
+ <#if chart.getDefaultFormArea().getItemLabel() != null> 
+  <#assign labelLevel1 = chart..getDefaultFormArea().getItemLabel() />
   <h4 class="s_question" style="page-break-before:avoid;">${labelLevel1?html}. ${formArea.getHints()[1]}</h4>
   <#assign prevLabelLevel2 = "-">
 </#if>
