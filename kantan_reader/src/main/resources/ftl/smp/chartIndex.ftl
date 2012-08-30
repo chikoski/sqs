@@ -100,17 +100,43 @@ tr.total {
 <#assign labelLevel0 = chart.getDefaultFormArea().getLabel()>
 
 <#if labelLevel0 != prevLabelLevel0>  
- <h3 class="question">${labelLevel0?html} ${formArea.getHints()[0]}</h3>
+ <h3 class="question">${labelLevel0?html} ${formArea.getHint()[0]}</h3>
  <#assign prevLabelLevel1 = "-">
  <#assign prevLabelLevel2 = "-">
 </#if>
 
- <#if chart.getDefaultFormArea().getItemLabel() != null> 
-  <#assign labelLevel1 = chart..getDefaultFormArea().getItemLabel() />
-  <h4 class="s_question" style="page-break-before:avoid;">${labelLevel1?html}. ${formArea.getHints()[1]}</h4>
+<#if 1 < chart.getDefaultFormArea().getHint()?size>
+ <#assign labelLevel1 = chart.getDefaultFormArea().getHint()[1]>
+ <#if labelLevel1 != prevLabelLevel1>  
+  <h4 class="s_question" style="page-break-before:avoid;">${labelLevel1?html}. ${formArea.getHint()[1]}</h4>
   <#assign prevLabelLevel2 = "-">
+ </#if>
+
+ <#if 2 < chart.getDefaultFormArea().getHint()?size>
+  <#assign labelLevel2 = chart.getDefaultFormArea().getHint()[2]>
+ </#if>
+ <#if labelLevel2 != prevLabelLevel2>  
+  <h4 style="page-break-before:avoid;">${formArea.getHint()[2]}</h4>
+ </#if>
 </#if>
 
+<!-- 
+ <p style="page-break-before:avoid;">(
+<#if formArea.getType() == "select1">
+択一選択設問
+<#elseif formArea.getType() == "select">
+複数選択設問
+</#if>
+)</p>
+-->
+
+<!--
+<p style="page-break-before:avoid;">
+<#list formArea.getHint() as hint>
+${hint}<br/>
+</#list>
+</p>
+-->
 
 <#if formArea.isSelect() || 0 < numRows-chart.getNumMultipleAnswers() >
  <#if false>
@@ -238,25 +264,34 @@ tr.total {
 <#else>
 
 <#if formArea.isSelect1()>
-  <#assign total = numRows - chart.getNumMultipleAnswers()>
-    <#if 0 < total>
-	 <img alt="chart" src="${piechart_url}&chd=t:<@chd chart/>,${chart.getNumNoAnswers()}&chl=<@chl chart total unitLabel/>|${noAnswerLabel}+%3d+<@itemValue chart.getNumNoAnswers() total unitLabel/>"
-	      style="page-break-before:avoid;"/>
-    </#if>
-    <#else>
-      <#if 0 < numRows>
-	   <img alt="chart" src="${barchart_url}&chd=t:<@chd chart/>&chdl=<@chdl chart/>"
-		style="page-break-before:avoid;"/>
-      </#if>
-    </#if>
-  </#if>
-  <#assign prevLabelLevel0 = labelLevel0 />
-  <#if chart.getDefaultFormArea().getItemLabel() != null>
-    <#assign prevLabelLevel1 = labelLevel1>
-    </#if>
-  </div><!--class:container end-->
+<#assign total = numRows - chart.getNumMultipleAnswers()>
+<#if 0 < total>
+<img alt="chart" src="${piechart_url}&chd=t:<@chd chart/>,${chart.getNumNoAnswers()}&chl=<@chl chart total unitLabel/>|${noAnswerLabel}+%3d+<@itemValue chart.getNumNoAnswers() total unitLabel/>"
+ style="page-break-before:avoid;"/>
+</#if>
+<#else>
+<#if 0 < numRows>
+<img alt="chart" src="${barchart_url}&chd=t:<@chd chart/>&chdl=<@chdl chart/>"
+ style="page-break-before:avoid;"/>
+</#if>
+</#if>
+
+</#if>
+
+
+<#assign prevLabelLevel0 = labelLevel0>
+<#if 1 < chart.getDefaultFormArea().getHint()?size>
+ <#assign prevLabelLevel1 = labelLevel1>
+  <#if 2 < chart.getDefaultFormArea().getHint()?size>
+   <#assign prevLabelLevel2 = labelLevel2>
+ </#if>
+</#if>
+
+		</div><!--class:container end-->
+
 </#list>
-</div><!--id:content end-->
+
+	</div><!--id:content end-->
 
 </div><!--id:wrap end-->
 
