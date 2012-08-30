@@ -42,7 +42,7 @@ class TextAreaExporter extends TemplateExporter{
 	Template textAreaIndexTemplate;
 	Template textAreaColumnTemplate;
 	Template textAreaRowRangeTemplate;
-	
+
 	TextAreaExporter(HTMLReportExportModule reportExportModule, File textareaDirectoryFile, String skin)throws IOException{
 		super(skin);
 		this.reportExportModule = reportExportModule;
@@ -107,7 +107,7 @@ class TextAreaExporter extends TemplateExporter{
 		ArrayList<TextAreaImageItem> textAreaImageItemListFull = null;
 		int numRows;
 		FormArea formArea;
-		
+
 		ColumnRowsWorker(FormArea formArea, int numRows){
 			this.formArea = formArea;
 			this.numRows = numRows;
@@ -122,6 +122,7 @@ class TextAreaExporter extends TemplateExporter{
 					(int)Math.ceil(1.0 * numRows / NUM_IMAGES_PAR_PAGE));
 			textAreaColumn = new TextAreaColumn(textAreaColumnMetadata);
 			textAreaImageItemListFull = new ArrayList<TextAreaImageItem>();
+
 		}
 		
 		@Override
@@ -316,6 +317,9 @@ class TextAreaExporter extends TemplateExporter{
 		map.put("textAreaRowRangeMetadata", textAreaRowRangeMetadata);
 		map.put("textAreaImageItemList", textAreaImageItemList);
 		map.put("path", path);
+
+//		map.put("title", this.reportExportModule.getTitle());
+		map.put("title", "");// XXXX
 	}
 
 	public class TextAreaColumn{

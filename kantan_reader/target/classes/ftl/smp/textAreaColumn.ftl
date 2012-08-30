@@ -18,44 +18,51 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
  limitations under the License.
  -->
 <head>
+<link rel="stylesheet" href="../../css/base.css" type="text/css" media="screen,print" />
 <#setting url_escaping_charset='UTF-8'>
-<#assign questionIDNum = textAreaColumnMetadata.getColumnIndex() + 1>
 
 <#if path == "">
 <#assign folderPrefix = "">
 <#else>
-<#assign folderPrefix = "フォルダ">
+<#assign folderPrefix = "フォルダ ">
 </#if>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<title>自由記述欄一覧: ${folderPrefix} ${path}: 設問${questionIDNum}</title>
+<title>${title?html}:${folderPrefix}${path}:${textAreaColumnMetadata.getLabel()}:自由記述欄一覧</title>
 </head>
 <body>
-
-<h1>
-自由記述欄一覧: ${folderPrefix} ${path}: 設問${questionIDNum}
-</h1>
-
-<p> (調査票原稿内の ${textAreaColumnMetadata.getDefaultFormArea().getPage()}ページ目)</p>
-<p>
-<#list textAreaColumnMetadata.getHints() as hint>
+<div id="wrap">
+<div id="header">
+ <#if 0 < (title?length + path?length)>
+ <h1 id="title">${title}:${folderPrefix}${path}</h1>
+ </#if>
+ <h2 id="pagetitle">処理結果:自由記述欄一覧</h2>
+ 
+ <br/>
+ 
+ <h3 class="question">${textAreaColumnMetadata.getLabel()}
+ <#list textAreaColumnMetadata.getHints() as hint>
 ${hint?html}<br/>
 </#list>
-</p>
+<!--<span>(調査票原稿内の ${textAreaColumnMetadata.getPage()}ページ目)</span>-->
+  </h3>
+</div>
+
+<div id="content">
 
 <#if 1 != textAreaColumn.getTextAreaRowRangeListSize()>
 
 <ul>
 <#list textAreaColumn.getTextAreaRowRangeList() as textAreaRowRange>
 
-<#assign path = textAreaRowRange.getTextAreaRowRangeMetadata().getSourceDirectory().getPath()>
+<#assign subFolderPath = textAreaRowRange.getTextAreaRowRangeMetadata().getSourceDirectory().getPath()>
+<#if subFolderPath == "">
+<#assign subFolderPrefix = "">
+<#else>
+<#assign subFolderPrefix = "フォルダ ">
+</#if>
 
-<li> ${textAreaRowRange_index + 1} :
-
-<#if path != "">フォルダ</#if>
-
-${folderPrefix} ${path} : 
- 
+<li>${subFolderPrefix}${subFolderPath}<#if 0 < subFolderPath?length>:</#if>  
 [<a href="${textAreaRowRange.getTextAreaRowRangeMetadata().getPath()}/${textAreaRowRange.getTextAreaRowRangeMetadata().getRowRangeIndex()}.html">
 <#if textAreaRowRange.getTextAreaRowRangeMetadata().getStartRow() == textAreaRowRange.getTextAreaRowRangeMetadata().getEndRow()>
 ${textAreaRowRange.getTextAreaRowRangeMetadata().getStartRow()}行目
@@ -69,17 +76,20 @@ ${textAreaRowRange.getTextAreaRowRangeMetadata().getStartRow()}行目 - ${textAr
 
 <#else>
 
-<ul>
+<ul class="textarea">
 <#list textAreaImageItemList as textAreaImageItem>
-
 <#assign rowID = textAreaImageItem.getRowIndex() + 1>
-<li> ${rowID} 行目:
-<img src="${textAreaImageItem.getRowIndex()}.png" alt="${textAreaImageItem.getRowIndex()}"/>  :
- ${textAreaImageItem.getValue()?html} </li>
+<li><span class="rowIndex"> ${rowID}</span>
+<img src="${textAreaImageItem.getRowIndex()}.png" alt="${textAreaImageItem.getRowIndex()}"/>
+<#if 0 < textAreaImageItem.getValue()?length>  :
+ ${textAreaImageItem.getValue()?html} 
+</#if>
+</li>
 </#list>
 </ul>
 
 </#if>
-
+</div>
+</div>
 </body>
 </html>

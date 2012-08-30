@@ -59,5 +59,13 @@ class TemplateExporter{
 		public int getPage(){
 			return this.defaultFormArea.getPage();
 		}
+
+		public String getLabel(){
+			String label = "";
+			if(this.defaultFormArea != null){
+				label = this.defaultFormArea.getLabel();
+			}
+			return label;
+		}
 	}
 }
