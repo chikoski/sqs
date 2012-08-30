@@ -100,23 +100,23 @@ tr.total {
 <#assign labelLevel0 = chart.getDefaultFormArea().getLabel()>
 
 <#if labelLevel0 != prevLabelLevel0>  
- <h3 class="question">${labelLevel0?html} ${formArea.getHint()[0]}</h3>
+ <h3 class="question">${labelLevel0?html} ${formArea.getHints()[0]}</h3>
  <#assign prevLabelLevel1 = "-">
  <#assign prevLabelLevel2 = "-">
 </#if>
 
-<#if 1 < chart.getDefaultFormArea().getHint()?size>
- <#assign labelLevel1 = chart.getDefaultFormArea().getHint()[1]>
+<#if 1 < chart.getDefaultFormArea().getHints()?size>
+ <#assign labelLevel1 = chart.getDefaultFormArea().getHints()[1]>
  <#if labelLevel1 != prevLabelLevel1>  
-  <h4 class="s_question" style="page-break-before:avoid;">${labelLevel1?html}. ${formArea.getHint()[1]}</h4>
+  <h4 class="s_question" style="page-break-before:avoid;">${labelLevel1?html}. ${formArea.getHints()[1]}</h4>
   <#assign prevLabelLevel2 = "-">
  </#if>
 
- <#if 2 < chart.getDefaultFormArea().getHint()?size>
-  <#assign labelLevel2 = chart.getDefaultFormArea().getHint()[2]>
+ <#if 2 < chart.getDefaultFormArea().getHints()?size>
+  <#assign labelLevel2 = chart.getDefaultFormArea().getHints()[2]>
  </#if>
  <#if labelLevel2 != prevLabelLevel2>  
-  <h4 style="page-break-before:avoid;">${formArea.getHint()[2]}</h4>
+  <h4 style="page-break-before:avoid;">${formArea.getHints()[2]}</h4>
  </#if>
 </#if>
 
@@ -132,7 +132,7 @@ tr.total {
 
 <!--
 <p style="page-break-before:avoid;">
-<#list formArea.getHint() as hint>
+<#list formArea.getHints() as hint>
 ${hint}<br/>
 </#list>
 </p>
@@ -280,9 +280,9 @@ ${hint}<br/>
 
 
 <#assign prevLabelLevel0 = labelLevel0>
-<#if 1 < chart.getDefaultFormArea().getHint()?size>
+<#if 1 < chart.getDefaultFormArea().getHints()?size>
  <#assign prevLabelLevel1 = labelLevel1>
-  <#if 2 < chart.getDefaultFormArea().getHint()?size>
+  <#if 2 < chart.getDefaultFormArea().getHints()?size>
    <#assign prevLabelLevel2 = labelLevel2>
  </#if>
 </#if>
