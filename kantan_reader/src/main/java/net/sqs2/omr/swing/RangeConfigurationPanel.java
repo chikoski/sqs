@@ -271,7 +271,7 @@ public class RangeConfigurationPanel extends JPanel {
 		slider.setMajorTickSpacing(majorTickSpacing);
 	
 		slider.setPaintLabels(true);
-		slider.setUI(new GrayscaleSliderUI());
+		//slider.setUI(new GrayscaleSliderUI());
 		slider.setLabelTable(slider.createStandardLabels(50));
 		return slider;
 	}
