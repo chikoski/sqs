@@ -146,6 +146,10 @@ class ChartExportModule extends TemplateExporter{
 	map.put("master", master);
 	map.put("numRows", reportExportModule.getNumRowsTotal(sourceDirectory));
 	map.put("charts", charts);
+	
+System.err.println("---------------------");
+System.err.println("numRows=" + reportExportModule.getNumRowsTotal(sourceDirectory));
+System.err.println("---------------------");
 		
 	Template chartIndexTemplate = this.loader.getTemplate("chartIndex.ftl", "UTF-8");
 	chartIndexTemplate.process(map, chartDirectoryIndexWriter);

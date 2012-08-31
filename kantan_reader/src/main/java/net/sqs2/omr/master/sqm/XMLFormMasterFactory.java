@@ -121,7 +121,12 @@ public class XMLFormMasterFactory implements PageMasterFactory {
 		String version = xpath.selectAttribute(masterNode, "version", SQSNamespaces.SQS2007MASTER_URI);
 		master.setVersion(version);
 
-			master.setNumPages(Integer.parseInt(xpath.selectAttribute(masterNode, "numPages", SQSNamespaces.SQS2007MASTER_URI)));
+			// XXXXX
+			int num_pages = Integer.parseInt(xpath.selectAttribute(masterNode, "numPages", SQSNamespaces.SQS2007MASTER_URI));
+			System.err.println("---------------------------------");
+			System.err.println("num_pages = " + num_pages);
+			System.err.println("---------------------------------");
+			master.setNumPages(num_pages);
 			
 			String horizontalOffset = xpath.selectAttribute(masterNode, "horizontalOffset", SQSNamespaces.SQS2007MASTER_URI);
 			if(horizontalOffset != null){

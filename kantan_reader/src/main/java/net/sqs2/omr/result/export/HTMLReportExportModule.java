@@ -101,12 +101,28 @@ public class HTMLReportExportModule extends SpreadSheetExportEventAdapter {
 	SourceDirectory parentSourceDirectory = rowGroupEvent.getParentSourceDirectory();
 	int numRows = sourceDirectory.getNumPageIDs() / numPages;
 	this.numRowsTotalMap.put(sourceDirectory, numRows);
+// XXXX
+System.err.println("--------------------------------------------");
+	System.err.println("numRows = " + numRows);
+	System.err.println("getNumpageIDs() = " + sourceDirectory.getNumPageIDs());
+	System.err.println("numPages = "  + numPages);
+	System.err.println("get() = " + this.numRowsTotalMap.get(sourceDirectory));
+System.err.println("--------------------------------------------");
+// XXX
+// What is parentSourceDirectory?
+/*
 	if(parentSourceDirectory != null){
 	    Integer parentNumRows = this.numRowsTotalMap.get(parentSourceDirectory);
 	    if(parentNumRows != null){
 		this.numRowsTotalMap.put(parentSourceDirectory, parentNumRows + numRows);	
 	    }
 	}
+*/
+// XXX
+	System.err.println("sourceDirectory = " + sourceDirectory);
+	System.err.println("parentSourceDirectory = " + parentSourceDirectory);
+	System.err.println("get() = " + this.numRowsTotalMap.get(sourceDirectory));
+System.err.println("--------------------------------------------");
     }
 
     @Override
